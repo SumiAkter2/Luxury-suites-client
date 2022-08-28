@@ -26,10 +26,10 @@ const Banner = () => {
       </div>
       <div className="bg-yellow-100 z-6 mx-12 p-4 mt-[-40px] rounded-lg">
         <h1 className="mx-auto text-center pb-4"> </h1>
-        <div className="grid grid-cols-5 gap-x-4 ">
+        <div className="grid lg:grid-cols-5 gap-x-4 ">
           <div>
             <img
-              className="h-40 rounded-lg shrink-0"
+              className=" lg:h-40  rounded-lg shrink-0"
               src="https://i.ibb.co/qMWdGV1/swimingpool2.png"
               alt="hotel-img"
             />
@@ -37,7 +37,7 @@ const Banner = () => {
           </div>
           <div>
             <img
-              className="h-40 rounded-lg shrink-0"
+              className=" lg:h-40  rounded-lg shrink-0"
               src="https://i.ibb.co/Z2Ny3PB/room3.png"
               alt="hotel-img"
             />
@@ -45,7 +45,7 @@ const Banner = () => {
           </div>
           <div>
             <img
-              className="h-40 rounded-lg shrink-0"
+              className=" lg:h-40  rounded-lg shrink-0"
               src="https://i.ibb.co/WFR6dhm/coridor2.png"
               alt="hotel-img"
             />
@@ -53,7 +53,7 @@ const Banner = () => {
           </div>
           <div>
             <img
-              className="h-40 rounded-lg shrink-0"
+              className=" lg:h-40  rounded-lg shrink-0"
               src="https://i.ibb.co/NrnZzgM/room2.png"
               alt="hotel-img"
             />
@@ -62,7 +62,7 @@ const Banner = () => {
 
           <div>
             <img
-              className="h-40 rounded-lg shrink-0"
+              className=" lg:h-40  rounded-lg shrink-0"
               src="https://i.ibb.co/V91JZpN/coridor.png"
               alt="hotel-img"
             />
