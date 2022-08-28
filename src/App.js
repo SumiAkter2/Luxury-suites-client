@@ -7,6 +7,7 @@ import About from "./Components/About/About";
 import LogIn from "./Components/LogIn/LogIn";
 import { Routes, Route } from "react-router-dom";
 import Footer from "./Components/Footer/Footer";
+import NotFound from "./Components/NotFound/NotFound";
 function App() {
   return (
     <div>
@@ -17,6 +18,7 @@ function App() {
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/login" element={<LogIn />}></Route>
+          <Route path="*" element={<NotFound />}></Route>
         </Routes>
         <Footer />
       </Header>
