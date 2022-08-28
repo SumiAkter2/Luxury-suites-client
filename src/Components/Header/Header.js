@@ -1,15 +1,19 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-
+import { useEffect } from "react";
+import { themeChange } from "theme-change";
 const Header = ({ children }) => {
+  useEffect(() => {
+    themeChange(false);
+  }, []);
   return (
     <div>
       <div class="drawer drawer-end">
         <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
         <div class="drawer-content flex flex-col">
           {/* <!-- Navbar --> */}
-          <div class="w-full navbar bg-base-300 px-20">
-            <div class="flex-1 px-2 mx-2 font-bold text-2xl">Luxury Suites</div>
+          <div class="w-full navbar bg-base-300 lg:px-20 ">
+            <div class="flex-1 font-bold text-xl">Luxury Suites</div>
             <div class="flex-none lg:hidden">
               <label for="my-drawer-3" class="btn btn-circle btn-ghost">
                 <svg
@@ -32,7 +36,7 @@ const Header = ({ children }) => {
               <ul class="menu menu-horizontal gap-x-2">
                 {/* <!-- Navbar menu content here --> */}
                 <li>
-                  <NavLink to="/living" className="rounded-lg ">
+                  <NavLink to="/living" className="rounded-lg py-0 ">
                     Living
                   </NavLink>
                 </li>
@@ -50,6 +54,30 @@ const Header = ({ children }) => {
                   <NavLink to="/login" className="rounded-lg ">
                     Log In
                   </NavLink>
+                </li>
+                <li>
+                  <button data-toggle-theme="dark,light" onClick={themeChange}>
+                    Theme
+                  </button>
+                </li>
+                <li class="dropdown dropdown-hover dropdown-end ">
+                  <label
+                    tabindex="0"
+                    class="btn btn-outline btn-primary rounded-lg"
+                  >
+                    Book
+                  </label>
+                  <ul
+                    tabindex="0"
+                    class="dropdown-content menu p-2 shadow bg-slate-300 rounded-box w-52"
+                  >
+                    <li>
+                      <a>Item 1</a>
+                    </li>
+                    <li>
+                      <a>Item 2</a>
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </div>
