@@ -27,7 +27,20 @@ const BayView = () => {
               dolorum expedita minima blanditiis incidunt recusandae, in hic
               aliquid impedit reprehenderit quia accusamus nihil?
             </p>
-            <button class="btn btn-primary">Get Started</button>
+            <div className="flex pt-6">
+              <div class="avatar">
+                <div class="w-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                  <img
+                    src="https://i.ibb.co/rHHJGXH/women2.jpg"
+                    alt="Girl-img"
+                  />
+                </div>
+              </div>
+              <div className="pl-4">
+                <h1>Alisha Zaman</h1>
+                <p className="text-xs">Hotel Manager</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
