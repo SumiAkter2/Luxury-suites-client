@@ -7,8 +7,8 @@ const BayView = () => {
       <div class="hero min-h-screen ">
         <div class="hero-content flex-col lg:flex-row">
           <img
-            className="w-96 h-96 shrink-0 lg:ml-12"
-            src="https://i.ibb.co/hgtf0pN/dyning.jpg"
+            className="w-96 shrink-0 lg:ml-12"
+            src="https://i.ibb.co/tP8z73j/hotel2.jpg"
             class="max-w-sm rounded-lg shadow-2xl"
             alt="hotel-dining-img"
           />
