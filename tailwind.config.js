@@ -14,6 +14,9 @@ module.exports = {
       },
       "dark",
       "cupcake",
+      "retro",
+      "cyberpunk",
+      "valentine",
     ],
   },
 
