@@ -1,7 +1,9 @@
 import React from "react";
+import ShowOff2 from "../Welcome/ShowOff2";
 import Welcome from "../Welcome/Welcome";
 import Banner from "./Banner";
 import BayView from "./BayView";
+import ShowOff1 from "./ShowOff1";
 
 const Home = () => {
   return (
@@ -10,6 +12,8 @@ const Home = () => {
 
       <Welcome />
       <BayView />
+      <ShowOff2 />
+      <ShowOff1 />
     </div>
   );
 };

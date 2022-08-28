@@ -28,7 +28,7 @@ const Welcome = () => {
             />
           </p>
           <div>
-            <div class="divider w-96 mx-auto mt-12 opacity-100">
+            <div class="divider w-60 mx-auto mt-12 opacity-100">
               {icon} {icon}
               {icon}
             </div>
@@ -41,7 +41,7 @@ const Welcome = () => {
               <span className="font-bold"> Luxury Suites</span> with its
               glamorous hospitality and its unique atmosphere.
             </p>
-            <div class="divider w-96 mx-auto mt-12 opacity-100 bg-opacity-100">
+            <div class="divider w-60 mx-auto mt-12 opacity-100 bg-opacity-100">
               {icon} {icon}
               {icon}
             </div>

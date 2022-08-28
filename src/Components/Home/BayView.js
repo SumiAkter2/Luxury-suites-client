@@ -7,14 +7,14 @@ const BayView = () => {
         <div class="hero-content flex-col lg:flex-row">
           <div className="">
             <img
-              style={{ height: "400px", width: "2000px" }}
+              style={{ height: "400px" }}
               src="https://i.ibb.co/tP8z73j/hotel2.jpg"
-              class="lg:pl-6  rounded-lg shadow-2xl"
+              class="lg:pl-6 lg:w-screen rounded-lg shadow-2xl"
               alt="hotel-img"
             />
           </div>
           <div className="lg:pl-8 pb-6 ">
-            <div class="divider w-96 mx-auto mt-2 opacity-100 bg-opacity-100">
+            <div class="divider w-60 mx-auto mt-2 opacity-100 bg-opacity-100">
               ...
             </div>
             <p className="pb-6 text-xs"> Hotel Bayview</p>
