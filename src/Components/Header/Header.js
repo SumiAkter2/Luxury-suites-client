@@ -1,11 +1,7 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
-import { useEffect } from "react";
-import { themeChange } from "theme-change";
+
 const Header = ({ children }) => {
-  useEffect(() => {
-    themeChange(false);
-  }, []);
   return (
     <div>
       <div class="drawer drawer-end">
@@ -78,10 +74,10 @@ const Header = ({ children }) => {
                     class="dropdown-content menu p-2 shadow bg-slate-300 rounded-box w-52"
                   >
                     <li>
-                      <a>Item 1</a>
+                      <a href="/">Item 1</a>
                     </li>
                     <li>
-                      <a>Item 2</a>
+                      <a href="/">Item 2</a>
                     </li>
                   </ul>
                 </li>
