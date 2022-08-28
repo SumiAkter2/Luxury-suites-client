@@ -9,7 +9,7 @@ const BayView = () => {
             <img
               style={{ height: "400px", width: "2000px" }}
               src="https://i.ibb.co/tP8z73j/hotel2.jpg"
-              class="  rounded-lg shadow-2xl"
+              class="lg:pl-6  rounded-lg shadow-2xl"
               alt="hotel-img"
             />
           </div>

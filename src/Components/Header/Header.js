@@ -18,7 +18,7 @@ const Header = ({ children }) => {
                 <img
                   style={{ width: "80px" }}
                   src="https://i.ibb.co/cgPn1sK/logo-for-hotel-removebg-preview.png"
-                  alt=""
+                  alt="logo"
                 />
               </Link>
               <Link to="/" className="font-bold text-xl text-violet-500 pr-12">

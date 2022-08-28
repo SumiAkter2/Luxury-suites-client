@@ -4,7 +4,7 @@ import BayView from "./BayView";
 
 const Home = () => {
   return (
-    <div>
+    <div className="bg-yellow-100">
       <Banner />
       <BayView />
     </div>
