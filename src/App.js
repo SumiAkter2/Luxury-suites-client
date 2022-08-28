@@ -8,7 +8,13 @@ import LogIn from "./Components/LogIn/LogIn";
 import { Routes, Route } from "react-router-dom";
 import Footer from "./Components/Footer/Footer";
 import NotFound from "./Components/NotFound/NotFound";
+import { useState } from "react";
+import Loading from "./Components/Loading/Loading";
 function App() {
+  const [loading, setLoading] = useState(false);
+  if (loading) {
+    <Loading />;
+  }
   return (
     <div>
       <Header>
