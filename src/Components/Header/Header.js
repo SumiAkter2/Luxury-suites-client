@@ -12,7 +12,7 @@ const Header = ({ children }) => {
         <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
         <div class="drawer-content flex flex-col">
           {/* <!-- Navbar --> */}
-          <div class="w-full navbar bg-base-300 lg:px-12 ">
+          <div class="w-full navbar bg-yellow-100 lg:px-12 ">
             <div class="flex-1 ">
               <Link to="/">
                 <img
