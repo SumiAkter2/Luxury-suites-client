@@ -7,6 +7,7 @@ import AllSuite from "./AllSuite";
 const AllSuites = () => {
   const [suites] = useSuites();
   const [startDate, setStartDate] = useState(new Date());
+  const [startDate1, setStartDate1] = useState(new Date());
   return (
     <div>
       <div
@@ -36,8 +37,8 @@ const AllSuites = () => {
             <h1> Check Out</h1>
             <DatePicker
               className="bg-yellow-200 rounded-lg p-2"
-              selected={startDate}
-              onChange={(date: Date) => setStartDate(date)}
+              selected={startDate1}
+              onChange={(date: Date) => setStartDate1(date)}
             />
           </div>
           <div className=" font-bold bg-slate-100 rounded-lg my-2">
@@ -54,6 +55,7 @@ const AllSuites = () => {
               <input className="w-20" type="number" placeholder="1" />
             </div>
           </div>
+          <button className="btn bg-yellow-200 btn-primary w-52">Search</button>
         </div>
 
         <div className="gap-12 grid">
