@@ -10,6 +10,7 @@ import Footer from "./Components/Footer/Footer";
 import NotFound from "./Components/NotFound/NotFound";
 import { useState } from "react";
 import Loading from "./Components/Loading/Loading";
+import AllSuites from "./Components/AllSuites/AllSuites";
 function App() {
   const [loading, setLoading] = useState(false);
   if (loading) {
@@ -21,6 +22,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/living" element={<Living />}></Route>
+          <Route path="/allSuites" element={<AllSuites />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/login" element={<LogIn />}></Route>
