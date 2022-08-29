@@ -13,35 +13,35 @@ const ShowOff1 = () => {
   );
   return (
     <div>
-      <div class="hero min-h-screen bg-yellow-100 my-0">
-        <div class="hero-content flex-col lg:flex-row-reverse">
+      <div className="hero min-h-screen bg-yellow-100 my-0">
+        <div className="hero-content flex-col lg:flex-row-reverse">
           <div className=" flex ">
             <div className="flex gap-x-4 z-20">
               <img
                 src="https://i.ibb.co/YNVPKmj/servent3.jpg"
-                class="max-w-sm  lg:w-48 mt-12 mr-[-40px] w-32 h-48 rounded-lg shadow-2xl"
+                className="max-w-sm  lg:w-48 mt-12 mr-[-40px] w-32 h-48 rounded-lg shadow-2xl"
                 alt="servant-img"
               />
             </div>
             <div className="z-30">
               <img
                 src="https://i.ibb.co/s2rtCq9/food2.jpg"
-                class="max-w-sm mt-[-50px] lg:w-48 w-32 h-48 rounded-lg shadow-2xl"
+                className="max-w-sm mt-[-50px] lg:w-48 w-32 h-48 rounded-lg shadow-2xl"
                 alt="servant-img"
               />
             </div>
           </div>
           <div className="mb-24 pb-24">
-            <div class="divider w-60 mx-auto mb-24 opacity-100 bg-opacity-100 ">
+            <div className="divider w-60 mx-auto mb-24 opacity-100 bg-opacity-100 ">
               {icon} {icon} {icon}
             </div>
-            <h1 class="text-xl font-bold">
+            <h1 className="text-xl font-bold">
               We give all the fresh food for our clients.
             </h1>
-            <p class="py-6">
+            <p className="py-6">
               All our suites are fabulous, they are destinations unto
               themselves. We have crossed the globe to bring you only the best.
-              <div class="divider w-60 mx-auto mt-24 opacity-100 bg-opacity-100 ">
+              <div className="divider w-60 mx-auto mt-24 opacity-100 bg-opacity-100 ">
                 {icon} {icon} {icon}
               </div>
             </p>

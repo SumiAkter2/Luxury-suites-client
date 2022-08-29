@@ -4,21 +4,21 @@ const Banner = () => {
   return (
     <div className="z-5">
       <div
-        class="hero h-screen shrink-0 "
+        className="hero h-screen shrink-0 "
         style={{ backgroundImage: "url(https://i.ibb.co/1XSs988/room6.png)" }}
       >
-        <div class="hero-overlay bg-opacity-10"></div>
-        <div class="text-center text-white ">
-          <div class="max-w-md">
-            <h1 class="mb-5 text-3xl font-bold ">
+        <div className="hero-overlay bg-opacity-10"></div>
+        <div className="text-center text-white ">
+          <div className="max-w-md">
+            <h1 className="mb-5 text-3xl font-bold ">
               Expect Nothing But The Best
             </h1>
-            <p class="mb-5 ">
+            <p className="mb-5 ">
               Hotel for the elite passionate about luxury & comfort. Luxury
               suites is a lavish and comfortable hotels and residences in Dhaka,
               Bangladesh.
             </p>
-            <button class="btn btn-primary font-bold border-0 bg-yellow-100 text-primary">
+            <button className="btn btn-primary font-bold border-0 bg-yellow-100 text-primary">
               Get Started
             </button>
           </div>

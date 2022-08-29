@@ -3,12 +3,12 @@ import React from "react";
 const suite = ({ suite }) => {
   return (
     <div>
-      <div class="card card-compact w-80 h-96  bg-base-100 shadow-xl">
+      <div className="card card-compact w-80 h-96  bg-base-100 shadow-xl">
         <figure>
           <img className="h-56 w-full" src={suite.picture} alt="Shoes" />
         </figure>
-        <div class="card-body">
-          <h2 class="card-title">{suite.name} </h2>
+        <div className="card-body">
+          <h2 className="card-title">{suite.name} </h2>
 
           <div className="flex justify-center items-center">
             <p className="flex mr-2">
@@ -23,8 +23,8 @@ const suite = ({ suite }) => {
               {suite.balance}/ <span className="text-xs">Night</span>
             </p>
 
-            <div class="card-actions justify-end">
-              <button class="btn btn-primary bg-yellow-200">Book Now</button>
+            <div className="card-actions justify-end">
+              <button className="btn btn-primary bg-yellow-200">Book Now</button>
             </div>
           </div>
         </div>
