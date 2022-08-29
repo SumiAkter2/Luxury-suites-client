@@ -8,14 +8,10 @@ import LogIn from "./Components/LogIn/LogIn";
 import { Routes, Route } from "react-router-dom";
 import Footer from "./Components/Footer/Footer";
 import NotFound from "./Components/NotFound/NotFound";
-import { useState } from "react";
-import Loading from "./Components/Loading/Loading";
+
 import AllSuites from "./Components/AllSuites/AllSuites";
+import SignUp from "./Components/SignUp/SignUp";
 function App() {
-  const [loading, setLoading] = useState(false);
-  if (loading) {
-    <Loading />;
-  }
   return (
     <div>
       <Header>
@@ -26,6 +22,7 @@ function App() {
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/login" element={<LogIn />}></Route>
+          <Route path="/signUp" element={<SignUp />}></Route>
           <Route path="*" element={<NotFound />}></Route>
         </Routes>
         <Footer />

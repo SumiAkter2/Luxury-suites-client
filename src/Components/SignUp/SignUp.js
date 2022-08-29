@@ -1,6 +1,6 @@
 import React from "react";
-import "./Login.css";
-const LogIn = () => {
+import "../LogIn/Login.css";
+const SignUp = () => {
   return (
     <div
       className="hero min-h-screen font-serif"
@@ -9,32 +9,40 @@ const LogIn = () => {
       <div className="hero-overlay bg-opacity-40"></div>
       <div className="hero-content text-center ">
         <div className="max-w-md">
-          <div className="  mt-6 bg-yellow-100 w-80 h-96 mb-24  rounded-lg hover:border-white border-2 ">
-            <h1 className=" text-xl font-serif pt-6 text-black">
-              Please Log In
+          <div className=" w-80  py-12   rounded-lg hover:border-white border-2 ">
+            <h1 className=" text-xl font-serif  text-black">
+              Create A New Account
             </h1>
             {/* form */}
             <form className="mt-6">
               <input
                 type="text"
-                placeholder="Type Email"
+                placeholder="Type Name"
                 class="input border-b-4 focus:border-0  input-warning input-sm w-60 max-w-xs"
+              />
+              <br />
+              <input
+                type="text"
+                placeholder="Type Email"
+                class="input border-b-4 focus:border-0  mt-2 input-warning input-sm w-60 max-w-xs"
               />
 
               <br />
               <input
                 type="text"
                 placeholder="Type Password"
-                class="input border-b-4 focus:border-0 mt-4 input-warning input-sm w-60 max-w-xs"
+                class="input border-b-4 focus:border-0  mt-2 input-warning input-sm w-60 max-w-xs"
               />
               <br />
-              <button className="button bg-yellow-200 w-48 ">Log In</button>
+
+              <input
+                type="text"
+                placeholder="Type Number"
+                class="input border-b-4 focus:border-0  mt-2 input-warning input-sm w-60 max-w-xs"
+              />
+              <button className="button bg-yellow-200 w-48 ">Sign Up</button>
             </form>
-            {/* forgot pass */}
-            <div className="mt-4 text-black text-sm flex justify-center">
-              <p>Forgot Password ? </p>
-              <p>Please Reset</p>
-            </div>
+
             {/* social */}
             <div className="flex justify-center items-center gap-x-6 mt-6 bg-yellow-200 w-48 mx-auto rounded-lg p-1">
               <img
@@ -54,8 +62,8 @@ const LogIn = () => {
               />
             </div>
             <div className="mt-4 font-serif text-black text-sm flex justify-center">
-              <p>New To Here ? </p>
-              <p>Create An Account</p>
+              <p>Have An Account? </p>
+              <p>Please Log IN</p>
             </div>
           </div>
         </div>
@@ -64,4 +72,4 @@ const LogIn = () => {
   );
 };
 
-export default LogIn;
+export default SignUp;
