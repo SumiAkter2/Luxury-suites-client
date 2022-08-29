@@ -1,33 +1,54 @@
 import React from "react";
+import { useForm } from "react-hook-form";
 import "./Login.css";
 const LogIn = () => {
+  const {
+    register,
+    formState: { errors },
+    handleSubmit,
+  } = useForm();
+  const onSubmit = (data) => console.log(data);
   return (
     <div
-      className="hero min-h-screen font-serif"
+      className="hero  font-serif"
       style={{ backgroundImage: "url(https://i.ibb.co/9ZKpt34/room5.png)" }}
     >
       <div className="hero-overlay bg-opacity-40"></div>
       <div className="hero-content text-center ">
         <div className="max-w-md">
-          <div className="  mt-6 bg-yellow-100 w-80 h-96 mb-24  rounded-lg hover:border-white border-2 ">
+          <div className="p-4  mt-6  w-80  mb-24  rounded-lg hover:border-white border-2 ">
             <h1 className=" text-xl font-serif pt-6 text-black">
               Please Log In
             </h1>
             {/* form */}
-            <form className="mt-6">
-              <input
-                type="text"
-                placeholder="Type Email"
-                class="input border-b-4 focus:border-0  input-warning input-sm w-60 max-w-xs"
-              />
+            <form className="mt-6" onSubmit={handleSubmit(onSubmit)}>
+              <div className="grid justify-center items-center">
+                <input
+                  type="text"
+                  placeholder="Type Email"
+                  class="input border-b-4 focus:border-0  input-warning input-sm w-60 max-w-xs mb-2"
+                  {...register("Email", { required: true })}
+                />
 
-              <br />
-              <input
-                type="text"
-                placeholder="Type Password"
-                class="input border-b-4 focus:border-0 mt-4 input-warning input-sm w-60 max-w-xs"
-              />
-              <br />
+                <span class="label-text-alt text-white ">
+                  {errors.Email?.type === "required" && "! Email is required"}
+                </span>
+              </div>
+
+              <div className="grid justify-center items-center">
+                <input
+                  type="text"
+                  placeholder="Type Password"
+                  class="input border-b-4 focus:border-0  input-warning input-sm w-60 max-w-xs"
+                  {...register("Password", { required: true })}
+                />
+
+                <span class="label-text-alt text-white ">
+                  {errors.Password?.type === "required" &&
+                    "! Password is required"}
+                </span>
+              </div>
+
               <button className="button bg-yellow-200 w-48 ">Log In</button>
             </form>
             {/* forgot pass */}
