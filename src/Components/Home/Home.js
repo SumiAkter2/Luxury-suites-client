@@ -1,4 +1,5 @@
 import React from "react";
+import Suites from "../Suites/Suites";
 import ShowOff2 from "../Welcome/ShowOff2";
 import Welcome from "../Welcome/Welcome";
 import Banner from "./Banner";
@@ -11,7 +12,9 @@ const Home = () => {
       <Banner />
 
       <Welcome />
+      <Suites />
       <BayView />
+
       <ShowOff2 />
       <ShowOff1 />
     </div>
