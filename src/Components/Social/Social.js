@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  useSignInWithFacebook,
   useSignInWithGithub,
   useSignInWithGoogle,
 } from "react-firebase-hooks/auth";
@@ -7,13 +8,17 @@ import auth from "../../firebase.init";
 
 const Social = () => {
   const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
+  const [signInWithFacebook] = useSignInWithFacebook(auth);
   const [signInWithGithub] = useSignInWithGithub(auth);
   const googleSingIn = () => {
     signInWithGoogle();
   };
-//   const githubSignIn = () => {
-//     signInWithGithub();
-//   };
+  const githubSignIn = () => {
+    signInWithGithub();
+  };
+  const facebookSignIn = () => {
+    signInWithFacebook();
+  };
   return (
     <div className="flex justify-center items-center gap-x-6 mt-6 bg-yellow-200 w-48 mx-auto rounded-lg p-1">
       <img
@@ -23,6 +28,7 @@ const Social = () => {
         alt=""
       />
       <img
+        onClick={facebookSignIn}
         className="w-8 h-8 cursor-pointer  hover:border-2 hover:border-red-300"
         src="https://i.ibb.co/F4yknXJ/facebook.png"
         alt=""
