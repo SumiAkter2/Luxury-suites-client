@@ -1,13 +1,21 @@
 import React from "react";
+import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { useForm } from "react-hook-form";
+import auth from "../../firebase.init";
 import "../LogIn/Login.css";
+import Social from "../Social/Social";
 const SignUp = () => {
   const {
     register,
     formState: { errors },
     handleSubmit,
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const [createUserWithEmailAndPassword, user, loading, error] =
+    useCreateUserWithEmailAndPassword(auth);
+  const onSubmit = (data) => {
+    createUserWithEmailAndPassword(data.Email, data.Password);
+    console.log(data);
+  };
   return (
     <div
       className="hero  font-serif"
@@ -85,23 +93,7 @@ const SignUp = () => {
             </form>
 
             {/* social */}
-            <div className="flex justify-center items-center gap-x-6 mt-6 bg-yellow-200 lg:w-80 w-48 mx-auto rounded-lg p-1">
-              <img
-                className="w-8 h-8"
-                src="https://i.ibb.co/ByzF7HZ/google-removebg-preview.png"
-                alt=""
-              />
-              <img
-                className="w-8 h-8"
-                src="https://i.ibb.co/F4yknXJ/facebook.png"
-                alt=""
-              />
-              <img
-                className="w-6 h-6"
-                src="https://i.ibb.co/chk4SZH/github.png"
-                alt=""
-              />
-            </div>
+            <Social />
             <div className="mt-4 font-serif text-black text-sm flex justify-center">
               <p>Have An Account? </p>
               <p>Please Log IN</p>

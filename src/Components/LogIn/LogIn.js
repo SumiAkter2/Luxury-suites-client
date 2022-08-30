@@ -1,16 +1,39 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import "./Login.css";
+import Social from "../Social/Social";
+import auth from "../../firebase.init";
+import { Link } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 const LogIn = () => {
   const {
     register,
     formState: { errors },
     handleSubmit,
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const [signInWithEmailAndPassword, user, loading, error] =
+    useSignInWithEmailAndPassword(auth);
+  const navigate = useNavigate();
+  if (user) {
+    return (
+      <div>
+        <p>Signed In User: {user.Email}</p>
+      </div>
+    );
+  }
+  if (error) {
+    console.log(error, "fff");
+  }
+
+  const onSubmit = (data) => {
+    signInWithEmailAndPassword(data.Email, data.Password);
+    console.log(data.Email, data.Password);
+    navigate("/");
+  };
   return (
     <div
-      className="hero  font-serif"
+      className="hero font-serif"
       style={{ backgroundImage: "url(https://i.ibb.co/9ZKpt34/room5.png)" }}
     >
       <div className="hero-overlay bg-opacity-40"></div>
@@ -57,7 +80,7 @@ const LogIn = () => {
               <p>Please Reset</p>
             </div>
             {/* social */}
-            <div className="flex justify-center items-center gap-x-6 mt-6 bg-yellow-200 w-48 mx-auto rounded-lg p-1">
+            {/* <div className="flex justify-center items-center gap-x-6 mt-6 bg-yellow-200 w-48 mx-auto rounded-lg p-1">
               <img
                 className="w-8 h-8"
                 src="https://i.ibb.co/ByzF7HZ/google-removebg-preview.png"
@@ -73,10 +96,11 @@ const LogIn = () => {
                 src="https://i.ibb.co/chk4SZH/github.png"
                 alt=""
               />
-            </div>
+            </div> */}
+            <Social />
             <div className="mt-4 font-serif text-black text-sm flex justify-center">
               <p>New To Here ? </p>
-              <p>Create An Account</p>
+              <Link to="/signUp">Create An Account</Link>
             </div>
           </div>
         </div>
