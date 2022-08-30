@@ -1,6 +1,15 @@
 import React from "react";
+import { useForm } from "react-hook-form";
 
 const Contact = () => {
+  const {
+    register,
+    formState: { errors },
+    handleSubmit,
+  } = useForm();
+  const onSubmit = (data) => {
+    console.log(data);
+  };
   return (
     <div>
       <div
@@ -16,8 +25,8 @@ const Contact = () => {
         </div>
       </div>
       {/* detail contact */}
-      <div className="lg:flex justify-around items-center">
-        <div className="my-6 bg-yellow-200 p-4 rounded-md ">
+      <div className="lg:flex justify-evenly  items-center">
+        <div className="my-6 bg-yellow-200 p-4 rounded-md mr-6">
           <h1 className="flex justify-start items-center ">
             {phoneIcon} <span className="text-3xl pl-2">Phone </span>
           </h1>
@@ -37,7 +46,54 @@ const Contact = () => {
           </div>
         </div>
         <div>
-          <h1>kjdsfhadf</h1>
+          <form
+            className="my-6 bg-yellow-200 p-6 rounded-md"
+            onSubmit={handleSubmit(onSubmit)}
+          >
+            <h1 className="text-2xl font-serif mb-4 ">Sent Email </h1>
+            <div className="grid justify-center items-center">
+              <input
+                type="text"
+                name="email"
+                placeholder="Type Email"
+                class="input border-b-4 focus:border-0  input-warning input-sm w-60 max-w-xs mb-2"
+                {...register("Email", { required: true })}
+              />
+
+              <span class="label-text-alt text-red-500 ">
+                {errors.Email?.type === "required" && "! Email is required"}
+              </span>
+            </div>
+
+            <div className="grid justify-center items-center">
+              <input
+                type="text"
+                placeholder="Type Password"
+                class="input border-b-4 focus:border-0  input-warning input-sm w-60 max-w-xs"
+                {...register("Password", { required: true })}
+              />
+
+              <span class="label-text-alt text-red-500 ">
+                {errors.Password?.type === "required" &&
+                  "! Password is required"}
+              </span>
+            </div>
+            <div className="grid justify-center items-center">
+              <textarea
+                type="text"
+                name="email"
+                placeholder="Type Here"
+                class="textarea border-b-4 focus:border-0  textarea-warning textarea-sm w-60 max-w-xs mb-2 mt-2"
+                {...register("TextArea", { required: true })}
+              />
+
+              <span class="label-text-alt text-red-500 ">
+                {errors.TextArea?.type === "required" &&
+                  "! TextArea is required"}
+              </span>
+            </div>
+            <button className="button bg-yellow-200 w-48 ml-6">Submit</button>
+          </form>
         </div>
       </div>
     </div>
