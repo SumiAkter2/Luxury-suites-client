@@ -1,21 +1,26 @@
 import React from "react";
 import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
+import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import auth from "../../firebase.init";
 import "../LogIn/Login.css";
 import Social from "../Social/Social";
+
 const SignUp = () => {
   const {
     register,
     formState: { errors },
     handleSubmit,
   } = useForm();
+  const navigate = useNavigate();
   const [createUserWithEmailAndPassword, user, loading, error] =
     useCreateUserWithEmailAndPassword(auth);
   const onSubmit = (data) => {
     createUserWithEmailAndPassword(data.Email, data.Password);
     console.log(data);
+    navigate("/");
   };
+
   return (
     <div
       className="hero  font-serif"
@@ -28,22 +33,24 @@ const SignUp = () => {
             <h1 className=" text-xl font-serif  text-black">
               Create A New Account
             </h1>
+
             {/* form */}
             <form className="mt-6  px-6" onSubmit={handleSubmit(onSubmit)}>
               <div className="lg:flex  justify-center items-center gap-x-2">
                 <div className="grid ">
+                  {/* name input */}
                   <input
                     type="text"
                     placeholder="Type Name"
                     class="input border-b-4 focus:border-0  mt-2 input-warning input-sm  max-w-xs"
                     {...register("Name", { required: true })}
                   />
-
+                  {/* error for name */}
                   <span class="label-text-alt text-white ">
                     {errors.Name?.type === "required" && "! Name is required"}
                   </span>
                 </div>
-
+                {/* email Input */}
                 <div className="grid">
                   <input
                     type="text"
@@ -51,13 +58,13 @@ const SignUp = () => {
                     class="input border-b-4 focus:border-0  mt-2 input-warning input-sm  max-w-xs"
                     {...register("Email", { required: true })}
                   />
-
+                  {/* error for email */}
                   <span class="label-text-alt text-white ">
                     {errors.Email?.type === "required" && "! Email is required"}
                   </span>
                 </div>
               </div>
-
+              {/* pass input */}
               <div className="lg:flex justify-center items-center gap-x-2">
                 <div className="grid">
                   <input
@@ -66,13 +73,13 @@ const SignUp = () => {
                     class="input border-b-4 focus:border-0  mt-2 input-warning input-sm  max-w-xs"
                     {...register("Password", { required: true })}
                   />
-
+                  {/* error for pass */}
                   <span class="label-text-alt text-white ">
                     {errors.Password?.type === "required" &&
                       "! Password is required"}
                   </span>
                 </div>
-
+                {/* num input */}
                 <div className="grid">
                   <input
                     type="text"
@@ -80,7 +87,7 @@ const SignUp = () => {
                     class="input border-b-4 focus:border-0  mt-2 input-warning input-sm  max-w-xs"
                     {...register("Number", { required: true })}
                   />
-
+                  {/* error for num */}
                   <span class="label-text-alt text-white ">
                     {errors.Number?.type === "required" &&
                       "! Number is required"}
@@ -96,7 +103,9 @@ const SignUp = () => {
             <Social />
             <div className="mt-4 font-serif text-black text-sm flex justify-center">
               <p>Have An Account? </p>
-              <p>Please Log IN</p>
+              <Link to="/login" className="text-white pl-2">
+                Please Log IN
+              </Link>
             </div>
           </div>
         </div>

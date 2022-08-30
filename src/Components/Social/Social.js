@@ -5,19 +5,23 @@ import {
   useSignInWithGoogle,
 } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
-
+import { useNavigate } from "react-router-dom";
 const Social = () => {
   const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
   const [signInWithFacebook] = useSignInWithFacebook(auth);
   const [signInWithGithub] = useSignInWithGithub(auth);
+  const navigate = useNavigate();
   const googleSingIn = () => {
     signInWithGoogle();
+    navigate("/");
   };
   const githubSignIn = () => {
     signInWithGithub();
+    navigate("/");
   };
   const facebookSignIn = () => {
     signInWithFacebook();
+    navigate("/");
   };
   return (
     <div className="flex justify-center items-center gap-x-6 mt-6 bg-yellow-200 w-48 mx-auto rounded-lg p-1">

@@ -1,19 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
+import {
+  useSendPasswordResetEmail,
+  useSignInWithEmailAndPassword,
+} from "react-firebase-hooks/auth";
 import "./Login.css";
 import Social from "../Social/Social";
 import auth from "../../firebase.init";
 import { Link } from "react-router-dom";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 const LogIn = () => {
+  // const [email, setEmail] = useState("");
   const {
     register,
     formState: { errors },
     handleSubmit,
   } = useForm();
-  const [signInWithEmailAndPassword, user, loading, error] =
+  const [signInWithEmailAndPassword, user] =
     useSignInWithEmailAndPassword(auth);
+  const [sendPasswordResetEmail, sending, error] =
+    useSendPasswordResetEmail(auth);
   const navigate = useNavigate();
   if (user) {
     return (
@@ -22,21 +28,34 @@ const LogIn = () => {
       </div>
     );
   }
-  if (error) {
-    console.log(error, "fff");
-  }
 
   const onSubmit = (data) => {
     signInWithEmailAndPassword(data.Email, data.Password);
     console.log(data.Email, data.Password);
     navigate("/");
+    // const resetPass = () => {
+    //   alert("sure?");
+    //   sendPasswordResetEmail(data.Email);
+    //   console.log("done");
+    // };
   };
+
+  if (error) {
+    return (
+      <div>
+        <p>Error: {error.message}</p>
+      </div>
+    );
+  }
+  if (sending) {
+    return <p>Sending...</p>;
+  }
   return (
     <div
       className="hero font-serif"
       style={{ backgroundImage: "url(https://i.ibb.co/9ZKpt34/room5.png)" }}
     >
-      <div className="hero-overlay bg-opacity-40"></div>
+      <div className="hero-overlay bg-opacity-50"></div>
       <div className="hero-content text-center ">
         <div className="max-w-md">
           <div className="p-4  mt-6  w-80  mb-24  rounded-lg hover:border-white border-2 ">
@@ -48,6 +67,7 @@ const LogIn = () => {
               <div className="grid justify-center items-center">
                 <input
                   type="text"
+                  name="email"
                   placeholder="Type Email"
                   class="input border-b-4 focus:border-0  input-warning input-sm w-60 max-w-xs mb-2"
                   {...register("Email", { required: true })}
@@ -74,33 +94,19 @@ const LogIn = () => {
 
               <button className="button bg-yellow-200 w-48 ">Log In</button>
             </form>
-            {/* forgot pass */}
-            <div className="mt-4 text-black text-sm flex justify-center">
-              <p>Forgot Password ? </p>
-              <p>Please Reset</p>
+            {/* Reset pass */}
+            <div className="mt-4  text-sm flex justify-center">
+              <p className="text-black  pl-2">Forgot Password ? </p>
+              <button className="text-white pl-2">Please Reset</button>
             </div>
             {/* social */}
-            {/* <div className="flex justify-center items-center gap-x-6 mt-6 bg-yellow-200 w-48 mx-auto rounded-lg p-1">
-              <img
-                className="w-8 h-8"
-                src="https://i.ibb.co/ByzF7HZ/google-removebg-preview.png"
-                alt=""
-              />
-              <img
-                className="w-8 h-8"
-                src="https://i.ibb.co/F4yknXJ/facebook.png"
-                alt=""
-              />
-              <img
-                className="w-6 h-6"
-                src="https://i.ibb.co/chk4SZH/github.png"
-                alt=""
-              />
-            </div> */}
+
             <Social />
             <div className="mt-4 font-serif text-black text-sm flex justify-center">
               <p>New To Here ? </p>
-              <Link to="/signUp">Create An Account</Link>
+              <Link to="/signUp" className="text-white pl-2">
+                Create An Account
+              </Link>
             </div>
           </div>
         </div>
