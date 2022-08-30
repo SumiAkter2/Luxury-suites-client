@@ -11,9 +11,9 @@ const Social = () => {
   const googleSingIn = () => {
     signInWithGoogle();
   };
-  const githubSignIn = () => {
-    signInWithGithub();
-  };
+//   const githubSignIn = () => {
+//     signInWithGithub();
+//   };
   return (
     <div className="flex justify-center items-center gap-x-6 mt-6 bg-yellow-200 w-48 mx-auto rounded-lg p-1">
       <img
