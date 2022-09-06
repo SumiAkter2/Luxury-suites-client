@@ -19,6 +19,8 @@ import Admin from "./Components/Dashboard/Admin";
 import AddReview from "./Components/Dashboard/AddReview";
 import ManageSuites from "./Components/Dashboard/ManageSuites";
 import FAQ from "./Components/MoreInfo/FAQ";
+import Teams from "./Components/MoreInfo/Teams";
+import Feature from "./Components/MoreInfo/Feature";
 function App() {
   return (
     <div className="font-serif">
@@ -39,6 +41,8 @@ function App() {
           <Route path="/login" element={<LogIn />}></Route>
           <Route path="/signUp" element={<SignUp />}></Route>
           <Route path="/faq" element={<FAQ />}></Route>
+          <Route path="/teams" element={<Teams />}></Route>
+          <Route path="/feature" element={<Feature />}></Route>
           <Route path="*" element={<NotFound />}></Route>
         </Routes>
         <Footer />
