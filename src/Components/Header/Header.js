@@ -42,19 +42,20 @@ const Header = ({ children }) => {
             <div className="flex-none hidden lg:block">
               <ul className="menu menu-horizontal gap-x-2">
                 {/* <!-- Navbar menu content here --> */}
+
                 <li>
-                  <NavLink to="/living" className="font-bold rounded-lg py-0 ">
-                    Living
+                  <NavLink to="/about" className=" font-bold rounded-lg ">
+                    About
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/dashBoard" className="font-bold rounded-lg ">
+                    DashBoard
                   </NavLink>
                 </li>
                 <li>
                   <NavLink to="/contact" className="font-bold rounded-lg ">
                     Contact
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/about" className=" font-bold rounded-lg ">
-                    About
                   </NavLink>
                 </li>
                 <li>
@@ -91,19 +92,20 @@ const Header = ({ children }) => {
           <label for="my-drawer-3" className="drawer-overlay"></label>
           <ul className="menu p-4 overflow-y-auto w-56 bg-slate-200 gap-y-2">
             {/* <!-- Sidebar content here --> */}
+
             <li>
-              <NavLink to="/living" className="font-bold rounded-lg ">
-                Living
+              <NavLink to="/about" className=" font-bold rounded-lg ">
+                About
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/dashBoard" className="font-bold rounded-lg ">
+                DashBoard
               </NavLink>
             </li>
             <li>
               <NavLink to="/contact" className="font-bold rounded-lg ">
                 Contact
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/about" className=" font-bold rounded-lg ">
-                About
               </NavLink>
             </li>
             <li>

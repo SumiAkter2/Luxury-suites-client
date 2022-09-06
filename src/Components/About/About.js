@@ -16,7 +16,7 @@ const About = () => {
           <div className="max-w-md text-white">
             <h1 className="mb-5 text-5xl font-serif">About Us</h1>
             <p className="mb-5 text-xl font-serif">
-              Luxury Suites Like yours own home .
+              Luxury Suites Like Yours Own Home .
             </p>
           </div>
         </div>
