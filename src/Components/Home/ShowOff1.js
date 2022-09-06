@@ -35,7 +35,7 @@ const ShowOff1 = () => {
             <div className="divider w-60 mx-auto mb-24 opacity-100 bg-opacity-100 ">
               {icon} {icon} {icon}
             </div>
-            <h1 className="text-xl font-bold">
+            <h1 className="text-4xl ">
               We give all the fresh food for our clients.
             </h1>
             <p className="py-6">

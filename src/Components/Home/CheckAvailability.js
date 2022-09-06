@@ -1,23 +1,62 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBed, faCalendar, faUsers } from "@fortawesome/free-solid-svg-icons";
+
+
 const CheckAvailability = () => {
   return (
     <div>
-      <div className="mx-12 bg-slate-100 mt-6">
-        <h1 className="text-4xl text-center  p-6">Check Availability</h1>
-        <div className="flex justify-evenly items-center shadow-lg">
-          <h1>shadow-lg Check In</h1>
-          <h1>
-            <FontAwesomeIcon icon={faCalendar} className="me-2" /> Check Out
-          </h1>
-          <h1>
-            <FontAwesomeIcon icon={faUsers} className="me-2" /> Person
-          </h1>
-          <h1>
-            <FontAwesomeIcon icon={faBed} className="me-2" /> Bed
-          </h1>
-          <h1>Check Available</h1>
+      <h1 className="text-4xl text-center  p-6">Check Availability</h1>
+      <div className="mx-12 bg-slate-100 mt-6 p-12 shadow-lg">
+        <div className="flex justify-evenly items-center ">
+          <div className="text-center  shadow-lg">
+            <h1 className="text-xl mb-1">
+              <FontAwesomeIcon icon={faCalendar} className="me-2" /> Check In
+            </h1>
+
+            <input
+              type="date"
+              className="bg-yellow-200 rounded-md w-48 p-1 mt-2"
+            />
+          </div>
+          <div className="text-center  shadow-lg">
+            <h1 className="text-xl mb-1">
+              <FontAwesomeIcon icon={faCalendar} className="me-2" /> Check Out
+            </h1>
+            <input
+              type="date"
+              className="bg-yellow-200 w-48 rounded-md p-1 mt-2"
+            />
+          </div>
+          <div className="text-center  shadow-lg">
+            <h1 className="text-xl mb-1">
+              <FontAwesomeIcon icon={faUsers} className="me-2" /> Person
+            </h1>
+
+            <select class="form-control w-24 rounded-md p-1 bg-yellow-200 ">
+              <option selected>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+            </select>
+          </div>
+          <div className="text-center  shadow-lg">
+            <h1 className="text-xl mb-1">
+              <FontAwesomeIcon icon={faBed} className="me-2" /> Bed
+            </h1>
+            <select class="form-control w-28 rounded-md p-1 bg-yellow-200 ">
+              <option selected>1 King Bed</option>
+              <option>2 Single Bed</option>
+              <option>2 King Bed</option>
+              <option>1 Double Bed</option>
+              <option>1 Single Bed</option>
+            </select>
+          </div>
+          <button className="btn btn-primary bg-yellow-200 mt-8">
+            Check Available
+          </button>
         </div>
       </div>
     </div>

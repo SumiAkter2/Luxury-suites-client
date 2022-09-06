@@ -14,8 +14,8 @@ const BayView = () => {
             />
           </div>
           <div className="lg:pl-8 pb-6 ">
-            <div className="divider w-60 mx-auto mt-2 opacity-100 bg-opacity-100">
-              ...
+            <div className="divider w-60 mx-auto mt-2 opacity-100 bg-opacity-100  text-orange-500 text-xl">
+              ......
             </div>
             <p className="pb-6 text-xs"> Hotel Bayview</p>
             <h1 className="text-5xl ">

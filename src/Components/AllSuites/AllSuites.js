@@ -1,13 +1,9 @@
-import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
-import React, { useState } from "react";
 import useSuites from "../Hooks/useSuites";
 import AllSuite from "./AllSuite";
 
 const AllSuites = () => {
   const [suites] = useSuites();
-  const [startDate, setStartDate] = useState(new Date());
-  const [startDate1, setStartDate1] = useState(new Date());
+
   return (
     <div>
       <div
@@ -26,33 +22,40 @@ const AllSuites = () => {
           <h1 className="text-2xl font-bold mb-6">Check Available</h1>
 
           <div className=" font-bold bg-slate-100 rounded-lg my-2">
-            <h1> Check In</h1>
-            <DatePicker
-              className="bg-yellow-200 rounded-lg p-2"
-              selected={startDate}
-              onChange={(date: Date) => setStartDate(date)}
-            />
+            <h1 className="mb-2"> Check In</h1>
+            <input type="date" className="bg-yellow-200 rounded-md p-1 w-52" />
           </div>
           <div className=" font-bold bg-slate-100 rounded-lg my-2">
-            <h1> Check Out</h1>
-            <DatePicker
-              className="bg-yellow-200 rounded-lg p-2"
-              selected={startDate1}
-              onChange={(date: Date) => setStartDate1(date)}
+            <h1 className="mb-2"> Check Out</h1>
+            <input
+              type="date"
+              className="bg-yellow-200 w-52 rounded-md p-1  "
             />
           </div>
-          <div className=" font-bold bg-slate-100 rounded-lg my-2">
+          <div className=" font-bold bg-slate-100 w-40 rounded-lg my-2">
             <h1> Room</h1>
-            <input type="number" placeholder="1" />
+            <input
+              type="number"
+              placeholder="1"
+              className="bg-yellow-200 rounded-md p-1 w-52"
+            />
           </div>
           <div className="flex justify-start  font-bold bg-slate-100 rounded-lg my-2">
             <div>
               <h1> Guest</h1>
-              <input className="w-20" type="number" placeholder="1" />
+              <input
+                className="w-24 bg-yellow-200 rounded-md p-1"
+                type="number"
+                placeholder="1"
+              />
             </div>
             <div className="ml-4">
               <h1>Children</h1>
-              <input className="w-20" type="number" placeholder="1" />
+              <input
+                className="w-24 bg-yellow-200 rounded-md p-1"
+                type="number"
+                placeholder="1"
+              />
             </div>
           </div>
           <button className="btn bg-yellow-200 btn-primary w-52">Search</button>
