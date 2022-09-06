@@ -6,7 +6,7 @@ const CheckAvailability = () => {
   return (
     <div>
       <h1 className="text-4xl text-center  pt-6">Check Availability</h1>
-      <div className="mx-12 bg-slate-200 mt-6 p-12 drop-shadow-md hover:drop-shadow-xl">
+      <div className="mx-12 bg-base-100 mt-6 p-12 drop-shadow-md hover:drop-shadow-xl">
         <div className="lg:flex   justify-evenly items-center ">
           <div className="text-center   mb-4 ">
             <h1 className="text-xl mb-1 ">
