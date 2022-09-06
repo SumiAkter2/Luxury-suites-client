@@ -17,10 +17,10 @@ const Dashboard = () => {
     <div>
       <div className="drawer drawer-mobile bg-base-100">
         <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
-        <div className="drawer-content flex flex-col items-center justify-center">
+        <div className="drawer-content flex flex-col  justify-start">
           {/* <!-- Page content here --> */}
           <Outlet />
-          <h1>kljhiuhjhj</h1>
+
           <label
             htmlFor="my-drawer-2"
             className="button drawer-button lg:hidden"
@@ -32,6 +32,11 @@ const Dashboard = () => {
           <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
           <ul className="menu p-4 w-60  overflow-y-auto  bg-yellow-200 text-base-content">
             {/* <!-- Sidebar content here --> */}
+            <li>
+              <Link to="/">
+                <FontAwesomeIcon icon={faHouse} /> Back Home
+              </Link>
+            </li>
             <li className="mt-1">
               <Link to="/dashboard">
                 <FontAwesomeIcon icon={faReorder} />
@@ -62,11 +67,6 @@ const Dashboard = () => {
             <li className="mt-1">
               <Link to="/dashboard/admin">
                 <FontAwesomeIcon icon={faUserPlus} /> Make Admin
-              </Link>
-            </li>
-            <li className="mt-1">
-              <Link to="/">
-                <FontAwesomeIcon icon={faHouse} /> Back Home
               </Link>
             </li>
           </ul>

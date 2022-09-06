@@ -68,17 +68,20 @@ const Header = ({ children }) => {
                     tabindex="0"
                     className="btn btn-outline btn-primary font-bold rounded-lg"
                   >
-                    Book
+                    More Info
                   </label>
                   <ul
                     tabindex="0"
-                    className="dropdown-content menu p-2 shadow bg-slate-300 rounded-box w-52"
+                    className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
                   >
                     <li>
-                      <a href="/">Item 1</a>
+                      <a href="/teams">Our Teams</a>
                     </li>
                     <li>
-                      <a href="/">Item 2</a>
+                      <a href="/feature">Feature</a>
+                    </li>
+                    <li>
+                      <a href="/faq">FAQ</a>
                     </li>
                   </ul>
                 </li>
