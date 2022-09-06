@@ -8,12 +8,12 @@ import LogIn from "./Components/LogIn/LogIn";
 import { Routes, Route } from "react-router-dom";
 import Footer from "./Components/Footer/Footer";
 import NotFound from "./Components/NotFound/NotFound";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import AllSuites from "./Components/AllSuites/AllSuites";
 import SignUp from "./Components/SignUp/SignUp";
 function App() {
   return (
-    <div>
+    <div className="font-serif">
       <Header>
         <Routes>
           <Route path="/" element={<Home />}></Route>

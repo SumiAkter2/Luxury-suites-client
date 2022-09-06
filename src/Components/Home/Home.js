@@ -17,7 +17,7 @@ const Home = () => {
       <BayView />
 
       <ShowOff2 />
-      <ShowOff1 />
+      {/* <ShowOff1 /> */}
     </div>
   );
 };
