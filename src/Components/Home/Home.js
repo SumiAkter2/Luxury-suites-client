@@ -5,7 +5,7 @@ import Welcome from "../Welcome/Welcome";
 import Banner from "./Banner";
 import BayView from "./BayView";
 import CheckAvailability from "./CheckAvailability";
-import ShowOff1 from "./ShowOff1";
+import Subscribe from "./Subscribe";
 
 const Home = () => {
   return (
@@ -16,6 +16,7 @@ const Home = () => {
       <Suites />
       <BayView />
       <ShowOff2 />
+      <Subscribe />
     </div>
   );
 };

@@ -12,7 +12,7 @@ const Welcome = () => {
     </svg>
   );
   return (
-    <div className="bg-yellow-100">
+    <div className="bg-base-100 mt-6">
       <div className="hero min-h-screen mt-0">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <p className="lg:flex grid gap-y-2">

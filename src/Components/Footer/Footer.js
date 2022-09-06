@@ -77,6 +77,14 @@ const Footer = () => {
           <a className="link link-hover">Cookie policy</a>
         </div>
       </footer>
+      <footer class="footer footer-center p-4 bg-yellow-200 text-base-content">
+        <div>
+          <p>
+            Copyright © 2022 - All right reserved by Luxury Suites. || This Site
+            Developed by Sumi Akter.
+          </p>
+        </div>
+      </footer>
     </div>
   );
 };

@@ -5,7 +5,7 @@ import Suite from "./Suite";
 const Suites = () => {
   const [suites, setSuites] = useSuites();
   return (
-    <div className="mb-6">
+    <div className="my-6">
       <div className="flex-col justify-center items-center">
         <h1 className="text-center text-2xl ">
           STEP INTO A ROOM THAT BLURS THE LINES <br />

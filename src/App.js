@@ -27,8 +27,6 @@ function App() {
         </Routes>
         <Footer />
       </Header>
-
-      {/*  */}
     </div>
   );
 }
