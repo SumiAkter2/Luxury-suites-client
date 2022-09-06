@@ -15,9 +15,7 @@ const Home = () => {
       <Welcome />
       <Suites />
       <BayView />
-
       <ShowOff2 />
-      {/* <ShowOff1 /> */}
     </div>
   );
 };

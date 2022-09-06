@@ -100,6 +100,96 @@ const About = () => {
           </div>
         </div>
       </div>
+      {/* spa services */}
+      <div>
+        <div className="hero min-h-screen  bg-yellow-100">
+          <div className="hero-content flex-col lg:flex-row">
+            <div className="lg:pl-8 pb-6 ">
+              <div className="divider w-60 mx-auto mt-2 bg-opacity-100  text-orange-500 text-xl">
+                ......
+              </div>
+
+              <h1 className="text-3xl ">The Spa. Refresh Yourself</h1>
+              <p className="py-4 text-sm">
+                Whether you are in search of a well-appointed gym or a pampering
+                moment on the massage table and inside the warm saunas, you can
+                always find a place for yourself at our spa.
+              </p>
+            </div>
+            <div>
+              <img
+                style={{ height: "400px" }}
+                src="https://i.ibb.co/BwMMRQF/spa.jpg"
+                className="lg:pl-6 lg:w-screen rounded-lg shadow-2xl"
+                alt="hotel-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* meeting room */}
+    
+      <div>
+        <div className="hero min-h-screen ">
+          <div className="hero-content flex-col lg:flex-row">
+            <div className="">
+              <img
+                style={{ height: "400px" }}
+                src="https://i.ibb.co/9WpnjQD/meeting.jpg"
+                className="lg:pl-6 lg:w-screen rounded-lg shadow-2xl"
+                alt="hotel-img"
+              />
+            </div>
+            <div className="lg:pl-8 pb-6 ">
+              <div className="divider w-60 mx-auto mt-2 opacity-100 bg-opacity-100  text-orange-500 text-xl">
+                ......
+              </div>
+
+              <h1 className="text-3xl ">Business meeting attend here.</h1>
+              <p className="py-4 text-sm">
+                Travel is a core part of many corporate workers, hence work on
+                the move is difficult. But at Luxury Suites we create a business
+                space for every corporate traveler to ensure that they work
+                smoothly. Latest-model computers, fax machines, telecom services
+                and other corporate facilities are available with our business
+                centre. While you are away from your office we assure you of the
+                best working environment for your career growth. An attentive
+                receptionist is available 24 hours a day.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* fitness services */}
+      <div>
+        <div className="hero min-h-screen  bg-yellow-100">
+          <div className="hero-content flex-col lg:flex-row">
+            <div className="lg:pl-8 pb-6 ">
+              <div className="divider w-60 mx-auto mt-2 bg-opacity-100  text-orange-500 text-xl">
+                ......
+              </div>
+
+              <h1 className="text-3xl ">Fitness Center for Yourself</h1>
+              <p className="py-4 text-sm">
+                While we, at Luxury Suites, believe that health is the ultimate
+                wealth and our guests must not miss on their health. A dedicated
+                gym is available for the guests to indulge in fitness. With all
+                the training equipment available, the gym offers a wide range of
+                fitness activities for fitness freaks. The latest cardiovascular
+                equipment is available in the fully equipped gymnasium.
+              </p>
+            </div>
+            <div>
+              <img
+                style={{ height: "400px" }}
+                src="https://i.ibb.co/5WpybKz/fitness.jpg"
+                className="lg:pl-6 lg:w-screen rounded-lg shadow-2xl"
+                alt="hotel-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
