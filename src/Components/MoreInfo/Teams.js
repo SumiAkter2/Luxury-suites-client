@@ -13,16 +13,11 @@ const Teams = () => {
             <h1 className="mb-5 text-4xl font-serif">
               Introducing Our Team Members.
             </h1>
-            <p className="text-center flex justify-center items-center cursor-pointer">
-              <span className="mr-2"> {FaceBook}</span>
-              <span className="mr-2"> {twitter}</span>
-              <span className="mr-2"> {instra}</span>
-            </p>
           </div>
         </div>
       </div>
       {/* card for team member */}
-      <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-12 px-12 my-6">
+      <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-12 px-12 my-12">
         <div>
           <img
             className="h-60  "
@@ -37,14 +32,15 @@ const Teams = () => {
             <span className="mr-2"> {instra}</span>
           </p>
         </div>
+
         <div>
           <img
-            className="h-60 "
-            src="https://i.ibb.co/KhtfYz6/women1.jpg"
+            className="h-60"
+            src="https://i.ibb.co/3RKWRYz/women3.jpg"
             alt="man-img"
           />
-          <h1 className="text-center mt-4 text-xl font-bold">Liesy Suku</h1>
-          <h1 className="text-center ">General Manager</h1>
+          <h1 className="text-center mt-4 text-xl font-bold">Lusi Fansu</h1>
+          <h1 className="text-center ">Chief Technology Officer</h1>
           <p className="text-center flex justify-center items-center cursor-pointer">
             <span className="mr-2"> {FaceBook}</span>
             <span className="mr-2"> {twitter}</span>
@@ -68,11 +64,11 @@ const Teams = () => {
         <div>
           <img
             className="h-60"
-            src="https://i.ibb.co/3RKWRYz/women3.jpg"
+            src="https://i.ibb.co/DwHbJFk/man44.jpg"
             alt="man-img"
           />
-          <h1 className="text-center mt-4 text-xl font-bold">Lusi Fansu</h1>
-          <h1 className="text-center ">Chief Technology Officer</h1>
+          <h1 className="text-center mt-4 text-xl font-bold">kiar Roy</h1>
+          <h1 className="text-center ">Hr Manager</h1>
           <p className="text-center flex justify-center items-center cursor-pointer">
             <span className="mr-2"> {FaceBook}</span>
             <span className="mr-2"> {twitter}</span>
@@ -81,12 +77,12 @@ const Teams = () => {
         </div>
         <div>
           <img
-            className="h-60"
-            src="https://i.ibb.co/DwHbJFk/man44.jpg"
+            className="h-60 "
+            src="https://i.ibb.co/KhtfYz6/women1.jpg"
             alt="man-img"
           />
-          <h1 className="text-center mt-4 text-xl font-bold">kiar Roy</h1>
-          <h1 className="text-center ">Hr Manager</h1>
+          <h1 className="text-center mt-4 text-xl font-bold">Liesy Suku</h1>
+          <h1 className="text-center ">General Manager</h1>
           <p className="text-center flex justify-center items-center cursor-pointer">
             <span className="mr-2"> {FaceBook}</span>
             <span className="mr-2"> {twitter}</span>
