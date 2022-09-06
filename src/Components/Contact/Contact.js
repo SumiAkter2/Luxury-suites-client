@@ -1,4 +1,5 @@
 import {
+  faArrowLeft,
   faLocation,
   faMailBulk,
   faPhone,
@@ -6,6 +7,8 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { useForm } from "react-hook-form";
+import { Link } from "react-router-dom";
+import Subscribe from "../Home/Subscribe";
 
 const Contact = () => {
   const {
@@ -31,79 +34,92 @@ const Contact = () => {
         </div>
       </div>
       {/* detail contact */}
-      <div className="lg:flex justify-evenly  items-center px-6">
-        <div className="my-6 bg-yellow-200 p-4 rounded-md mr-6 ">
+      <div className="lg:flex justify-evenly  items-center py-6 bg-yellow-200 ">
+        <div>
           <h1 className="flex justify-start items-center ">
             <FontAwesomeIcon icon={faPhone} />
             <span className="text-3xl pl-2">Phone </span>
           </h1>
           <p className="mb-4">099999765534</p>
+        </div>
+        <div>
           <h1 className="flex justify-start items-center ">
             <FontAwesomeIcon icon={faMailBulk} />
             <span className="text-3xl pl-2">Email </span>
           </h1>
           <p className="mb-4">luxurySuites@gmail.com</p>
-          <div>
-            <h1 className="flex justify-start items-center ">
-              <FontAwesomeIcon icon={faLocation} />
-              <span className="text-3xl pl-2">Location </span>
-            </h1>
-            <p className=" text-sm mb-4">
-              4 apt. Flawing Street. The Grand <br />
-              <span>Avenue. Liverpool, UK 33342</span>
-            </p>
-          </div>
         </div>
         <div>
-          <form
-            className="my-6 bg-yellow-200 p-6 rounded-md"
-            onSubmit={handleSubmit(onSubmit)}
-          >
-            <h1 className="text-2xl font-serif mb-4 ">Sent Email </h1>
-            <div className="grid justify-center items-center">
-              <input
-                type="text"
-                name="email"
-                placeholder="Type Email"
-                class="input border-b-4 focus:border-0  input-warning input-sm w-60 max-w-xs mb-2"
-                {...register("Email", { required: true })}
-              />
-
-              <span class="label-text-alt text-red-500 ">
-                {errors.Email?.type === "required" && "! Email is required"}
-              </span>
-            </div>
-
-            <div className="grid justify-center items-center">
-              <input
-                type="text"
-                placeholder="Type Password"
-                class="input border-b-4 focus:border-0  input-warning input-sm w-60 max-w-xs"
-                {...register("Password", { required: true })}
-              />
-
-              <span class="label-text-alt text-red-500 ">
-                {errors.Password?.type === "required" &&
-                  "! Password is required"}
-              </span>
-            </div>
-            <div className="grid justify-center items-center">
-              <textarea
-                type="text"
-                name="email"
-                placeholder="Type Here"
-                class="textarea border-b-4 focus:border-0  textarea-warning textarea-sm w-60 max-w-xs mb-2 mt-2"
-                {...register("TextArea", { required: true })}
-              />
-
-              <span class="label-text-alt text-red-500 ">
-                {errors.TextArea?.type === "required" &&
-                  "! TextArea is required"}
-              </span>
-            </div>
-            <button className="button bg-yellow-200 w-48 ml-6">Submit</button>
-          </form>
+          <h1 className="flex justify-start items-center ">
+            <FontAwesomeIcon icon={faLocation} />
+            <span className="text-3xl pl-2">Location </span>
+          </h1>
+          <p className=" text-sm mb-4">
+            4 apt. Flawing Street. The Grand <br />
+            <span>Avenue. Liverpool, UK 33342</span>
+          </p>
         </div>
+      </div>
+      <div>
+        <form
+          className="mt-6  p-6 rounded-md lg:w-96 mx-auto"
+          onSubmit={handleSubmit(onSubmit)}
+        >
+          <h1 className="text-3xl font-serif mb-6 text-center">
+            Give us your info
+          </h1>
+          <div className="grid justify-center items-center">
+            <input
+              type="text"
+              name="email"
+              placeholder="Type Email"
+              class="input border-b-4 focus:border-0  input-warning input-sm w-60 max-w-xs mb-2"
+              {...register("Email", { required: true })}
+            />
+
+            <span class="label-text-alt text-red-500 ">
+              {errors.Email?.type === "required" && "! Email is required"}
+            </span>
+          </div>
+
+          <div className="grid justify-center items-center">
+            <input
+              type="text"
+              placeholder="Type Password"
+              class="input border-b-4 focus:border-0  input-warning input-sm w-60 max-w-xs"
+              {...register("Password", { required: true })}
+            />
+
+            <span class="label-text-alt text-red-500 ">
+              {errors.Password?.type === "required" && "! Password is required"}
+            </span>
+          </div>
+          <div className="grid justify-center items-center">
+            <textarea
+              type="text"
+              name="email"
+              placeholder="Type Here"
+              class="textarea border-b-4 focus:border-0  textarea-warning textarea-sm w-60 max-w-xs mb-2 mt-2"
+              {...register("TextArea", { required: true })}
+            />
+
+            <span class="label-text-alt text-red-500 ">
+              {errors.TextArea?.type === "required" && "! TextArea is required"}
+            </span>
+          </div>
+          <div className="flex justify-center items-center">
+            <button className="button bg-yellow-300 w-48  ">Submit</button>
+          </div>
+        </form>
+      </div>
+      <div className="bg-yellow-200 py-12">
+        <Subscribe />
+      </div>
+
+      <div className=" flex justify-center my-6">
+        <p className="cursor-pointer p-2  text-2xl">
+          <FontAwesomeIcon icon={faArrowLeft} /> <Link to="/"> Go Home</Link>
+        </p>
       </div>
     </div>
   );

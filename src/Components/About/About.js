@@ -1,4 +1,7 @@
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -187,6 +190,11 @@ const About = () => {
             />
           </div>
         </div>
+      </div>
+      <div className=" flex justify-center my-6">
+        <p className="cursor-pointer p-2  text-2xl">
+          <FontAwesomeIcon icon={faArrowLeft} /> <Link to="/"> Go Home</Link>
+        </p>
       </div>
     </div>
   );
