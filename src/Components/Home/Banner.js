@@ -46,7 +46,7 @@ const Banner = () => {
           </div>
           <div>
             <img
-              className=" lg:h-40  rounded-lg shrink-0"
+              className=" lg:h-40 md:w-full  rounded-lg shrink-0"
               src="https://i.ibb.co/WFR6dhm/coridor2.png"
               alt="hotel-img"
             />
