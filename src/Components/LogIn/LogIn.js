@@ -58,7 +58,7 @@ const LogIn = () => {
       <div className="hero-overlay bg-opacity-50"></div>
       <div className="hero-content text-center ">
         <div className="max-w-md">
-          <div className="p-4  mt-6  w-80  mb-24  rounded-lg hover:border-white border-2 ">
+          <div className="p-4  mt-6  lg:w-80  mb-24  rounded-lg hover:border-white border-2 ">
             <h1 className=" text-xl font-serif pt-6 text-black">
               Please Log In
             </h1>

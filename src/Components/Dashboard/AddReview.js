@@ -19,7 +19,7 @@ const AddReview = () => {
       <div className="hero-content text-center ">
         <div className="max-w-md">
           <h1 className="text-4xl text-center my-6 text-white">Review Us</h1>
-          <div className="p-4  mt-6  w-80  mb-24  rounded-lg hover:border-white border-2 ">
+          <div className="p-4  mt-6  lg:w-80  mb-24  rounded-lg hover:border-white border-2 ">
             <div className="font-serif">
               <form className="mt-6" onSubmit={handleSubmit(onSubmit)}>
                 <div className="grid justify-center items-center">
@@ -83,7 +83,9 @@ const AddReview = () => {
                       "! Comment is required"}
                   </span>
                 </div>
-                <button className="button bg-yellow-200 w-48 ">Log In</button>
+                <button className="button bg-yellow-200 w-48 ">
+                  Review Now
+                </button>
               </form>
             </div>
           </div>
