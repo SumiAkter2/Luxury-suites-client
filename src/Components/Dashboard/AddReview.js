@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 
 const AddReview = () => {
@@ -7,8 +7,25 @@ const AddReview = () => {
     formState: { errors },
     handleSubmit,
   } = useForm();
+
   const onSubmit = (data) => {
-    console.log(data);
+    const review = {
+      name: data.Name,
+      address: data.Address,
+      ratting: data.Ratting,
+      comment: data.comment,
+    };
+
+    console.log(data.name, data.Address, data.Ratting, data.comment);
+
+    fetch("http://localhost:5000/reviews", {
+      method: "POST",
+      headers:{
+        'content-type':'application/json'
+      },body:JSON.stringify(review)
+    })
+      .then((res) => res.json())
+      .then((data) => console.log(data));
   };
   return (
     <div

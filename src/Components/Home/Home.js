@@ -12,8 +12,9 @@ const Home = () => {
     <div className="bg-yellow-100">
       <Banner />
       <CheckAvailability />
-      <Welcome />
+
       <Suites />
+      <Welcome />
       <BayView />
       <ShowOff2 />
       <Subscribe />
