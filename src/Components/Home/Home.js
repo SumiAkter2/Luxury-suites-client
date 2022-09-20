@@ -5,6 +5,7 @@ import Welcome from "../Welcome/Welcome";
 import Banner from "./Banner";
 import BayView from "./BayView";
 import CheckAvailability from "./CheckAvailability";
+import ShowReview from "./ShowReview";
 import Subscribe from "./Subscribe";
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
       <Welcome />
       <BayView />
       <ShowOff2 />
+      <ShowReview />
       <Subscribe />
     </div>
   );

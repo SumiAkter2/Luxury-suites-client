@@ -1,7 +1,14 @@
+import { signOut } from "firebase/auth";
 import React from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
 import { NavLink, Link } from "react-router-dom";
+import auth from "../../firebase.init";
 
 const Header = ({ children }) => {
+  const [user] = useAuthState(auth);
+  const handleSignOut = () => {
+    signOut(auth);
+  };
   return (
     <div>
       <div className="drawer drawer-end">
@@ -58,11 +65,24 @@ const Header = ({ children }) => {
                     Contact
                   </NavLink>
                 </li>
-                <li>
-                  <NavLink to="/login" className="font-bold rounded-lg ">
-                    Log In
-                  </NavLink>
-                </li>
+                {user ? (
+                  <li>
+                    <NavLink
+                      onClick={handleSignOut}
+                      to="/login"
+                      className="font-bold rounded-lg "
+                    >
+                      Sign Out
+                    </NavLink>
+                  </li>
+                ) : (
+                  <li>
+                    <NavLink to="/login" className="font-bold rounded-lg ">
+                      Log In
+                    </NavLink>
+                  </li>
+                )}
+
                 <li className="dropdown dropdown-hover dropdown-end ">
                   <label
                     tabindex="0"
@@ -111,11 +131,23 @@ const Header = ({ children }) => {
                 Contact
               </NavLink>
             </li>
-            <li>
-              <NavLink to="/login" className="font-bold rounded-lg ">
-                Log In
-              </NavLink>
-            </li>
+            {user ? (
+              <li>
+                <NavLink
+                  onClick={handleSignOut}
+                  to="/login"
+                  className="font-bold rounded-lg "
+                >
+                  Sign Out
+                </NavLink>
+              </li>
+            ) : (
+              <li>
+                <NavLink to="/login" className="font-bold rounded-lg ">
+                  Log In
+                </NavLink>
+              </li>
+            )}
           </ul>
         </div>
       </div>

@@ -1,7 +1,11 @@
 import React, { useState } from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
 import { useForm } from "react-hook-form";
+import Swal from "sweetalert2";
+import auth from "../../firebase.init";
 
 const AddReview = () => {
+  const user = useAuthState(auth);
   const {
     register,
     formState: { errors },
@@ -9,23 +13,35 @@ const AddReview = () => {
   } = useForm();
 
   const onSubmit = (data) => {
+    console.log(data);
     const review = {
       name: data.Name,
       address: data.Address,
       ratting: data.Ratting,
       comment: data.comment,
+      photo: data.Photo,
     };
 
-    console.log(data.name, data.Address, data.Ratting, data.comment);
+    console.log(data.Name, data.Address, data.Ratting, data.comment);
 
-    fetch("http://localhost:5000/reviews", {
+    fetch(`http://localhost:5000/reviews`, {
       method: "POST",
-      headers:{
-        'content-type':'application/json'
-      },body:JSON.stringify(review)
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(review),
     })
       .then((res) => res.json())
-      .then((data) => console.log(data));
+      .then((data) => {
+        console.log(data);
+        Swal.fire({
+          title: "Success!",
+          text: "Successfully added a review",
+          icon: "success",
+          confirmButtonText: "Done",
+        });
+        review("");
+      });
   };
   return (
     <div
@@ -42,8 +58,7 @@ const AddReview = () => {
                 <div className="grid justify-center items-center">
                   <input
                     type="text"
-                    name="Name"
-                    placeholder="Type Name"
+                    value={user.displayName}
                     class="input border-b-4 focus:border-0  input-warning input-sm w-60 max-w-xs mb-2"
                     {...register("Name", { required: true })}
                   />
@@ -74,16 +89,29 @@ const AddReview = () => {
                     class="select border-b-4 focus:border-0  select-warning select-sm w-60 max-w-xs"
                     {...register("Ratting", { required: true })}
                   >
-                    <option selected>5</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
+                    <option selected>5/5</option>
+                    <option>1/5</option>
+                    <option>2/5</option>
+                    <option>3/5</option>
+                    <option>4/5</option>
                   </select>
 
                   <span class="label-text-alt text-white ">
                     {errors.Address?.type === "required" &&
                       "! Ratting is required"}
+                  </span>
+                </div>
+                <div className="grid justify-center items-center">
+                  <input
+                    type="file"
+                    // src="https://i.ibb.co/DwHbJFk/man44.jpg"
+                    class="input border-b-4 focus:border-0 lg:w-60 input-warning input-sm  max-w-xs my-2 ml-2"
+                    {...register("Photo", { required: true })}
+                    // alt=""
+                  />
+
+                  <span class="label-text-alt text-white ">
+                    {errors.Photo?.type === "required" && "! Photo is required"}
                   </span>
                 </div>
                 <div className="grid justify-center items-center mt-2">

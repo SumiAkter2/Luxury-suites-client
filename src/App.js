@@ -8,7 +8,7 @@ import LogIn from "./Components/LogIn/LogIn";
 import { Routes, Route } from "react-router-dom";
 import Footer from "./Components/Footer/Footer";
 import NotFound from "./Components/NotFound/NotFound";
-
+import Swal from "sweetalert2";
 import AllSuites from "./Components/AllSuites/AllSuites";
 import SignUp from "./Components/SignUp/SignUp";
 import Dashboard from "./Components/Dashboard/Dashboard";
