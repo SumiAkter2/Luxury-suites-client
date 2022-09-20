@@ -15,6 +15,9 @@ const Social = () => {
     signInWithGoogle();
     navigate("/");
   };
+  if (user) {
+    console.log(user);
+  }
   const githubSignIn = () => {
     signInWithGithub();
     navigate("/");

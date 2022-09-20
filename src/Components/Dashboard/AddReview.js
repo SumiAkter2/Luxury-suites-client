@@ -1,11 +1,10 @@
-import React, { useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
 import auth from "../../firebase.init";
 
 const AddReview = () => {
-  const user = useAuthState(auth);
+  const [user] = useAuthState(auth);
   const {
     register,
     formState: { errors },
@@ -22,7 +21,7 @@ const AddReview = () => {
       photo: data.Photo,
     };
 
-    console.log(data.Name, data.Address, data.Ratting, data.comment);
+    // console.log(data.Name, data.Address, data.Ratting, data.comment);
 
     fetch(`http://localhost:5000/reviews`, {
       method: "POST",
@@ -58,7 +57,8 @@ const AddReview = () => {
                 <div className="grid justify-center items-center">
                   <input
                     type="text"
-                    value={user.displayName}
+                    readOnly
+                    value={user?.displayName}
                     class="input border-b-4 focus:border-0  input-warning input-sm w-60 max-w-xs mb-2"
                     {...register("Name", { required: true })}
                   />
@@ -102,13 +102,19 @@ const AddReview = () => {
                   </span>
                 </div>
                 <div className="grid justify-center items-center">
-                  <input
-                    type="file"
-                    // src="https://i.ibb.co/DwHbJFk/man44.jpg"
-                    class="input border-b-4 focus:border-0 lg:w-60 input-warning input-sm  max-w-xs my-2 ml-2"
+                  <select
+                    name="Photo"
+                    type="text"
+                    placeholder="Type Ratting"
+                    class="select border-b-4 focus:border-0  select-warning select-sm w-60 max-w-xs mt-2"
                     {...register("Photo", { required: true })}
-                    // alt=""
-                  />
+                  >
+                    <option selected>5/5</option>
+                    <option>1/5</option>
+                    <option>2/5</option>
+                    <option>3/5</option>
+                    <option>4/5</option>
+                  </select>
 
                   <span class="label-text-alt text-white ">
                     {errors.Photo?.type === "required" && "! Photo is required"}

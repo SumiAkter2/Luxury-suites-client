@@ -66,6 +66,15 @@ const Header = ({ children }) => {
                   </NavLink>
                 </li>
                 {user ? (
+                  <li className="font-bold rounded-lg mt-3">
+                    {/* <NavLink to="/profile" className="font-bold rounded-lg "> */}
+                    {user.displayName}
+                    {/* </NavLink> */}
+                  </li>
+                ) : (
+                  ""
+                )}
+                {user ? (
                   <li>
                     <NavLink
                       onClick={handleSignOut}
@@ -121,11 +130,13 @@ const Header = ({ children }) => {
                 About
               </NavLink>
             </li>
+
             <li>
               <NavLink to="/dashBoard" className="font-bold rounded-lg ">
                 DashBoard
               </NavLink>
             </li>
+
             <li>
               <NavLink to="/contact" className="font-bold rounded-lg ">
                 Contact

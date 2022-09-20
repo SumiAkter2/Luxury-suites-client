@@ -22,16 +22,13 @@ const LogIn = () => {
     useSendPasswordResetEmail(auth);
   const navigate = useNavigate();
   if (user) {
-    return (
-      <div>
-        <p>Signed In User: {user.Email}</p>
-      </div>
-    );
+    console.log("yes, user is available", user);
   }
 
   const onSubmit = (data) => {
     signInWithEmailAndPassword(data.Email, data.Password);
-    console.log(data.Email, data.Password);
+    // console.log(data.Email, data.Password);
+
     navigate("/");
     // const resetPass = () => {
     //   alert("sure?");
