@@ -67,9 +67,7 @@ const Header = ({ children }) => {
                 </li>
                 {user ? (
                   <li className="font-bold rounded-lg mt-3">
-                    {/* <NavLink to="/profile" className="font-bold rounded-lg "> */}
                     {user.displayName}
-                    {/* </NavLink> */}
                   </li>
                 ) : (
                   ""
