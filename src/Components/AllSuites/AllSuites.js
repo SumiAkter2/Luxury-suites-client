@@ -13,7 +13,7 @@ const AllSuites = () => {
         <div className="hero-overlay bg-opacity-40"></div>
         <div className="hero-content text-center text-neutral-content">
           <div className="max-w-md">
-            <h1 className="mb-5 text-5xl font-serif">Search Luxury Suites</h1>
+            <h1 className="mb-5 lg:text-5xl font-serif text-3xl">Search Luxury Suites</h1>
           </div>
         </div>
       </div>

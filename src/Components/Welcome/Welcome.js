@@ -18,12 +18,12 @@ const Welcome = () => {
           <p className="lg:flex grid gap-y-2">
             <img
               src="https://i.ibb.co/yFCwYQM/welcome2.jpg"
-              className="max-w-sm w-60 z-30 mt-24 mr-[-40px] rounded-lg shadow-2xl"
+              className=" w-80 lg:max-w-sm z-30 mt-24 mr-[-40px] rounded-lg shadow-2xl mb-12 lg:mb-0"
               alt=""
             />
             <img
               src="https://i.ibb.co/JqJZGbH/welcome.jpg"
-              className="max-w-sm w-60 h-48  z-40 rounded-lg shadow-2xl"
+              className=" w-80 lg:max-w-sm h-48  z-40 rounded-lg shadow-2xl"
               alt=""
             />
           </p>

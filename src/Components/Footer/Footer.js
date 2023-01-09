@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div>
-      <footer className="footer p-10 bg-yellow-200 text-base-content">
+      <footer className="footer py-6 bg-yellow-200 text-base-content">
         <div>
           <div className="flex">
             <img
@@ -11,13 +11,13 @@ const Footer = () => {
               src="https://i.ibb.co/cgPn1sK/logo-for-hotel-removebg-preview.png"
               alt="logo"
             />
-            <p className="text-lg font-semibold pt-4">
+            <p className="text-lg font-semibold pt-4 mx-auto">
               Luxury Suites.
               <br />
               Providing reliable tech since 1992
             </p>
           </div>
-          <div className="lg:pl-4">
+          <div className=" mx-auto w-60">
             <p className="footer-title mb-6">Social</p>
             <div className="grid grid-flow-col gap-4 ">
               <a>
@@ -56,28 +56,28 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div>
+        <div className="mx-auto w-60">
           <span className="footer-title">Services</span>
           <a className="link link-hover">Branding</a>
           <a className="link link-hover">Design</a>
           <a className="link link-hover">Marketing</a>
           <a className="link link-hover">Advertisement</a>
         </div>
-        <div>
+        <div className="mx-auto w-60">
           <span className="footer-title">Company</span>
           <a className="link link-hover">About us</a>
           <a className="link link-hover">Contact</a>
           <a className="link link-hover">Jobs</a>
           <a className="link link-hover">Press kit</a>
         </div>
-        <div>
+        <div className="mx-auto w-60">
           <span className="footer-title">Legal</span>
           <a className="link link-hover">Terms of use</a>
           <a className="link link-hover">Privacy policy</a>
           <a className="link link-hover">Cookie policy</a>
         </div>
       </footer>
-      <footer class="footer footer-center mt-1 p-4 bg-yellow-200 text-base-content">
+      <footer class="footer footer-center mt-1 p-6  bg-yellow-200 text-base-content">
         <div>
           <p>
             Copyright © 2022 - All right reserved by Luxury Suites. || This Site

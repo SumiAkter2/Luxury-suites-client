@@ -7,21 +7,21 @@ const Suites = () => {
   return (
     <div className="my-6">
       <div className="flex-col justify-center items-center">
-        <h1 className="text-center text-2xl ">
+        <h1 className="text-center lg:text-3xl text-2xl ">
           STEP INTO A ROOM THAT BLURS THE LINES <br />
           <span>BETWEEN DREAMS AND REALITY</span>
         </h1>
-        <h1 className="text-orange-400 text-2xl flex justify-center items-center pb-4">
+        <h1 className="text-orange-400 text-2xl flex justify-center items-center pb-4 ">
           .............
         </h1>
 
-        <p className="text-center lg:px-12">
+        <p className="text-center lg:px-12 px-6">
           Step into a room that blurs the lines between dreams and reality. A
           wonderland of color, glamour, and comfort that expands the imagination
           and cradles the spirit.
         </p>
       </div>
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4 mt-12 px-12">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4 mt-12 px-12 mx-auto">
         {suites.slice(0, 6).map((suite) => (
           <Suite key={suite._id} suite={suite}></Suite>
         ))}

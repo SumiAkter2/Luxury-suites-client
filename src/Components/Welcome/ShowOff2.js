@@ -9,12 +9,12 @@ const ShowOff2 = () => {
             <p className="flex gap-x-4">
               <img
                 src="https://i.ibb.co/r61dkX4/servent.jpg"
-                className="max-w-sm lg:w-48 w-32  h-48 rounded-lg shadow-2xl"
+                className="w-32 lg:w-48   h-48 rounded-lg shadow-2xl"
                 alt="servant-img"
               />
               <img
                 src="https://i.ibb.co/YRFXvTK/servent.jpg"
-                className="max-w-sm lg:w-48 w-32 h-48 rounded-lg shadow-2xl"
+                className=" lg:w-48 w-32 h-48 rounded-lg shadow-2xl"
                 alt="servant-img"
               />
             </p>
