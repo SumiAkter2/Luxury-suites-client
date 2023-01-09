@@ -13,7 +13,6 @@ const Home = () => {
     <div className="bg-yellow-100">
       <Banner />
       <CheckAvailability />
-
       <Suites />
       <Welcome />
       <BayView />

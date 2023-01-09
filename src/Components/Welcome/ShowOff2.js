@@ -5,33 +5,37 @@ const ShowOff2 = () => {
     <div>
       <div>
         <div className="hero min-h-screen bg-base-100 my-0">
-          <div className="hero-content flex-col lg:flex-row-reverse">
-            <p className="flex gap-x-4">
+          <div className="hero-content flex-col lg:flex-row-reverse justify-between items-start">
+            <div className="lg:w-1/2 mx-auto">
               <img
                 src="https://i.ibb.co/r61dkX4/servent.jpg"
-                className="w-32 lg:w-48   h-48 rounded-lg shadow-2xl"
+                className="w-60 lg:w-2/3 h-60 rounded-lg shadow-2xl mb-4 mx-auto"
                 alt="servant-img"
               />
               <img
                 src="https://i.ibb.co/YRFXvTK/servent.jpg"
-                className=" lg:w-48 w-32 h-48 rounded-lg shadow-2xl"
+                className=" lg:w-2/3 w-60 h-60 rounded-lg shadow-2xl mx-auto"
                 alt="servant-img"
               />
-            </p>
-            <div>
-              <div className="divider w-60 mx-auto mb-12 opacity-100 bg-opacity-100  text-orange-500 text-xl">
+            </div>
+            <div className="lg:w-1/2">
+              <div className="divider w-60 mx-auto mb-12 opacity-100 bg-opacity-100  text-orange-500 text-xl ">
                 ......
               </div>
               <h1 className="text-3xl mb-4">
                 OFFERING A SERIES OF COMFORTABLE AND
-                <br />
+               
                 <span> LAVISH HOTELS & RESIDENCES</span>
               </h1>
-              <p className="py-6">
+              <p className="py-6 leading-6">
                 All our suites are fabulous, they are destinations unto
                 themselves. We have crossed the globe to bring you only the
-                best.
+                best. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Eos, minima. Dolores nihil nemo id! Est quae expedita nobis
+                velit minima accusamus labore debitis dolore fugit amet! Enim
+                exercitationem hic pariatur!
               </p>
+              <button className="btn  btn-primary text-orange-500 mt-6"> Learn More ...</button>
             </div>
           </div>
         </div>

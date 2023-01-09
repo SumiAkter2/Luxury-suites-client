@@ -14,15 +14,11 @@ const BayView = () => {
             />
           </div>
           <div className="lg:pl-8 pb-6 ">
-            <div className="divider w-60 mx-auto mt-2 opacity-100 bg-opacity-100  text-orange-500 text-xl">
-              ......
-            </div>
-            <p className="pb-6 text-xs"> Hotel Bayview</p>
-            <h1 className="text-5xl ">
-              Relax in our <br />
-              <span>Hotel Resort</span>
+            <p className="pb-6 text-sm"> Hotel BayView</p>
+            <h1 className="lg:text-5xl text-3xl pb-6">
+              Relax in our Hotel Resort
             </h1>
-            <p className="py-4 text-sm">
+            <p className="py-4 leading-6">
               Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
               excepturi exercitationem quasi. In deleniti eaque aut repudiandae
               et a id nisi. Lorem ipsum dolor sit, amet consectetur adipisicing
@@ -40,8 +36,8 @@ const BayView = () => {
                 </div>
               </div>
               <div className="pl-4">
-                <h1>Alisha Zaman</h1>
-                <p className="text-xs">Hotel Manager</p>
+                <h1 className="font-bold">Alisha Zaman</h1>
+                <p className="text-xs">CEO</p>
               </div>
             </div>
           </div>

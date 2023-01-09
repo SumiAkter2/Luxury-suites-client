@@ -12,29 +12,29 @@ const Welcome = () => {
     </svg>
   );
   return (
-    <div className="bg-base-100 mt-6">
+    <div className="bg-base-100 ">
       <div className="hero min-h-screen mt-0">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <p className="lg:flex grid gap-y-2">
             <img
               src="https://i.ibb.co/yFCwYQM/welcome2.jpg"
-              className=" w-80 lg:max-w-sm z-30 mt-24 mr-[-40px] rounded-lg shadow-2xl mb-12 lg:mb-0"
+              className=" w-80 lg:max-w-sm z-30 mt-24 mr-[-40px] rounded-lg shadow-2xl mb-12 lg:mb-0 h-60"
               alt=""
             />
             <img
               src="https://i.ibb.co/JqJZGbH/welcome.jpg"
-              className=" w-80 lg:max-w-sm h-48  z-40 rounded-lg shadow-2xl"
+              className=" w-80 lg:max-w-sm h-60  z-40 rounded-lg shadow-2xl"
               alt=""
             />
           </p>
           <div>
-            <div className="divider w-60 mx-auto mt-12 opacity-100">
+            <div className="divider w-60 mx-auto mb-12 opacity-100">
               {icon} {icon}
               {icon}
             </div>
-            <p className="text-xs">Grand Welcome</p>
-            <h1 className="text-5xl ">Luxury Suites</h1>
-            <p className="py-6 text-sm">
+            <p className="text-xs mb-6">Grand Welcome</p>
+            <h1 className="lg:text-5xl text-3xl my-6">Luxury Suites</h1>
+            <p className="py-6  leading-6">
               Imagine a charming and picturesque Heritage village in the north
               part of the countryside, surrounded by the spectacular natural
               beauty. Experience a relaxing, exciting, comfortable stay in

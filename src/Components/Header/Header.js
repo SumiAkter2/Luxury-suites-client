@@ -15,7 +15,7 @@ const Header = ({ children }) => {
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col">
           {/* <!-- Navbar --> */}
-          <div className="w-full navbar bg-yellow-100 lg:px-12 ">
+          <div className="w-full navbar bg-yellow-200 lg:px-12 ">
             <div className="flex-1 ">
               <Link to="/">
                 <img
@@ -24,7 +24,7 @@ const Header = ({ children }) => {
                   alt="logo"
                 />
               </Link>
-              <Link to="/" className="font-bold text-xl text-violet-500 pr-12">
+              <Link to="/" className="font-bold text-xl text-amber-500 pr-12">
                 Luxury Suites
               </Link>
             </div>
@@ -51,22 +51,22 @@ const Header = ({ children }) => {
                 {/* <!-- Navbar menu content here --> */}
 
                 <li>
-                  <NavLink to="/about" className=" font-bold rounded-lg ">
+                  <NavLink to="/about" className=" font-bold rounded-lg text-amber-500 ">
                     About
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/dashBoard" className="font-bold rounded-lg ">
+                  <NavLink to="/dashBoard" className="font-bold rounded-lg text-amber-500 ">
                     DashBoard
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/contact" className="font-bold rounded-lg ">
+                  <NavLink to="/contact" className="font-bold rounded-lg text-amber-500 ">
                     Contact
                   </NavLink>
                 </li>
                 {user ? (
-                  <li className="font-bold rounded-lg mt-3">
+                  <li className="font-bold rounded-lg text-amber-500 mt-3">
                     {user.displayName}
                   </li>
                 ) : (
@@ -77,14 +77,14 @@ const Header = ({ children }) => {
                     <NavLink
                       onClick={handleSignOut}
                       to="/login"
-                      className="font-bold rounded-lg "
+                      className="font-bold rounded-lg text-amber-500 "
                     >
                       Sign Out
                     </NavLink>
                   </li>
                 ) : (
                   <li>
-                    <NavLink to="/login" className="font-bold rounded-lg ">
+                    <NavLink to="/login" className="font-bold rounded-lg text-amber-500 ">
                       Log In
                     </NavLink>
                   </li>
@@ -93,7 +93,7 @@ const Header = ({ children }) => {
                 <li className="dropdown dropdown-hover dropdown-end ">
                   <label
                     tabindex="0"
-                    className="btn btn-outline btn-primary font-bold rounded-lg"
+                    className="btn btn-outline btn-primary font-bold rounded-lg text-amber-500"
                   >
                     More Info
                   </label>
@@ -124,19 +124,19 @@ const Header = ({ children }) => {
             {/* <!-- Sidebar content here --> */}
 
             <li>
-              <NavLink to="/about" className=" font-bold rounded-lg ">
+              <NavLink to="/about" className=" font-bold rounded-lg text-amber-500 ">
                 About
               </NavLink>
             </li>
 
             <li>
-              <NavLink to="/dashBoard" className="font-bold rounded-lg ">
+              <NavLink to="/dashBoard" className="font-bold rounded-lg text-amber-500 ">
                 DashBoard
               </NavLink>
             </li>
 
             <li>
-              <NavLink to="/contact" className="font-bold rounded-lg ">
+              <NavLink to="/contact" className="font-bold rounded-lg text-amber-500 ">
                 Contact
               </NavLink>
             </li>
@@ -145,14 +145,14 @@ const Header = ({ children }) => {
                 <NavLink
                   onClick={handleSignOut}
                   to="/login"
-                  className="font-bold rounded-lg "
+                  className="font-bold rounded-lg text-amber-500 "
                 >
                   Sign Out
                 </NavLink>
               </li>
             ) : (
               <li>
-                <NavLink to="/login" className="font-bold rounded-lg ">
+                <NavLink to="/login" className="font-bold rounded-lg text-amber-500 ">
                   Log In
                 </NavLink>
               </li>

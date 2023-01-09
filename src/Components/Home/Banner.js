@@ -8,10 +8,10 @@ const Banner = () => {
         className="hero h-screen shrink-0 "
         style={{ backgroundImage: "url(https://i.ibb.co/1XSs988/room6.png)" }}
       >
-        <div className="hero-overlay bg-opacity-10"></div>
+        <div className="hero-overlay bg-opacity-30"></div>
         <div className="text-center text-white ">
-          <div className="max-w-md">
-            <h1 className="mb-5 text-5xl font-bold ">
+          <div className="">
+            <h1 className="mb-5 lg:text-5xl text-3xl font-bold ">
               Expect Nothing But The Best
             </h1>
             <p className="mb-5 text-sm">

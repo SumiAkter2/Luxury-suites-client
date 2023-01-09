@@ -11,37 +11,44 @@ const ShowReview = () => {
       .then((data) => setReview(data));
   }, []);
   return (
-    <div className="bg-yellow-100 mt-2 p-6">
-      <h1 className="text-3xl text-center my-12 ">Clients Testimonial</h1>
+   
+      <div className="bg-yellow-100 mt-2 p-6">
+        <h1 className="text-3xl text-center my-12 pb-12">
+          Clients Testimonial
+        </h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-12 ">
-        {review.slice(0, 3).map((r) => (
-          <div className="card flex  justify-center items-center  shadow-xl text-center p-4 bg-yellow-200">
-            <div className="avatar">
-              <div className="w-24 rounded-full">
-                <img src="https://placeimg.com/192/192/people" alt="man-pic" />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-12 ">
+          {review.slice(0, 3).map((r) => (
+            <div className="card flex  justify-center items-center  shadow-xl text-center p-4 bg-yellow-200 p-6">
+              <div className="avatar">
+                <div className="w-24 rounded-full m-6">
+                  <img
+                    src="https://placeimg.com/192/192/people"
+                    alt="clients-pic"
+                  />
+                </div>
               </div>
-            </div>
 
-            <h2>{r.name}</h2>
-            <h2>{r.address}</h2>
-            <h2 className="flex">
-              {star}
-              {star}
-              {star}
-              {star}
-              {star}
-            </h2>
-            <p className="mt-2 text-xs">{r.comment}</p>
-          </div>
-        ))}
-        <div>
-          <button>
-            <Link to="/dashboard/review">Add Review</Link>
+              <h2>{r.name}</h2>
+              <h2>{r.address}</h2>
+              <h2 className="flex mt-2">
+                {star}
+                {star}
+                {star}
+                {star}
+                {star}
+              </h2>
+              <p className="mt-2 text-sm p-6 leading-6">{r.comment}</p>
+            </div>
+          ))}
+        </div>
+        <div className="flex justify-center items-center ">
+          <button className=" btn btn-primary mt-24">
+            <Link to="/dashboard/review ">Add Review</Link>
           </button>
         </div>
       </div>
-    </div>
+    
   );
 };
 

@@ -3,7 +3,7 @@ import React from "react";
 const suite = ({ suite }) => {
   return (
     <div>
-      <div className="card card-compact w-72 lg:w-80 h-96  bg-base-100 shadow-xl mx-auto">
+      <div className="card card-compact w-72 lg:w-96 h-96  bg-base-100 shadow-xl mx-auto">
         <figure>
           <img className="h-56 w-full" src={suite.picture} alt="Shoes" />
         </figure>
