@@ -60,7 +60,7 @@ const AllSuites = () => {
           </div>
           <button className="btn bg-yellow-200 btn-primary w-52">Search</button>
         </div>
-
+        {suites.length}
         <div className="gap-12 grid">
           {suites.map((suite) => (
             <AllSuite key={suite._id} suite={suite}></AllSuite>
