@@ -3,7 +3,7 @@ import React from "react";
 const AllSuite = ({ suite }) => {
   return (
     <div className="lg:flex grid gap-x-4 items-center ">
-      <img className="h-60  w-60" src={suite.picture} alt="" />
+      <img className="h-60  lg:w-60 w-56" src={suite.picture} alt="" />
       <div className="text-start w-80">
         <h1 className="text-3xl font-bold mb-4">{suite.name} </h1>
 
