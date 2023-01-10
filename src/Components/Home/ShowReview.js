@@ -20,7 +20,7 @@ const ShowReview = () => {
     <div className="bg-yellow-100 mt-2 p-6">
       <h1 className="text-3xl text-center my-12 pb-12">Clients Testimonial</h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-12 ">
+      <div className=" hidden lg:block">
         <div>
           <Swiper
             style={{
@@ -37,11 +37,8 @@ const ShowReview = () => {
           >
             {review.map((r) => (
               <>
-                <SwiperSlide key={r._id}
-                  className="w-full  {
-"
-                >
-                  <div className="card flex  justify-center items-center  shadow-xl text-center bg-yellow-200 p-6 h-80 w-80 mx-auto">
+                <SwiperSlide key={r._id} className="lg:w-full ">
+                  <div className="card flex  justify-center items-center  shadow-xl text-center bg-yellow-200 lg:p-6 h-80 lg:w-80 mx-auto w-48">
                     <div className="avatar">
                       <div className="w-24 rounded-full m-6">
                         <img
@@ -73,6 +70,30 @@ const ShowReview = () => {
             ))}
           </Swiper>
         </div>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto lg:hidden">
+        {review.slice(0, 3).map((r) => (
+          <div className="card lg:flex  justify-center items-center  shadow-xl text-center bg-yellow-200 p-6 h-80 w-80 mx-auto ">
+            <div className="avatar">
+              <div className="w-24 rounded-full m-6">
+                <img
+                  src="https://placeimg.com/192/192/people"
+                  alt="clients-pic"
+                />
+              </div>
+            </div>
+            <h2>{r.name}</h2>
+            <h2>{r.address}</h2>
+            <h2 className="flex mt-2">
+              {star}
+              {star}
+              {star}
+              {star}
+              {star}
+            </h2>
+            <p className="mt-2 text-sm p-6 leading-6">{r.comment}</p>
+          </div>
+        ))}
       </div>
       <div className="flex justify-center items-center ">
         <button className=" btn btn-primary mt-24">
