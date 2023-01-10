@@ -24,7 +24,6 @@ const ShowOff2 = () => {
               </div>
               <h1 className="text-3xl mb-4">
                 OFFERING A SERIES OF COMFORTABLE AND
-               
                 <span> LAVISH HOTELS & RESIDENCES</span>
               </h1>
               <p className="py-6 leading-6">
@@ -35,7 +34,10 @@ const ShowOff2 = () => {
                 velit minima accusamus labore debitis dolore fugit amet! Enim
                 exercitationem hic pariatur!
               </p>
-              <button className="btn  btn-primary text-orange-500 mt-6"> Learn More ...</button>
+              <button className="btn  btn-primary text-orange-500 mt-6">
+                {" "}
+                Learn More ...
+              </button>
             </div>
           </div>
         </div>

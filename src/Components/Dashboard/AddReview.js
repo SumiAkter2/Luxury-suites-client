@@ -59,11 +59,11 @@ const AddReview = () => {
                     type="text"
                     readOnly
                     value={user?.displayName}
-                    class="input border-b-4 focus:border-0  input-warning input-sm w-60 max-w-xs mb-2"
+                    className="input border-b-4 focus:border-0  input-warning input-sm w-60 max-w-xs mb-2"
                     {...register("Name", { required: true })}
                   />
 
-                  <span class="label-text-alt text-white ">
+                  <span className="label-text-alt text-white ">
                     {errors.Name?.type === "required" && "! Name is required"}
                   </span>
                 </div>
@@ -72,11 +72,11 @@ const AddReview = () => {
                   <input
                     type="text"
                     placeholder="Type Address"
-                    class="input border-b-4 focus:border-0  input-warning input-sm w-60 max-w-xs"
+                    className="input border-b-4 focus:border-0  input-warning input-sm w-60 max-w-xs"
                     {...register("Address", { required: true })}
                   />
 
-                  <span class="label-text-alt text-white ">
+                  <span className="label-text-alt text-white ">
                     {errors.Address?.type === "required" &&
                       "! Address is required"}
                   </span>
@@ -86,7 +86,7 @@ const AddReview = () => {
                     name="Ratting"
                     type="text"
                     placeholder="Type Ratting"
-                    class="select border-b-4 focus:border-0  select-warning select-sm w-60 max-w-xs"
+                    className="select border-b-4 focus:border-0  select-warning select-sm w-60 max-w-xs"
                     {...register("Ratting", { required: true })}
                   >
                     <option selected>5/5</option>
@@ -96,7 +96,7 @@ const AddReview = () => {
                     <option>4/5</option>
                   </select>
 
-                  <span class="label-text-alt text-white ">
+                  <span className="label-text-alt text-white ">
                     {errors.Address?.type === "required" &&
                       "! Ratting is required"}
                   </span>
@@ -106,7 +106,7 @@ const AddReview = () => {
                     name="Photo"
                     type="text"
                     placeholder="Type Ratting"
-                    class="select border-b-4 focus:border-0  select-warning select-sm w-60 max-w-xs mt-2"
+                    className="select border-b-4 focus:border-0  select-warning select-sm w-60 max-w-xs mt-2"
                     {...register("Photo", { required: true })}
                   >
                     <option selected>5/5</option>
@@ -116,7 +116,7 @@ const AddReview = () => {
                     <option>4/5</option>
                   </select>
 
-                  <span class="label-text-alt text-white ">
+                  <span className="label-text-alt text-white ">
                     {errors.Photo?.type === "required" && "! Photo is required"}
                   </span>
                 </div>
@@ -125,11 +125,11 @@ const AddReview = () => {
                     name="comment"
                     type="text"
                     placeholder="Type comment"
-                    class="textarea border-b-4 focus:border-0  textarea-warning textarea-sm w-60 max-w-xs"
+                    className="textarea border-b-4 focus:border-0  textarea-warning textarea-sm w-60 max-w-xs"
                     {...register("comment", { required: true })}
                   />
 
-                  <span class="label-text-alt text-white ">
+                  <span className="label-text-alt text-white ">
                     {errors.Address?.type === "required" &&
                       "! Comment is required"}
                   </span>

@@ -32,7 +32,7 @@ const CheckAvailability = () => {
               <FontAwesomeIcon icon={faUsers} className="me-2" /> Person
             </h1>
 
-            <select class="form-control lg:w-24 w-36 rounded-md p-1 bg-yellow-200  mx-auto">
+            <select className="form-control lg:w-24 w-36 rounded-md p-1 bg-yellow-200  mx-auto">
               <option selected>1</option>
               <option>2</option>
               <option>3</option>
@@ -45,7 +45,7 @@ const CheckAvailability = () => {
             <h1 className="text-xl mb-2">
               <FontAwesomeIcon icon={faBed} className="me-2" /> Bed
             </h1>
-            <select class="form-control lg:w-28 w-36 rounded-md p-1 bg-yellow-200 mx-auto">
+            <select className="form-control lg:w-28 w-36 rounded-md p-1 bg-yellow-200 mx-auto">
               <option selected>1 King Bed</option>
               <option>2 Single Bed</option>
               <option>2 King Bed</option>

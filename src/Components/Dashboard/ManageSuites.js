@@ -11,8 +11,8 @@ const ManageSuites = () => {
         <p className="font-bold pl-6 mt-6">Manage All Suites:</p>
 
         <div className="w-full px-6 ">
-          <div class="overflow-x-auto shadow-lg  top-24 mt-4">
-            <table class="table table-compact w-full mb-6">
+          <div className="overflow-x-auto shadow-lg  top-24 mt-4">
+            <table className="table table-compact w-full mb-6">
               <thead>
                 <tr>
                   <th>No</th>

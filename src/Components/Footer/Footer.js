@@ -1,8 +1,16 @@
 import React from "react";
+import ScrollToTop from "react-scroll-to-top";
 
 const Footer = () => {
   return (
     <div>
+      {/* scroll to top */}
+      <div>
+        <ScrollToTop smooth color="#6f00ff" />
+        <h1>Hello!</h1>
+        <h2>Scroll down for the button to appear</h2>
+        <p style={{ marginTop: "150vh" }}>bottom</p>
+      </div>
       <footer className="footer py-6 bg-yellow-200 text-base-content">
         <div>
           <div className="flex">
@@ -77,7 +85,7 @@ const Footer = () => {
           <a className="link link-hover">Cookie policy</a>
         </div>
       </footer>
-      <footer class="footer footer-center mt-1 p-6  bg-yellow-200 text-base-content">
+      <footer className="footer footer-center mt-1 p-6  bg-yellow-200 text-base-content">
         <div>
           <p>
             Copyright © 2022 - All right reserved by Luxury Suites. || This Site

@@ -66,11 +66,11 @@ const LogIn = () => {
                   type="text"
                   name="email"
                   placeholder="Type Email"
-                  class="input border-b-4 focus:border-0  input-warning input-sm w-60 max-w-xs mb-2"
+                  className="input border-b-4 focus:border-0  input-warning input-sm w-60 max-w-xs mb-2"
                   {...register("Email", { required: true })}
                 />
 
-                <span class="label-text-alt text-white ">
+                <span className="label-text-alt text-white ">
                   {errors.Email?.type === "required" && "! Email is required"}
                 </span>
               </div>
@@ -79,11 +79,11 @@ const LogIn = () => {
                 <input
                   type="text"
                   placeholder="Type Password"
-                  class="input border-b-4 focus:border-0  input-warning input-sm w-60 max-w-xs"
+                  className="input border-b-4 focus:border-0  input-warning input-sm w-60 max-w-xs"
                   {...register("Password", { required: true })}
                 />
 
-                <span class="label-text-alt text-white ">
+                <span className="label-text-alt text-white ">
                   {errors.Password?.type === "required" &&
                     "! Password is required"}
                 </span>

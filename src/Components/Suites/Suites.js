@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import useSuites from "../Hooks/useSuites";
 import Suite from "./Suite";
 const Suites = () => {
-  const [suites, setSuites] = useSuites();
+  const [suites] = useSuites();
   return (
     <div className="my-6">
       <div className="flex-col justify-center items-center">

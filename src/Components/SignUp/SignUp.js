@@ -53,11 +53,11 @@ const SignUp = () => {
                   <input
                     type="text"
                     placeholder="Type Name"
-                    class="input border-b-4 focus:border-0  mt-2 input-warning input-sm  max-w-xs"
+                    className="input border-b-4 focus:border-0  mt-2 input-warning input-sm  max-w-xs"
                     {...register("Name", { required: true })}
                   />
                   {/* error for name */}
-                  <span class="label-text-alt text-white ">
+                  <span className="label-text-alt text-white ">
                     {errors.Name?.type === "required" && "! Name is required"}
                   </span>
                 </div>
@@ -66,11 +66,11 @@ const SignUp = () => {
                   <input
                     type="text"
                     placeholder="Type Email"
-                    class="input border-b-4 focus:border-0  mt-2 input-warning input-sm  max-w-xs"
+                    className="input border-b-4 focus:border-0  mt-2 input-warning input-sm  max-w-xs"
                     {...register("Email", { required: true })}
                   />
                   {/* error for email */}
-                  <span class="label-text-alt text-white ">
+                  <span className="label-text-alt text-white ">
                     {errors.Email?.type === "required" && "! Email is required"}
                   </span>
                 </div>
@@ -81,11 +81,11 @@ const SignUp = () => {
                   <input
                     type="text"
                     placeholder="Type Password"
-                    class="input border-b-4 focus:border-0  mt-2 input-warning input-sm  max-w-xs"
+                    className="input border-b-4 focus:border-0  mt-2 input-warning input-sm  max-w-xs"
                     {...register("Password", { required: true })}
                   />
                   {/* error for pass */}
-                  <span class="label-text-alt text-white ">
+                  <span className="label-text-alt text-white ">
                     {errors.Password?.type === "required" &&
                       "! Password is required"}
                   </span>
@@ -95,11 +95,11 @@ const SignUp = () => {
                   <input
                     type="text"
                     placeholder="Type Number"
-                    class="input border-b-4 focus:border-0  mt-2 input-warning input-sm  max-w-xs"
+                    className="input border-b-4 focus:border-0  mt-2 input-warning input-sm  max-w-xs"
                     {...register("Number", { required: true })}
                   />
                   {/* error for num */}
-                  <span class="label-text-alt text-white ">
+                  <span className="label-text-alt text-white ">
                     {errors.Number?.type === "required" &&
                       "! Number is required"}
                   </span>
