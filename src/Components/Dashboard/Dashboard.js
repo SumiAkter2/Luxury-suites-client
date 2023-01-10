@@ -14,7 +14,7 @@ import { Link, Outlet } from "react-router-dom";
 const Dashboard = () => {
   return (
     <div>
-      <div className="drawer drawer-mobile bg-base-100">
+      <div className="drawer drawer-mobile bg-yellow-50">
         <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col  justify-start">
           {/* <!-- Page content here --> */}
@@ -22,12 +22,12 @@ const Dashboard = () => {
 
           <label
             htmlFor="my-drawer-2"
-            className="button drawer-button lg:hidden"
+            className="button drawer-button lg:hidden mx-auto"
           >
             Open drawer
           </label>
         </div>
-        <div className="drawer-side bg-yellow-100">
+        <div className="drawer-side bg-yellow-200">
           <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
           <ul className="menu p-4 w-60  overflow-y-auto  bg-yellow-200 text-base-content">
             {/* <!-- Sidebar content here --> */}

@@ -26,7 +26,6 @@ const AllSuite = ({ suite }) => {
         Swal.fire({
           text: "Successfully added a review",
           icon: "success",
-          // confirmButtonText: "Done",
         });
       });
   };

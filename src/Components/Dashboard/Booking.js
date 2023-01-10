@@ -1,14 +1,42 @@
 import React, { useEffect, useState } from "react";
+
 import { MdDeleteOutline } from "react-icons/md";
 import { MdPayment } from "react-icons/md";
+import axios from "axios";
+import Swal from "sweetalert2";
 const Booking = () => {
   const [booking, setBooking] = useState([]);
+  //  const [order, setOrder] = useState([]);
+  //  useEffect(() => {
+  //    fetch(`https://warm-refuge-78132.herokuapp.com/orders/${user?.email}`)
+  //      .then((res) => res.json())
+  //      .then((data) => setOrder(data));
+  //  }, [user?.email]);
+
   useEffect(() => {
     fetch("http://localhost:5000/bookings")
       .then((res) => res.json())
       .then((data) => setBooking(data));
   }, []);
-  console.log(booking);
+
+  const handleDelete = (id) => {
+    alert("sure to delete");
+    fetch(`http://localhost:5000/bookings/${id} `, {
+      method: "DELETE",
+      headers: {
+        "content-type": "application/json",
+      },
+      // body: JSON.stringify(booking),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        const restData = booking.filter((o) => o._id !== id);
+        setBooking(restData);
+        // swal('Are you sure to Delete your order??')
+        console.log(data);
+      });
+    console.log("dlt");
+  };
   return (
     <div>
       <h1 className="text-3xl p-6">Your Booking List</h1>
@@ -60,7 +88,10 @@ const Booking = () => {
                     </button>
                   </th>
                   <th>
-                    <button className="btn btn-ghost btn-xs h-12">
+                    <button
+                      className="btn btn-ghost btn-xs h-12"
+                      onClick={handleDelete}
+                    >
                       <MdDeleteOutline size="20px" className="mr-2 " />
                       Delete
                     </button>

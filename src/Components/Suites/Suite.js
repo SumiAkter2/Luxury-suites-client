@@ -1,6 +1,34 @@
 import React from "react";
+import Swal from "sweetalert2";
 
 const suite = ({ suite }) => {
+  const handleToBooking = () => {
+    const bookings = {
+      bookingName: suite.name,
+      bookingBed: suite.bed,
+      bookingGuest: suite.guest,
+      bookingSqr: suite.sqr,
+      bookingDis: suite.dis,
+      bookingImage: suite.picture,
+      bookingBalance: suite.balance,
+    };
+    console.log("added booking", bookings);
+    fetch(`http://localhost:5000/bookings`, {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(bookings),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        Swal.fire({
+          text: "Successfully added a review",
+          icon: "success",
+        });
+      });
+  };
   return (
     <div>
       <div className="card card-compact w-72 lg:w-96 h-96  bg-base-100 shadow-xl mx-auto">
@@ -23,8 +51,10 @@ const suite = ({ suite }) => {
               {suite.balance}/ <span className="text-xs">Night</span>
             </p>
 
-            <div className="card-actions justify-end">
-              <button className="btn btn-primary bg-yellow-200">Book Now</button>
+            <div className="card-actions justify-end" onClick={handleToBooking}>
+              <button className="btn btn-primary bg-yellow-200">
+                Book Now
+              </button>
             </div>
           </div>
         </div>
