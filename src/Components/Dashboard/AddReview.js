@@ -37,7 +37,7 @@ const AddReview = () => {
           title: "Success!",
           text: "Successfully added a review",
           icon: "success",
-          confirmButtonText: "Done",
+          // confirmButtonText: "Done",
         });
         review("");
       });

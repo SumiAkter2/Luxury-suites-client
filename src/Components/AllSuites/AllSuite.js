@@ -1,9 +1,42 @@
 import React from "react";
+import Swal from "sweetalert2";
 
 const AllSuite = ({ suite }) => {
+  const handleToBooking = () => {
+    const bookings = {
+      bookingName: suite.name,
+      bookingBed: suite.bed,
+      bookingGuest: suite.guest,
+      bookingSqr: suite.sqr,
+      bookingDis: suite.dis,
+      bookingImage: suite.picture,
+      bookingBalance: suite.balance,
+    };
+    console.log("added booking", bookings);
+    fetch(`http://localhost:5000/bookings`, {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(bookings),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        Swal.fire({
+          text: "Successfully added a review",
+          icon: "success",
+          // confirmButtonText: "Done",
+        });
+      });
+  };
   return (
     <div className="lg:flex grid gap-x-4 items-center mx-auto">
-      <img className="h-60  lg:w-60 w-56" src={suite.picture} alt="" />
+      <img
+        className="h-60  lg:w-60 w-80 rounded-md"
+        src={suite.picture}
+        alt="Suite-pictures"
+      />
       <div className="text-start w-80">
         <h1 className="text-3xl font-bold mb-4">{suite.name} </h1>
 
@@ -32,7 +65,7 @@ const AllSuite = ({ suite }) => {
             {suite.balance}/ <span className="text-xs">Night</span>
           </p>
 
-          <div className="card-actions justify-end">
+          <div className="card-actions justify-end" onClick={handleToBooking}>
             <button className="btn btn-primary bg-yellow-200">Book Now</button>
           </div>
         </div>

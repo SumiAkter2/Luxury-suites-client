@@ -86,10 +86,10 @@ const About = () => {
                 ......
               </div>
 
-              <h1 className="text-3xl ">
+                <h1 className="text-3xl my-12">
                 Available swimming pool for our clients.
               </h1>
-              <p className="py-4 text-sm">
+                <p className="py-4 leader-4">
                 The modern designed swimming pool adds glam to the luxurious
                 set-up and classy ambience. There are two swimming pools and a
                 spacious swimming pool deck. With a wooden designer chaise, the
@@ -112,8 +112,8 @@ const About = () => {
               ......
             </div>
 
-            <h1 className="text-3xl ">The Spa. Refresh Yourself</h1>
-            <p className="py-4 text-sm">
+              <h1 className="text-3xl my-12">The Spa. Refresh Yourself</h1>
+              <p className="py-4 leader-4">
               Whether you are in search of a well-appointed gym or a pampering
               moment on the massage table and inside the warm saunas, you can
               always find a place for yourself at our spa.
@@ -147,8 +147,8 @@ const About = () => {
               ......
             </div>
 
-            <h1 className="text-3xl ">Business meeting attend here.</h1>
-            <p className="py-4 text-sm">
+              <h1 className="text-3xl my-12">Business meeting attend here.</h1>
+              <p className="py-4 leader-4">
               Travel is a core part of many corporate workers, hence work on the
               move is difficult. But at Luxury Suites we create a business space
               for every corporate traveler to ensure that they work smoothly.
@@ -171,8 +171,8 @@ const About = () => {
               ......
             </div>
 
-            <h1 className="text-3xl ">Fitness Center for Yourself</h1>
-            <p className="py-4 text-sm">
+              <h1 className="text-3xl my-12">Fitness Center for Yourself</h1>
+              <p className="py-4 leader-4">
               While we, at Luxury Suites, believe that health is the ultimate
               wealth and our guests must not miss on their health. A dedicated
               gym is available for the guests to indulge in fitness. With all

@@ -3,11 +3,10 @@ import {
   faHouse,
   faIdBadge,
   faPlusMinus,
-  faReorder,
   faSquarePlus,
-  faUser,
   faUserPlus,
 } from "@fortawesome/free-solid-svg-icons";
+import { IoIosListBox } from "react-icons/io";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
@@ -39,7 +38,7 @@ const Dashboard = () => {
             </li>
             <li className="mt-1">
               <Link to="/dashboard">
-                <FontAwesomeIcon icon={faReorder} />
+                <IoIosListBox />
                 Booking List
               </Link>
             </li>

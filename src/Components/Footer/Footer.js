@@ -1,16 +1,9 @@
 import React from "react";
 import ScrollToTop from "react-scroll-to-top";
-
+import "./Footer.css";
 const Footer = () => {
   return (
     <div>
-      {/* scroll to top */}
-      <div>
-        <ScrollToTop smooth color="#6f00ff" />
-        <h1>Hello!</h1>
-        <h2>Scroll down for the button to appear</h2>
-        <p style={{ marginTop: "150vh" }}>bottom</p>
-      </div>
       <footer className="footer py-6 bg-yellow-200 text-base-content">
         <div>
           <div className="flex">

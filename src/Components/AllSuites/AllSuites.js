@@ -18,8 +18,8 @@ const AllSuites = () => {
         </div>
       </div>
       <div className=" lg:flex grid justify-evenly items-start px-6 my-12">
-        <div className="w-60 my-12 sticky top-14">
-          <h1 className="text-2xl font-bold mb-6">Check Available</h1>
+        <div className="w-60 my-12 lg:sticky top-14">
+          <h1 className="text-2xl font-bold mb-12">Check Available</h1>
 
           <div className=" font-bold bg-slate-100 rounded-lg my-2">
             <h1 className="mb-2"> Check In</h1>
@@ -60,7 +60,7 @@ const AllSuites = () => {
           </div>
           <button className="btn bg-yellow-200 btn-primary w-52">Search</button>
         </div>
-        {suites.length}
+       
         <div className="gap-12 grid">
           {suites.map((suite) => (
             <AllSuite key={suite._id} suite={suite}></AllSuite>
