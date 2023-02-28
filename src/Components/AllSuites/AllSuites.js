@@ -9,6 +9,7 @@ const AllSuites = () => {
   const [endDate, setEndDate] = useState(new Date());
   const [suites, setSuites] = useState([]);
   const [booked, setBooked] = useState(null);
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const startDate = e.target.startDate.value;
@@ -45,7 +46,7 @@ const AllSuites = () => {
           </div>
         </div>
       </div>
-      <div className=" lg:flex grid justify-around items-start px-6 my-12">
+      <div className=" lg:flex grid justify-evenly items-start px-6 my-12">
         <div className="w-60 my-12 lg:sticky top-14">
           <h1 className="text-2xl font-bold mb-12">Check Availability</h1>
 
@@ -72,7 +73,7 @@ const AllSuites = () => {
 
             <div className="flex justify-start  font-bold rounded-lg my-2">
               <div>
-                <h1> Adult</h1>
+                <h1 className="mb-2"> Adult</h1>
                 <select
                   name="guest"
                   className="w-24 bg-yellow-200 rounded-md p-1"
@@ -87,7 +88,7 @@ const AllSuites = () => {
                 </select>
               </div>
               <div className="ml-4">
-                <h1>Children</h1>
+                <h1 className="mb-2">Children</h1>
                 <select
                   name="children"
                   className="w-24 bg-yellow-200 rounded-md p-1"
@@ -101,7 +102,7 @@ const AllSuites = () => {
                 </select>
               </div>
             </div>
-            <button className="btn bg-yellow-200 btn-primary w-52">
+            <button className="btn bg-yellow-200 btn-primary w-52 mt-6">
               Search
             </button>
           </form>
@@ -109,7 +110,7 @@ const AllSuites = () => {
 
         <div className="lg:gap-12 grid">
           <h1 className="text-xl text-center">
-            Available Suites :{suites.length >= 3 ? "dddd" : "sorry"}
+            Available Suites :{suites.length}
           </h1>
           {suites.map((suite) => (
             <AllSuite

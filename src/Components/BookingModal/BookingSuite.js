@@ -13,6 +13,7 @@ const BookingSuite = ({ booked }) => {
     bookingBalance,
   } = booked;
   console.log(booked);
+
   return (
     <div>
       <input
@@ -22,16 +23,16 @@ const BookingSuite = ({ booked }) => {
       />
       <div className="modal modal-bottom sm:modal-middle m-2">
         <div className="modal-box">
-          <div className="lg:flex grid gap-x-4 items-center mx-auto px-6 lg:p-0">
+          <div className="lg:flex grid gap-x-4  mx-auto px-6 lg:p-0">
             <img
               className="h-48  lg:w-48 w-24 rounded-md"
               src={bookingImage}
               alt="Suite-pictures"
             />
-            <div className="text-start w-80 mt-6 px-6 lg:p-0  ">
-              <h1 className="text-3xl font-bold mb-4">{bookingName} </h1>
-
-              <div className="flex lg:justify-between justify-center items-center">
+            <div className="text-start w-80 px-6 lg:p-0  ">
+              <h1 className="text-xl font-bold">{bookingName} </h1>
+              <p className="text-sm my-2">{bookingDis} </p>
+              <div className=" lg:justify-between justify-center items-center">
                 <p className="flex mr-2">
                   <IoIosBed fill="orange" size="20px" />{" "}
                   <span className="pl-2">{bookingBed} </span>
@@ -45,59 +46,21 @@ const BookingSuite = ({ booked }) => {
                   <span className="pl-2">{bookingSqr} </span>
                 </p>
               </div>
-              {/* <p className="text-sm mt-6">{bookingBalance} </p> */}
 
               <div className="flex justify-between items-center">
-                <p>
-                  {bookingBalance}/ <span className="text-xs">Night</span>
+                <p className="text-xl font-bold">
+                  {bookingBalance}/{" "}
+                  <span className="text-xs font-bold">Night</span>
                 </p>
               </div>
             </div>
           </div>
-          {/* <div className="flex justify-center items-center gap-4">
-            <img src={bookingImage} alt="suite-img" className="rounded-lg lg:w-24" />
-            <h3 className="font-bold text-lg">{bookingName}</h3>
-          </div> */}
-          {/* <form className="mt-4 ">
-            <div className="flex justify-center items-center gap-4">
-              <input
-                type="text"
-                value={bookingBed}
-                disabled
-                className="input input-bordered mt-2  input-warning w-full max-w-xs"
-              />
-              <input
-                type="text"
-                disabled
-                value={bookingGuest}
-                className="input input-bordered mt-2  input-warning w-full max-w-xs"
-              />
-              <input
-                type="text"
-                disabled
-                value={bookingSqr}
-                className="input input-bordered mt-2  input-warning w-full max-w-xs"
-              />
-            </div>
-            <div className="flex justify-center items-center gap-4">
-              <input
-                type="text"
-                disabled
-                value={bookingBalance}
-                className="input input-bordered mt-2 font-bold input-warning w-full max-w-xs"
-              />
-              <input
-                type="text"
-                disabled
-                value={bookingBed}
-                className="input input-bordered mt-2  input-warning w-full max-w-xs"
-              />
-            </div>
-          </form> */}
-
+          <div>
+            <h1> Check In :</h1>
+          </div>
           <div className="modal-action">
-            <label htmlFor="booking-suites-modal" className="btn">
-              Yay!
+            <label htmlFor="booking-suites-modal" className="btn btn-primary">
+              Confirm Booking
             </label>
           </div>
         </div>
