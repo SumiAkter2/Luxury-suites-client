@@ -12,7 +12,7 @@ import "./Review.css";
 const ShowReview = () => {
   const [review, setReview] = useState([]);
   useEffect(() => {
-    fetch("https://luxury-suites-server-production.up.railway.app/reviews")
+    fetch("https://luxury-suites-server.vercel.app/reviews")
       .then((res) => res.json())
       .then((data) => setReview(data));
   }, []);

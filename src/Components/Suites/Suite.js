@@ -13,7 +13,7 @@ const suite = ({ suite }) => {
       bookingBalance: suite.balance,
     };
     console.log("added booking", bookings);
-    fetch(`http://localhost:5000/bookings`, {
+    fetch(`https://luxury-suites-server.vercel.app/bookings`, {
       method: "POST",
       headers: {
         "content-type": "application/json",
