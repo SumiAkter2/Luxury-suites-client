@@ -51,7 +51,10 @@ const suite = ({ suite }) => {
               {suite.balance}/ <span className="text-xs">Night</span>
             </p>
 
-            <div className="card-actions justify-end" onClick={handleToBooking}>
+            <div className="card-actions justify-end"
+              // onClick={handleToBooking}
+            >
+              
               <button className="btn btn-primary bg-yellow-200">
                 Book Now
               </button>

@@ -73,7 +73,10 @@ const ShowReview = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto lg:hidden">
         {review.slice(0, 3).map((r) => (
-          <div className="card lg:flex  justify-center items-center  shadow-xl text-center bg-yellow-200 p-6 h-80 w-80 mx-auto ">
+          <div
+            key={review._id}
+            className="card lg:flex  justify-center items-center  shadow-xl text-center bg-yellow-200 p-6 h-80 w-80 mx-auto "
+          >
             <div className="avatar">
               <div className="w-24 rounded-full m-6">
                 <img

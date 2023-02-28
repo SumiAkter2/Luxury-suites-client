@@ -1,14 +1,12 @@
 import "./App.css";
 import Header from "./Components/Header/Header";
 import Home from "./Components/Home/Home";
-
 import Contact from "./Components/Contact/Contact";
 import About from "./Components/About/About";
 import LogIn from "./Components/LogIn/LogIn";
 import { Routes, Route } from "react-router-dom";
 import Footer from "./Components/Footer/Footer";
 import NotFound from "./Components/NotFound/NotFound";
-import Swal from "sweetalert2";
 import AllSuites from "./Components/AllSuites/AllSuites";
 import SignUp from "./Components/SignUp/SignUp";
 import Dashboard from "./Components/Dashboard/Dashboard";
@@ -21,9 +19,10 @@ import ManageSuites from "./Components/Dashboard/ManageSuites";
 import FAQ from "./Components/MoreInfo/FAQ";
 import Teams from "./Components/MoreInfo/Teams";
 import Feature from "./Components/MoreInfo/Feature";
+
 function App() {
   return (
-    <div className="font-serif">
+    <div className="font-serifl mx-auto">
       <Header>
         <Routes>
           <Route path="/" element={<Home />}></Route>
@@ -45,6 +44,7 @@ function App() {
           <Route path="/feature" element={<Feature />}></Route>
           <Route path="*" element={<NotFound />}></Route>
         </Routes>
+
         <Footer />
       </Header>
     </div>

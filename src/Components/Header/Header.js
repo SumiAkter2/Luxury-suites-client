@@ -1,6 +1,7 @@
 import { signOut } from "firebase/auth";
 import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
+import { AiFillCaretDown } from "react-icons/ai";
 import { NavLink, Link } from "react-router-dom";
 import auth from "../../firebase.init";
 
@@ -37,9 +38,9 @@ const Header = ({ children }) => {
                   className="inline-block w-6 h-6 stroke-current"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="M4 6h16M4 12h16M4 18h16"
                   ></path>
                 </svg>
@@ -51,17 +52,26 @@ const Header = ({ children }) => {
                 {/* <!-- Navbar menu content here --> */}
 
                 <li>
-                  <NavLink to="/about" className=" font-bold rounded-lg text-amber-500 ">
+                  <NavLink
+                    to="/about"
+                    className=" font-bold rounded-lg text-amber-500 "
+                  >
                     About
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/dashBoard" className="font-bold rounded-lg text-amber-500 ">
+                  <NavLink
+                    to="/dashBoard"
+                    className="font-bold rounded-lg text-amber-500 "
+                  >
                     DashBoard
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/contact" className="font-bold rounded-lg text-amber-500 ">
+                  <NavLink
+                    to="/contact"
+                    className="font-bold rounded-lg text-amber-500 "
+                  >
                     Contact
                   </NavLink>
                 </li>
@@ -84,21 +94,25 @@ const Header = ({ children }) => {
                   </li>
                 ) : (
                   <li>
-                    <NavLink to="/login" className="font-bold rounded-lg text-amber-500 ">
+                    <NavLink
+                      to="/login"
+                      className="font-bold rounded-lg text-amber-500 "
+                    >
                       Log In
                     </NavLink>
                   </li>
                 )}
 
-                <li className="dropdown dropdown-hover dropdown-end ">
+                <li className="dropdown dropdown-hover dropdown-end text-orange-500">
                   <label
-                    tabindex="0"
-                    className="btn btn-outline btn-primary font-bold rounded-lg text-amber-500"
+                    tabIndex="0"
+                    className="  border-0 hover:btn-secondary bg-secondary font-bold rounded-lg "
                   >
-                    More Info
+                    More Info <AiFillCaretDown size="20px" />
                   </label>
+
                   <ul
-                    tabindex="0"
+                    tabIndex="0"
                     className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
                   >
                     <li>
@@ -124,19 +138,28 @@ const Header = ({ children }) => {
             {/* <!-- Sidebar content here --> */}
 
             <li>
-              <NavLink to="/about" className=" font-bold rounded-lg text-amber-500 ">
+              <NavLink
+                to="/about"
+                className=" font-bold rounded-lg text-amber-500 "
+              >
                 About
               </NavLink>
             </li>
 
             <li>
-              <NavLink to="/dashBoard" className="font-bold rounded-lg text-amber-500 ">
+              <NavLink
+                to="/dashBoard"
+                className="font-bold rounded-lg text-amber-500 "
+              >
                 DashBoard
               </NavLink>
             </li>
 
             <li>
-              <NavLink to="/contact" className="font-bold rounded-lg text-amber-500 ">
+              <NavLink
+                to="/contact"
+                className="font-bold rounded-lg text-amber-500 "
+              >
                 Contact
               </NavLink>
             </li>
@@ -152,7 +175,10 @@ const Header = ({ children }) => {
               </li>
             ) : (
               <li>
-                <NavLink to="/login" className="font-bold rounded-lg text-amber-500 ">
+                <NavLink
+                  to="/login"
+                  className="font-bold rounded-lg text-amber-500 "
+                >
                   Log In
                 </NavLink>
               </li>

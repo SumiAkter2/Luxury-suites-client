@@ -33,7 +33,7 @@ const CheckAvailability = () => {
             </h1>
 
             <select className="form-control lg:w-24 w-36 rounded-md p-1 bg-yellow-200  mx-auto">
-              <option selected>1</option>
+              <option defaultValue={1}>1</option>
               <option>2</option>
               <option>3</option>
               <option>4</option>
@@ -46,7 +46,7 @@ const CheckAvailability = () => {
               <FontAwesomeIcon icon={faBed} className="me-2" /> Bed
             </h1>
             <select className="form-control lg:w-28 w-36 rounded-md p-1 bg-yellow-200 mx-auto">
-              <option selected>1 King Bed</option>
+              <option defaultValue={"1 King Bed"}>1 King Bed</option>
               <option>2 Single Bed</option>
               <option>2 King Bed</option>
               <option>1 Double Bed</option>
