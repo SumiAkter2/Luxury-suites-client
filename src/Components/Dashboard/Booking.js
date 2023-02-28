@@ -14,14 +14,14 @@ const Booking = () => {
   //  }, [user?.email]);
 
   useEffect(() => {
-    fetch("https://luxury-suites-server.vercel.app/bookings")
+    fetch("http://localhost:5000/bookings")
       .then((res) => res.json())
       .then((data) => setBooking(data));
   }, []);
 
   const handleDelete = (id) => {
     alert("sure to delete");
-    fetch(`https://luxury-suites-server.vercel.app/bookings/${id} `, {
+    fetch(`http://localhost:5000/bookings/${id} `, {
       method: "DELETE",
       headers: {
         "content-type": "application/json",

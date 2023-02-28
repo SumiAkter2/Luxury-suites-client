@@ -13,7 +13,7 @@ const suite = ({ suite }) => {
       bookingBalance: suite.balance,
     };
     console.log("added booking", bookings);
-    fetch(`https://luxury-suites-server.vercel.app/bookings`, {
+    fetch(`http://localhost:5000/bookings`, {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -51,10 +51,10 @@ const suite = ({ suite }) => {
               {suite.balance}/ <span className="text-xs">Night</span>
             </p>
 
-            <div className="card-actions justify-end"
+            <div
+              className="card-actions justify-end"
               // onClick={handleToBooking}
             >
-              
               <button className="btn btn-primary bg-yellow-200">
                 Book Now
               </button>

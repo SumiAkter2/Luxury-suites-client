@@ -23,7 +23,7 @@ const AddReview = () => {
 
     // console.log(data.Name, data.Address, data.Ratting, data.comment);
 
-    fetch(`https://luxury-suites-server.vercel.app/reviews`, {
+    fetch(`http://localhost:5000/reviews`, {
       method: "POST",
       headers: {
         "content-type": "application/json",

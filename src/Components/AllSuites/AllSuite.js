@@ -17,8 +17,9 @@ const AllSuite = ({ suite, setBooked }) => {
       bookingBalance: suite.balance,
     };
     setBooked(bookings);
+   
     console.log("added booking", bookings);
-    // fetch(`https://luxury-suites-server.vercel.app/bookings`, {
+    // fetch(`http://localhost:5000/bookings`, {
     //   method: "POST",
     //   headers: {
     //     "content-type": "application/json",
