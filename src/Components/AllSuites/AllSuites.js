@@ -9,6 +9,7 @@ const AllSuites = () => {
   const [endDate, setEndDate] = useState(new Date());
   const [suites, setSuites] = useState([]);
   const [booked, setBooked] = useState(null);
+  const [bookingSuite, setBookingSuite] = useState({});
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -20,7 +21,7 @@ const AllSuites = () => {
 
     const bookingSuite = { startDate, endDate, guests, adult, children };
     console.log(bookingSuite);
-
+    setBookingSuite(bookingSuite);
     fetch("http://localhost:5000/suites")
       .then((res) => res.json())
       .then((data) => {
@@ -31,6 +32,7 @@ const AllSuites = () => {
         setSuites(suites);
       });
   };
+  // console.log(bookingSuite);
   return (
     <div>
       <div
@@ -47,7 +49,7 @@ const AllSuites = () => {
         </div>
       </div>
       <div className=" lg:flex grid justify-evenly items-start px-6 my-12">
-        <div className="w-60 my-12 lg:sticky top-14">
+        <div className="w-60 my-12 lg:sticky top-14 mx-auto lg:mx-0">
           <h1 className="text-2xl font-bold mb-12">Check Availability</h1>
 
           <form onSubmit={handleSubmit}>
@@ -109,7 +111,7 @@ const AllSuites = () => {
         </div>
 
         <div className="lg:gap-12 grid">
-          <h1 className="text-xl text-center">
+          <h1 className="text-xl text-center mb-6 lg:mb-0">
             Available Suites :{suites.length}
           </h1>
           {suites.map((suite) => (
@@ -120,7 +122,12 @@ const AllSuites = () => {
             ></AllSuite>
           ))}
         </div>
-        {booked && <BookingSuite booked={booked}></BookingSuite>}
+        {booked && (
+          <BookingSuite
+            bookingSuite={bookingSuite}
+            booked={booked}
+          ></BookingSuite>
+        )}
       </div>
     </div>
   );
