@@ -1,9 +1,13 @@
+import { useState } from "react";
+import BookingSuite from "../BookingModal/BookingSuite";
 import useSuites from "../Hooks/useSuites";
 import AllSuite from "./AllSuite";
+import DatePicker from "react-datepicker";
 
 const AllSuites = () => {
+  const [startDate, setStartDate] = useState(new Date());
   const [suites] = useSuites();
-
+  const [booked, setBooked] = useState(null);
   return (
     <div>
       <div
@@ -13,7 +17,9 @@ const AllSuites = () => {
         <div className="hero-overlay bg-opacity-40"></div>
         <div className="hero-content text-center text-neutral-content">
           <div className="max-w-md">
-            <h1 className="mb-5 lg:text-5xl font-serif text-3xl">Search Luxury Suites</h1>
+            <h1 className="mb-5 lg:text-5xl font-serif text-3xl">
+              Search Luxury Suites
+            </h1>
           </div>
         </div>
       </div>
@@ -21,18 +27,24 @@ const AllSuites = () => {
         <div className="w-60 my-12 lg:sticky top-14">
           <h1 className="text-2xl font-bold mb-12">Check Available</h1>
 
-          <div className=" font-bold bg-slate-100 rounded-lg my-2">
+          <div className=" font-bold  rounded-lg my-2">
             <h1 className="mb-2"> Check In</h1>
-            <input type="date" className="bg-yellow-200 rounded-md p-1 w-52" />
-          </div>
-          <div className=" font-bold bg-slate-100 rounded-lg my-2">
-            <h1 className="mb-2"> Check Out</h1>
-            <input
-              type="date"
-              className="bg-yellow-200 w-52 rounded-md p-1  "
+
+            <DatePicker
+              className="bg-yellow-200 rounded-md p-1 w-52"
+              selected={startDate}
+              onChange={(date) => setStartDate(date)}
             />
           </div>
-          <div className=" font-bold bg-slate-100 w-40 rounded-lg my-2">
+          <div className=" font-bold  rounded-lg my-2">
+            <h1 className="mb-2"> Check Out</h1>
+            <DatePicker
+              className="bg-yellow-200 rounded-md p-1 w-52"
+              selected={startDate}
+              onChange={(date) => setStartDate(date)}
+            />
+          </div>
+          <div className=" font-bold  w-40 rounded-lg my-2">
             <h1> Room</h1>
             <input
               type="number"
@@ -40,7 +52,7 @@ const AllSuites = () => {
               className="bg-yellow-200 rounded-md p-1 w-52"
             />
           </div>
-          <div className="flex justify-start  font-bold bg-slate-100 rounded-lg my-2">
+          <div className="flex justify-start  font-bold rounded-lg my-2">
             <div>
               <h1> Guest</h1>
               <input
@@ -60,12 +72,17 @@ const AllSuites = () => {
           </div>
           <button className="btn bg-yellow-200 btn-primary w-52">Search</button>
         </div>
-       
-        <div className="gap-12 grid">
+
+        <div className="lg:gap-12 grid">
           {suites.map((suite) => (
-            <AllSuite key={suite._id} suite={suite}></AllSuite>
+            <AllSuite
+              key={suite._id}
+              suite={suite}
+              setBooked={setBooked}
+            ></AllSuite>
           ))}
         </div>
+        {booked && <BookingSuite booked={booked}></BookingSuite>}
       </div>
     </div>
   );
