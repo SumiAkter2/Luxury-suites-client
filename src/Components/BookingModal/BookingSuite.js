@@ -2,6 +2,8 @@ import React from "react";
 import { IoIosBed } from "react-icons/io";
 import { IoIosPeople } from "react-icons/io";
 import { BsFillSquareFill } from "react-icons/bs";
+import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
 const BookingSuite = ({ booked, bookingSuite }) => {
   const {
     bookingName,
@@ -12,8 +14,27 @@ const BookingSuite = ({ booked, bookingSuite }) => {
     bookingImage,
     bookingBalance,
   } = booked;
-  console.log(booked);
-
+  const navigate = useNavigate();
+  const handleConfirmBooking = (booked) => {
+    console.log(booked);
+  
+    navigate("/");
+    // fetch(`http://localhost:5000/bookings`, {
+    //   method: "POST",
+    //   headers: {
+    //     "content-type": "application/json",
+    //   },
+    //   body: JSON.stringify(booked),
+    // })
+    //   .then((res) => res.json())
+    //   .then((data) => {
+    //     console.log(data);
+    //     Swal.fire({
+    //       text: "Successfully added a review",
+    //       icon: "success",
+    //     });
+    //   });
+  };
   return (
     <div className="">
       <input
@@ -85,10 +106,8 @@ const BookingSuite = ({ booked, bookingSuite }) => {
               </h1>
             </div>
           </div>
-          <div className="modal-action">
-            <label htmlFor="booking-suites-modal" className="btn btn-primary">
-              Confirm Booking
-            </label>
+          <div className="modal-action" onClick={handleConfirmBooking(booked)}>
+            <label className="btn btn-primary">Confirm Booking</label>
           </div>
         </div>
       </div>

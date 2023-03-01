@@ -4,7 +4,7 @@ import { MdDeleteOutline } from "react-icons/md";
 import { MdPayment } from "react-icons/md";
 import axios from "axios";
 import Swal from "sweetalert2";
-const Booking = () => {
+const BookingList = () => {
   const [booking, setBooking] = useState([]);
   //  const [order, setOrder] = useState([]);
   //  useEffect(() => {
@@ -23,14 +23,14 @@ const Booking = () => {
     alert("sure to delete");
     fetch(`http://localhost:5000/bookings/${id} `, {
       method: "DELETE",
-      headers: {
-        "content-type": "application/json",
-      },
+      // headers: {
+      //   "content-type": "application/json",
+      // },
       // body: JSON.stringify(booking),
     })
       .then((res) => res.json())
       .then((data) => {
-        const restData = booking.filter((o) => o._id !== id);
+        const restData = data.filter((o) => o._id !== id);
         setBooking(restData);
         // swal('Are you sure to Delete your order??')
         console.log(data);
@@ -106,4 +106,4 @@ const Booking = () => {
   );
 };
 
-export default Booking;
+export default BookingList;

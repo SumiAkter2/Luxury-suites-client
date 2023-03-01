@@ -50,7 +50,14 @@ const Header = ({ children }) => {
             <div className="flex-none hidden lg:block">
               <ul className="menu menu-horizontal gap-x-2">
                 {/* <!-- Navbar menu content here --> */}
-
+                <li>
+                  <NavLink
+                    to="/allSuites"
+                    className=" font-bold rounded-lg text-amber-500 "
+                  >
+                    Suites
+                  </NavLink>
+                </li>
                 <li>
                   <NavLink
                     to="/about"

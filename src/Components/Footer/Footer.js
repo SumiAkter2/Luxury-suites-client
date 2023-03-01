@@ -17,7 +17,7 @@ const Footer = () => {
             <p className="text-lg font-semibold pt-4 mx-auto">
               Luxury Suites.
               <br />
-              Providing reliable tech since 1992
+              Your Best Choice.
             </p>
           </div>
           <div className=" mx-auto w-60">

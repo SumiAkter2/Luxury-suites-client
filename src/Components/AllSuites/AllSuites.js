@@ -18,8 +18,8 @@ const AllSuites = () => {
     const adult = e.target.guest.value;
     const children = e.target.children.value;
     const guests = parseInt(adult) + parseInt(children);
-
     const bookingSuite = { startDate, endDate, guests, adult, children };
+
     console.log(bookingSuite);
     setBookingSuite(bookingSuite);
     fetch("http://localhost:5000/suites")
@@ -119,15 +119,16 @@ const AllSuites = () => {
               key={suite._id}
               suite={suite}
               setBooked={setBooked}
+              bookingSuite={bookingSuite}
             ></AllSuite>
           ))}
         </div>
-        {booked && (
+        {/* {booked && (
           <BookingSuite
             bookingSuite={bookingSuite}
             booked={booked}
           ></BookingSuite>
-        )}
+        )} */}
       </div>
     </div>
   );
