@@ -112,16 +112,18 @@ const AllSuites = ({ handleSubmit, suites, bookingSuite ,setBooked}) => {
 
         <div className="lg:gap-12 grid">
           <h1 className="text-xl text-center mb-6 lg:mb-0">
-            Available Suites :{suites.length}
+            Available Suites : {suites.length}
           </h1>
-          {suites.map((suite) => (
-            <AllSuite
-              key={suite._id}
-              suite={suite}
-              setBooked={setBooked}
-              bookingSuite={bookingSuite}
-            ></AllSuite>
-          ))}
+          <div className="bg-yellow-100 p-6 rounded-2xl">
+            {suites.map((suite) => (
+              <AllSuite
+                key={suite._id}
+                suite={suite}
+                setBooked={setBooked}
+                bookingSuite={bookingSuite}
+              ></AllSuite>
+            ))}
+          </div>
         </div>
         {/* {booked && (
           <BookingSuite

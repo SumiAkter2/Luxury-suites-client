@@ -27,14 +27,14 @@ const AllSuite = ({ suite, setBooked, bookingSuite }) => {
     console.log("added booking", bookings);
   };
   return (
-    <div className="lg:flex grid gap-x-4 items-center mx-auto px-6 lg:p-0">
+    <div className="lg:flex grid gap-x-4 items-center mx-auto px-6 lg:p-0  ">
       <img
         className="lg:h-96 lg:w-80 w-80 rounded-md"
         src={suite.picture}
         alt="Suite-pictures"
       />
-      <div className="text-start w-80  px-6 lg:p-0  ">
-        <h1 className="text-3xl font-bold mt-4">{suite.name} </h1>
+      <div className="text-start w-80  px-6   ">
+        <h1 className="text-3xl font-bold mt-6">{suite.name} </h1>
         <p className="flex items-center mr-2 mb-4">
           <AiFillStar fill="orange" />
           <AiFillStar fill="orange" />

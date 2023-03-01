@@ -1,5 +1,5 @@
 .gallery-image {
-    /* padding: 5px; */
+   
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -14,7 +14,6 @@
 
 .img-box {
     box-sizing: content-box;
-    /* margin: 5px; */
     height: 350px;
     width: 400px;
     overflow: hidden;
@@ -27,11 +26,16 @@
 .caption {
     position: absolute;
     bottom: 5px;
-    left: 20px;
     opacity: 0.0;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
-
+.booking-btn{
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+    opacity: 0.0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
 .transparent-box {
     height: 350px;
     width: 400px;
@@ -55,14 +59,9 @@
     opacity: 1.0;
 }
 
-.img-box:hover {
-    cursor: pointer;
-}
+
 
 .caption>p:nth-child(2) {
     font-size: 0.8em;
 }
 
-.opacity-low {
-    opacity: 0.5;
-}
