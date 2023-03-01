@@ -6,21 +6,25 @@ import { BsFillSquareFill } from "react-icons/bs";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
 
-const AllSuite = ({ suite, setBooked, bookingSuite }) => {
+const AllSuite = ({ suite, setBooked,bookingSuite }) => {
   const navigate = useNavigate();
   const handleBookingNow = () => {
     navigate("/booking");
-    // const bookings = {
-    //   bookingName: suite.name,
-    //   bookingBed: suite.bed,
-    //   bookingGuest: suite.guest,
-    //   bookingSqr: suite.sqr,
-    //   bookingDis: suite.dis,
-    //   bookingImage: suite.picture,
-    //   bookingBalance: suite.balance,
-    // };
-    // setBooked(bookings);
-    // console.log("added booking", bookings);
+    const bookings = {
+      bookingName: suite.name,
+      bookingBed: suite.bed,
+      bookingGuest: suite.guest,
+      bookingSqr: suite.sqr,
+      bookingDis: suite.dis,
+      bookingImage: suite.picture,
+      bookingBalance: suite.balance,
+      startDate: bookingSuite.startDate,
+      endDate: bookingSuite.endDate,
+      adult: bookingSuite.adult,
+      children: bookingSuite.children,
+    };
+    setBooked(bookings);
+    console.log("added booking", bookings);
   };
   return (
     <div className="lg:flex grid gap-x-4 items-center mx-auto px-6 lg:p-0">

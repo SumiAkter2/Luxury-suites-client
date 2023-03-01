@@ -4,34 +4,34 @@ import useSuites from "../Hooks/useSuites";
 import AllSuite from "./AllSuite";
 import DatePicker from "react-datepicker";
 
-const AllSuites = () => {
+const AllSuites = ({ handleSubmit, suites, bookingSuite ,setBooked}) => {
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
-  const [suites, setSuites] = useState([]);
-  const [booked, setBooked] = useState(null);
-  const [bookingSuite, setBookingSuite] = useState({});
+  // const [suites, setSuites] = useState([]);
+  // // const [booked, setBooked] = useState(null);
+  // const [bookingSuite, setBookingSuite] = useState({});
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const startDate = e.target.startDate.value;
-    const endDate = e.target.endDate.value;
-    const adult = e.target.guest.value;
-    const children = e.target.children.value;
-    const guests = parseInt(adult) + parseInt(children);
-    const bookingSuite = { startDate, endDate, guests, adult, children };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   const startDate = e.target.startDate.value;
+  //   const endDate = e.target.endDate.value;
+  //   const adult = e.target.guest.value;
+  //   const children = e.target.children.value;
+  //   const guests = parseInt(adult) + parseInt(children);
+  //   const bookingSuite = { startDate, endDate, guests, adult, children };
 
-    console.log(bookingSuite);
-    setBookingSuite(bookingSuite);
-    fetch("http://localhost:5000/suites")
-      .then((res) => res.json())
-      .then((data) => {
-        const suites = data.filter(
-          (suite) => parseInt(suite.guest) === bookingSuite.guests
-        );
-        console.log(suites);
-        setSuites(suites);
-      });
-  };
+  //   console.log(bookingSuite);
+  //   setBookingSuite(bookingSuite);
+  //   fetch("http://localhost:5000/suites")
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       const suites = data.filter(
+  //         (suite) => parseInt(suite.guest) === bookingSuite.guests
+  //       );
+  //       console.log(suites);
+  //       setSuites(suites);
+  //     });
+  // };
   // console.log(bookingSuite);
   return (
     <div>
