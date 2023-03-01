@@ -6,7 +6,7 @@ import { BsFillSquareFill } from "react-icons/bs";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
 
-const AllSuite = ({ suite, setBooked,bookingSuite }) => {
+const AllSuite = ({ suite, setBooked, bookingSuite }) => {
   const navigate = useNavigate();
   const handleBookingNow = () => {
     navigate("/booking");
