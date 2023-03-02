@@ -27,7 +27,7 @@ const Social = () => {
     navigate("/");
   };
   return (
-    <div className="flex justify-center items-center gap-x-6 mt-6 bg-yellow-200 w-48 mx-auto rounded-lg p-1">
+    <div className="flex justify-center items-center gap-x-6 mt-6 bg-secondary w-48 mx-auto rounded-lg p-1">
       <img
         onClick={googleSingIn}
         className="w-8 h-8 cursor-pointer hover:border-2 hover:border-blue-200"

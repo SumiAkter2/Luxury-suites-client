@@ -17,7 +17,7 @@ const ShowReview = () => {
       .then((data) => setReview(data));
   }, []);
   return (
-    <div className="bg-yellow-100 mt-2 p-6">
+    <div className="bg-white mt-2 p-6">
       <h1 className="text-3xl text-center my-12 pb-12">Clients Testimonial</h1>
 
       <div className=" hidden lg:block">
@@ -38,7 +38,7 @@ const ShowReview = () => {
             {review.map((r) => (
               <>
                 <SwiperSlide key={r._id} className="lg:w-full ">
-                  <div className="card flex  justify-center items-center  shadow-xl text-center bg-yellow-200 lg:p-6 h-80 lg:w-80 mx-auto w-48">
+                  <div className="card flex  justify-center items-center  shadow-xl text-center bg-secondary lg:p-6 h-80 lg:w-80 mx-auto w-48">
                     <div className="avatar">
                       <div className="w-24 rounded-full m-6">
                         <img
@@ -75,7 +75,7 @@ const ShowReview = () => {
         {review.slice(0, 3).map((r) => (
           <div
             key={review._id}
-            className="card lg:flex  justify-center items-center  shadow-xl text-center bg-yellow-200 p-6 h-80 w-80 mx-auto "
+            className="card lg:flex  justify-center items-center  shadow-xl text-center bg-secondary p-6 h-80 w-80 mx-auto "
           >
             <div className="avatar">
               <div className="w-24 rounded-full m-6">

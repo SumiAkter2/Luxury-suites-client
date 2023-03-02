@@ -89,9 +89,9 @@ const AllSuite = ({ suite, setBooked, bookingSuite }) => {
         >
           <label
             htmlFor="booking-suites-modal"
-            className="btn btn-primary bg-yellow-200"
+            className="btn btn-primary bg-secondary"
           >
-            Booking Now
+            Confirm Booking
           </label>
         </div>
 

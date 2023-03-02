@@ -34,7 +34,7 @@ const Contact = () => {
         </div>
       </div>
       {/* detail contact */}
-      <div className="lg:flex justify-evenly  items-center py-12 bg-yellow-200 px-12">
+      <div className="lg:flex justify-evenly  items-center py-12 bg-secondary px-12">
         <div>
           <h1 className="flex justify-start items-center ">
             <FontAwesomeIcon icon={faPhone} />
@@ -112,7 +112,7 @@ const Contact = () => {
           </div>
         </form>
       </div>
-      <div className="bg-yellow-200 py-12">
+      <div className="bg-secondary py-12">
         <Subscribe />
       </div>
 

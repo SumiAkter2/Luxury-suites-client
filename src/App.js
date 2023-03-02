@@ -52,48 +52,47 @@ function App() {
   };
   return (
     <div className="font-serif mx-auto">
-      <Header>
-        <Routes>
-          <Route path="/" element={<Home />}></Route>
+      <Header> </Header>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route
+          path="/allSuites"
+          element={
+            <AllSuites
+              handleSubmit={handleSubmit}
+              bookingSuite={bookingSuite}
+              suites={suites}
+              setBooked={setBooked}
+            />
+          }
+        ></Route>
+        {booked && (
           <Route
-            path="/allSuites"
-            element={
-              <AllSuites
-                handleSubmit={handleSubmit}
-                bookingSuite={bookingSuite}
-                suites={suites}
-                setBooked={setBooked}
-              />
-            }
+            path="/booking"
+            element={<Booking bookingSuite={bookingSuite} booked={booked} />}
           ></Route>
-          {booked && (
-            <Route
-              path="/booking"
-              element={<Booking bookingSuite={bookingSuite} booked={booked} />}
-            ></Route>
-          )}
+        )}
 
-          <Route path="/dashboard" element={<Dashboard />}>
-            <Route index element={<BookingList />}></Route>
-            <Route path="profile" element={<Profile />}></Route>
-            <Route path="review" element={<AddReview />}></Route>
-            <Route path="addSuites" element={<AddSuites />}></Route>
-            <Route path="manageSuites" element={<ManageSuites />}></Route>
-            <Route path="admin" element={<Admin />}></Route>
-          </Route>
+        <Route path="/dashboard" element={<Dashboard />}>
+          <Route index element={<BookingList />}></Route>
+          <Route path="profile" element={<Profile />}></Route>
+          <Route path="review" element={<AddReview />}></Route>
+          <Route path="addSuites" element={<AddSuites />}></Route>
+          <Route path="manageSuites" element={<ManageSuites />}></Route>
+          <Route path="admin" element={<Admin />}></Route>
+        </Route>
 
-          <Route path="/contact" element={<Contact />}></Route>
-          <Route path="/about" element={<About />}></Route>
-          <Route path="/login" element={<LogIn />}></Route>
-          <Route path="/signUp" element={<SignUp />}></Route>
-          <Route path="/faq" element={<FAQ />}></Route>
-          <Route path="/teams" element={<Teams />}></Route>
-          <Route path="/feature" element={<Feature />}></Route>
-          <Route path="*" element={<NotFound />}></Route>
-        </Routes>
+        <Route path="/contact" element={<Contact />}></Route>
+        <Route path="/about" element={<About />}></Route>
+        <Route path="/login" element={<LogIn />}></Route>
+        <Route path="/signUp" element={<SignUp />}></Route>
+        <Route path="/faq" element={<FAQ />}></Route>
+        <Route path="/teams" element={<Teams />}></Route>
+        <Route path="/feature" element={<Feature />}></Route>
+        <Route path="*" element={<NotFound />}></Route>
+      </Routes>
 
-        <Footer />
-      </Header>
+      <Footer />
     </div>
   );
 }

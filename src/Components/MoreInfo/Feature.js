@@ -29,7 +29,7 @@ const Feature = () => {
           </div>
         </div>
       </div>
-      <div className="bg-yellow-200 py-12 px-12">
+      <div className="bg-secondary py-12 px-12">
         <h1 className=" text-4xl font-serif text-center">Features</h1>
         <p className="text-center">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam
@@ -42,7 +42,7 @@ const Feature = () => {
         <h1 className="text-3xl font-bold text-center my-6">DROPCAPS STYLES</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="px-12   ">
-            <p className="bg-yellow-200 rounded-3xl py-2 h-12 mx-auto w-12 text-center my-4">
+            <p className="bg-secondary rounded-3xl py-2 h-12 mx-auto w-12 text-center my-4">
               <FontAwesomeIcon icon={faBowlFood}></FontAwesomeIcon>
             </p>
 
@@ -54,7 +54,7 @@ const Feature = () => {
             </h1>
           </div>
           <div className="px-12   ">
-            <p className="bg-yellow-200 rounded-3xl py-2 h-12 mx-auto w-12 text-center my-4">
+            <p className="bg-secondary rounded-3xl py-2 h-12 mx-auto w-12 text-center my-4">
               <FontAwesomeIcon icon={faSwimmingPool}></FontAwesomeIcon>
             </p>
             <h1 className="text-center">
@@ -65,7 +65,7 @@ const Feature = () => {
             </h1>
           </div>
           <div className="px-12   ">
-            <p className="bg-yellow-200 rounded-3xl py-2 h-12 mx-auto w-12 text-center my-4">
+            <p className="bg-secondary rounded-3xl py-2 h-12 mx-auto w-12 text-center my-4">
               <FontAwesomeIcon icon={faSpa}></FontAwesomeIcon>
             </p>
             <h1 className="text-center">
@@ -76,7 +76,7 @@ const Feature = () => {
             </h1>
           </div>
           <div className="px-12   ">
-            <p className="bg-yellow-200 rounded-3xl py-2 h-12 mx-auto w-12 text-center my-4">
+            <p className="bg-secondary rounded-3xl py-2 h-12 mx-auto w-12 text-center my-4">
               <FontAwesomeIcon icon={faCarAlt}></FontAwesomeIcon>
             </p>
             <h1 className="text-center">
@@ -87,7 +87,7 @@ const Feature = () => {
             </h1>
           </div>
           <div className="px-12   ">
-            <p className="bg-yellow-200 rounded-3xl py-2 h-12 mx-auto w-12 text-center my-4">
+            <p className="bg-secondary rounded-3xl py-2 h-12 mx-auto w-12 text-center my-4">
               <FontAwesomeIcon icon={faAirFreshener}></FontAwesomeIcon>
             </p>
             <h1 className="text-center">
@@ -98,7 +98,7 @@ const Feature = () => {
             </h1>
           </div>
           <div className="px-12   ">
-            <p className="bg-yellow-200 rounded-3xl py-2 h-12 mx-auto w-12 text-center my-4">
+            <p className="bg-secondary rounded-3xl py-2 h-12 mx-auto w-12 text-center my-4">
               <FontAwesomeIcon icon={faGifts}></FontAwesomeIcon>
             </p>
             <h1 className="text-center">

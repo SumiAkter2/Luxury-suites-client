@@ -89,7 +89,7 @@ const LogIn = () => {
                 </span>
               </div>
 
-              <button className="button bg-yellow-200 w-48 ">Log In</button>
+              <button className="button bg-secondary w-48 ">Log In</button>
             </form>
             {/* Reset pass */}
             <div className="mt-4  text-sm flex justify-center">

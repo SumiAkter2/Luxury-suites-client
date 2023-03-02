@@ -105,7 +105,7 @@ const SignUp = () => {
                   </span>
                 </div>
               </div>
-              <button className="button bg-yellow-200 lg:w-80 w-48 ">
+              <button className="button bg-secondary lg:w-80 w-48 ">
                 Sign Up
               </button>
             </form>

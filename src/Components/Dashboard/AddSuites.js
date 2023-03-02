@@ -175,7 +175,7 @@ const AddSuites = () => {
                     </div>
                   </div>
 
-                  <button className="button bg-yellow-200 w-48 ">
+                  <button className="button bg-secondary w-48 ">
                     Add Suites
                   </button>
                 </form>

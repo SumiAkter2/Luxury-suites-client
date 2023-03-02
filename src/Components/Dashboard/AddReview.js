@@ -134,7 +134,7 @@ const AddReview = () => {
                       "! Comment is required"}
                   </span>
                 </div>
-                <button className="button bg-yellow-200 w-48 ">
+                <button className="button bg-secondary w-48 ">
                   Review Now
                 </button>
               </form>

@@ -4,7 +4,7 @@ import useSuites from "../Hooks/useSuites";
 import AllSuite from "./AllSuite";
 import DatePicker from "react-datepicker";
 
-const AllSuites = ({ handleSubmit, suites, bookingSuite ,setBooked}) => {
+const AllSuites = ({ handleSubmit, suites, bookingSuite, setBooked }) => {
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
   // const [suites, setSuites] = useState([]);
@@ -57,7 +57,7 @@ const AllSuites = ({ handleSubmit, suites, bookingSuite ,setBooked}) => {
               <h1 className="mb-2"> Check In</h1>
 
               <DatePicker
-                className="bg-yellow-200 rounded-md p-1 w-52"
+                className="bg-secondary rounded-md p-1 w-52"
                 selected={startDate}
                 name="startDate"
                 onChange={(date) => setStartDate(date)}
@@ -67,7 +67,7 @@ const AllSuites = ({ handleSubmit, suites, bookingSuite ,setBooked}) => {
               <h1 className="mb-2"> Check Out</h1>
               <DatePicker
                 name="endDate"
-                className="bg-yellow-200 rounded-md p-1 w-52"
+                className="bg-secondary rounded-md p-1 w-52"
                 selected={endDate}
                 onChange={(date) => setEndDate(date)}
               />
@@ -78,7 +78,7 @@ const AllSuites = ({ handleSubmit, suites, bookingSuite ,setBooked}) => {
                 <h1 className="mb-2"> Adult</h1>
                 <select
                   name="guest"
-                  className="w-24 bg-yellow-200 rounded-md p-1"
+                  className="w-24 bg-secondary rounded-md p-1"
                   type="number"
                   placeholder="1"
                 >
@@ -93,7 +93,7 @@ const AllSuites = ({ handleSubmit, suites, bookingSuite ,setBooked}) => {
                 <h1 className="mb-2">Children</h1>
                 <select
                   name="children"
-                  className="w-24 bg-yellow-200 rounded-md p-1"
+                  className="w-24 bg-secondary rounded-md p-1"
                   type="number"
                   placeholder="1"
                 >
@@ -104,7 +104,7 @@ const AllSuites = ({ handleSubmit, suites, bookingSuite ,setBooked}) => {
                 </select>
               </div>
             </div>
-            <button className="btn bg-yellow-200 btn-primary w-52 mt-6">
+            <button className="btn bg-secondary btn-primary w-52 mt-6">
               Search
             </button>
           </form>
@@ -114,7 +114,7 @@ const AllSuites = ({ handleSubmit, suites, bookingSuite ,setBooked}) => {
           <h1 className="text-xl text-center mb-6 lg:mb-0">
             Available Suites : {suites.length}
           </h1>
-          <div className="bg-yellow-100 p-6 rounded-2xl">
+          <div className="bg-white p-6 rounded-2xl">
             {suites.map((suite) => (
               <AllSuite
                 key={suite._id}

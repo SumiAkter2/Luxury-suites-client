@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div>
       <ScrollToTop smooth className="p-0" color="#007aff"></ScrollToTop>
-      <footer className="footer py-6 bg-yellow-200 text-base-content">
+      <footer className="footer py-6 bg-secondary text-base-content">
         <div>
           <div className="flex">
             <img
@@ -80,7 +80,7 @@ const Footer = () => {
           <a className="link link-hover">Cookie policy</a>
         </div>
       </footer>
-      <footer className="footer footer-center mt-1 p-6  bg-yellow-200 text-base-content">
+      <footer className="footer footer-center mt-1 p-6  bg-secondary text-base-content">
         <div>
           <p>
             Copyright © {date} - All right reserved by Luxury Suites. || This

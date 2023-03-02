@@ -10,7 +10,7 @@ import Subscribe from "./Subscribe";
 
 const Home = () => {
   return (
-    <div className="bg-yellow-100">
+    <div className="bg-white">
       <Banner />
       <CheckAvailability />
       <Suites />

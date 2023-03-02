@@ -15,7 +15,7 @@ const CheckAvailability = () => {
 
             <input
               type="date"
-              className="bg-yellow-200 rounded-md w-42 p-1 mt-2"
+              className="bg-secondary rounded-md w-42 p-1 mt-2"
             />
           </div>
           <div className="text-center   mb-4 ">
@@ -24,7 +24,7 @@ const CheckAvailability = () => {
             </h1>
             <input
               type="date"
-              className="bg-yellow-200 w-42 rounded-md p-1 mt-2"
+              className="bg-secondary w-42 rounded-md p-1 mt-2"
             />
           </div>
           <div className="text-center  mb-4 ">
@@ -32,7 +32,7 @@ const CheckAvailability = () => {
               <FontAwesomeIcon icon={faUsers} className="me-2" /> Person
             </h1>
 
-            <select className="form-control lg:w-24 w-36 rounded-md p-1 bg-yellow-200  mx-auto">
+            <select className="form-control lg:w-24 w-36 rounded-md p-1 bg-secondary  mx-auto">
               <option defaultValue={1}>1</option>
               <option>2</option>
               <option>3</option>
@@ -45,7 +45,7 @@ const CheckAvailability = () => {
             <h1 className="text-xl mb-2">
               <FontAwesomeIcon icon={faBed} className="me-2" /> Bed
             </h1>
-            <select className="form-control lg:w-28 w-36 rounded-md p-1 bg-yellow-200 mx-auto">
+            <select className="form-control lg:w-28 w-36 rounded-md p-1 bg-secondary mx-auto">
               <option defaultValue={"1 King Bed"}>1 King Bed</option>
               <option>2 Single Bed</option>
               <option>2 King Bed</option>
@@ -53,7 +53,7 @@ const CheckAvailability = () => {
               <option>1 Single Bed</option>
             </select>
           </div>
-          <button className="btn btn-primary bg-yellow-200 mt-8">
+          <button className="btn btn-primary bg-secondary mt-8">
             Check Available
           </button>
         </div>

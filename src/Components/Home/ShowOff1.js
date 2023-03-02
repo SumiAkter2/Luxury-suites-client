@@ -13,7 +13,7 @@ const ShowOff1 = () => {
   );
   return (
     <div>
-      <div className="hero min-h-screen bg-yellow-100 my-0">
+      <div className="hero min-h-screen bg-white my-0">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className=" flex ">
             <div className="flex gap-x-4 z-20">

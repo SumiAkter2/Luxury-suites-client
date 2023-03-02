@@ -2,7 +2,7 @@ import React from "react";
 
 const BayView = () => {
   return (
-    <div className="bg-yellow-100">
+    <div className="bg-white">
       <div className="hero min-h-screen ">
         <div className="hero-content flex-col lg:flex-row">
           <div className="">
