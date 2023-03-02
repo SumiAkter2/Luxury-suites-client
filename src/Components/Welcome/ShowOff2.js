@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ShowOff2 = () => {
   return (
@@ -9,16 +10,16 @@ const ShowOff2 = () => {
             <div className="lg:w-1/2 mx-auto">
               <img
                 src="https://i.ibb.co/r61dkX4/servent.jpg"
-                className="lg:w-screen h-60 rounded-sm shadow-2xl mb-4 mx-auto"
+                className="lg:w-screen w-80 h-80 rounded-sm shadow-2xl mb-2 mx-auto"
                 alt="servant-img"
               />
               <img
                 src="https://i.ibb.co/YRFXvTK/servent.jpg"
-                className="lg:w-screen  h-60 rounded-sm shadow-2xl mx-auto"
+                className="lg:w-screen w-80  h-80 rounded-sm shadow-2xl mx-auto"
                 alt="servant-img"
               />
             </div>
-            <div className="lg:w-1/2">
+            <div className="lg:w-1/2 p-6">
               <div className="divider w-60 mx-auto mb-12 opacity-100 bg-opacity-100  text-orange-500 text-xl ">
                 ......
               </div>
@@ -34,10 +35,11 @@ const ShowOff2 = () => {
                 velit minima accusamus labore debitis dolore fugit amet! Enim
                 exercitationem hic pariatur!
               </p>
-              <button className="btn  btn-primary text-orange-500 mt-6">
-                {" "}
-                Learn More ...
-              </button>
+              <Link to="/about">
+                <button className="btn  btn-primary  mt-6">
+                  Learn More ...
+                </button>
+              </Link>
             </div>
           </div>
         </div>

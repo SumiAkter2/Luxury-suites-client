@@ -5,10 +5,9 @@ const BayView = () => {
     <div className="bg-white">
       <div className="hero min-h-screen ">
         <div className="hero-content flex-col lg:flex-row">
-          <div className="lg:w-1/2">
+          <div className="lg:w-1/2 w-full  mx-auto">
             <img
-              // style={{ height: "400px" }}
-              // src="https://i.ibb.co/tP8z73j/hotel2.jpg"
+              
               src={img}
               className="lg:pl-6 lg:h-screen w-80 h-80 lg:w-screen shadow-2xl"
               alt="hotel-img"

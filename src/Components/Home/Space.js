@@ -1,12 +1,15 @@
 import React from "react";
-import "./Space.css";
+
 const Space = () => {
   return (
     <div>
       <div className="rounded-sm pb-4 my-12">
         <h1 className="mx-auto text-3xl text-center ">Some Interior Space</h1>
-        <p className="text-xl text-center mb-6"> Plenty of Services to Assure Your Relaxation and Comfortable.</p>
-        <div className="grid lg:grid-cols-4 gap-x-4 lg:px-12">
+        <p className="text-xl text-center">
+          {" "}
+          Plenty of Services to Assure Your Relaxation and Comfortable.
+        </p>
+        <div className="grid lg:grid-cols-4 gap-x-4 lg:px-12 pt-12 gap-y-2 w-full mx-auto px-6">
           <div className="gallery-image">
             <div className="img-box">
               <img src="https://i.ibb.co/Z2Ny3PB/room3.png" alt="" />

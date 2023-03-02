@@ -39,8 +39,8 @@ const ShowReview = () => {
             {review.map((r) => (
               <>
                 <SwiperSlide key={r._id} className="lg:w-full overflow-visible">
-                  <div className="flex justify-between ">
-                    <div className="h-96 w-1/2 bg-red-300 flex justify-center items-center">
+                  <div className="flex justify-between h-screen">
+                    <div className="h-screen lg:w-1/2 bg-secondary flex justify-center items-center">
                       <div className="p-6 ">
                         <div>
                           <h1 className="text-5xl  ">{r.comment}</h1>
@@ -51,7 +51,7 @@ const ShowReview = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="h-96  w-1/2 ">
+                    <div className="h-screen  lg:w-1/2 ">
                       <img
                         className="w-full bg-cover"
                         src="https://i.ibb.co/r7BxSRb/Rectangle-25.png"
