@@ -1,5 +1,6 @@
 import React from "react";
 import Suites from "../Suites/Suites";
+import Weather from "../Weather/Weather";
 import ShowOff2 from "../Welcome/ShowOff2";
 import Welcome from "../Welcome/Welcome";
 import Banner from "./Banner";
@@ -13,7 +14,7 @@ const Home = () => {
     <div className="bg-white">
       <Banner />
       <Space />
-
+      <Weather />
       <Suites />
       <Welcome />
       <BayView />

@@ -1,7 +1,12 @@
 .swiper {
     width: 1120px;
     height: 400px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+
+}
+
+.review-div{
+
 }
 @media screen and (max-width:560px) {
     .swiper {

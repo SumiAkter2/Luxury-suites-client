@@ -27,7 +27,7 @@ const Suites = () => {
         ))}
       </div>
       <Link to="/allSuites">
-        <button className="btn bg-secondary btn-primary mt-16 mx-auto flex justify-center items-center">
+        <button className="btn btn-primary mt-16 mx-auto flex justify-center items-center">
           View All Suites
         </button>
       </Link>
