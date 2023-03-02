@@ -8,19 +8,18 @@ const Banner = () => {
   return (
     <div>
       <div
-        className="hero h-screen shrink-0 "
+        className="hero lg:h-screen shrink-0 "
         style={{ backgroundImage: `url(${banner})` }}
       >
         <div className="hero-overlay bg-black bg-opacity-40"></div>
         {/* <div></div> */}
-        <div className="  text-white flex justify-center items-center">
-          <div className="w-1/2">
-            <p className=" lg:text-5xl text-3xl ">
-              Hotel for the elite passionate about luxury & comfort. Luxury
-              suites is a lavish and comfortable hotels and residences in Dhaka,
-              Bangladesh.
+        <div className="p-6  text-white lg:flex justify-center items-start">
+          <div className="lg:w-2/3 mt-6">
+            <p className=" lg:text-5xl text-3xl my-6">
+              Luxury suites for the elite passionate about luxury & comfort.
             </p>
-            <button className="btn btn-primary font-bold border-0 mt-4">
+            <p className="text-2xl mt-6">Book Your Suites & Enjoy Your Luxury Experience.</p>
+            <button className="btn btn-accent text-white font-bold border-0 mt-12">
               <Link to="/about">About More</Link>
             </button>
           </div>

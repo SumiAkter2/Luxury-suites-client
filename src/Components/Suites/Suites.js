@@ -22,7 +22,7 @@ const Suites = () => {
         </p>
       </div>
       <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-y-6 mt-12 px-12 mx-auto">
-        {suites.map((suite) => (
+        {suites.slice(2,8).map((suite) => (
           <Suite key={suite._id} suite={suite}></Suite>
         ))}
       </div>

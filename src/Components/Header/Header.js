@@ -21,12 +21,17 @@ const Header = () => {
               alt="logo"
             />
           </Link>
-          <Link to="/" className="font-bold text-2xl  pr-12">
+          <Link to="/" className="font-bold text-2xl text-accent pr-12">
             Luxury Suites.
           </Link>
         </div>
         <div className="navbar-center hidden lg:block">
           <ul className="menu menu-horizontal gap-x-2">
+            <li>
+              <NavLink to="/" className=" font-bold  rounded-lg  ">
+                Home
+              </NavLink>
+            </li>
             <li>
               <NavLink to="/allSuites" className=" font-bold rounded-lg  ">
                 Suites
@@ -71,16 +76,13 @@ const Header = () => {
             )}
 
             <li className="dropdown dropdown-hover dropdown-end ">
-              <label
-                tabIndex="0"
-                className="  border-0 hover:btn-secondary bg-secondary font-bold rounded-lg "
-              >
+              <label tabIndex="0" className="  border-0 font-bold rounded-lg ">
                 More Info <AiFillCaretDown size="20px" />
               </label>
 
               <ul
                 tabIndex="0"
-                className="dropdown-content menu p-2 shadow text-white rounded-box w-52"
+                className="dropdown-content menu p-2 shadow text-white rounded-box w-52 bg-accent opacity-60"
               >
                 <li>
                   <a href="/teams">Our Teams</a>
