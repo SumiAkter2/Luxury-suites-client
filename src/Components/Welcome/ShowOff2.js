@@ -9,12 +9,12 @@ const ShowOff2 = () => {
             <div className="lg:w-1/2 mx-auto">
               <img
                 src="https://i.ibb.co/r61dkX4/servent.jpg"
-                className="w-60 lg:w-2/3 h-60 rounded-lg shadow-2xl mb-4 mx-auto"
+                className="lg:w-screen h-60 rounded-sm shadow-2xl mb-4 mx-auto"
                 alt="servant-img"
               />
               <img
                 src="https://i.ibb.co/YRFXvTK/servent.jpg"
-                className=" lg:w-2/3 w-60 h-60 rounded-lg shadow-2xl mx-auto"
+                className="lg:w-screen  h-60 rounded-sm shadow-2xl mx-auto"
                 alt="servant-img"
               />
             </div>

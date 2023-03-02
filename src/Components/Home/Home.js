@@ -15,9 +15,10 @@ const Home = () => {
       <Banner />
       <Space />
       <Weather />
-      <Suites />
       <Welcome />
       <BayView />
+      <Suites />
+
       <ShowOff2 />
       <ShowReview />
       <Subscribe />

@@ -1,19 +1,20 @@
 import React from "react";
-
+import img from "../../img/colombo_30.jpg";
 const BayView = () => {
   return (
     <div className="bg-white">
       <div className="hero min-h-screen ">
         <div className="hero-content flex-col lg:flex-row">
-          <div className="">
+          <div className="lg:w-1/2">
             <img
-              style={{ height: "400px" }}
-              src="https://i.ibb.co/tP8z73j/hotel2.jpg"
-              className="lg:pl-6 lg:w-screen rounded-lg shadow-2xl"
+              // style={{ height: "400px" }}
+              // src="https://i.ibb.co/tP8z73j/hotel2.jpg"
+              src={img}
+              className="lg:pl-6 lg:h-screen w-80 h-80 lg:w-screen shadow-2xl"
               alt="hotel-img"
             />
           </div>
-          <div className="lg:pl-8 pb-6 ">
+          <div className="lg:pl-8 p-6 lg:w-1/2">
             <p className="pb-6 text-sm"> Hotel BayView</p>
             <h1 className="lg:text-5xl text-3xl pb-6">
               Relax in our Hotel Resort
