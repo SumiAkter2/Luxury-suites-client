@@ -5,7 +5,7 @@ const Footer = () => {
   const date = new Date().getFullYear();
   return (
     <div>
-      <ScrollToTop smooth className="p-0" color="#007aff"></ScrollToTop>
+      <ScrollToTop smooth  color="black" className="bg-transparent" ></ScrollToTop>
       <footer className="footer py-6 bg-secondary text-base-content">
         <div>
           <div className="flex">

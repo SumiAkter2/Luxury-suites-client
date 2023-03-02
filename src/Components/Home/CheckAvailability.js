@@ -4,10 +4,11 @@ import { faBed, faCalendar, faUsers } from "@fortawesome/free-solid-svg-icons";
 
 const CheckAvailability = () => {
   return (
-    <div>
-      <h1 className="text-4xl text-center  pt-6">Check Availability</h1>
-      <div className="mx-12 bg-base-100 mt-6 p-12 drop-shadow-md hover:drop-shadow-xl">
-        <div className="lg:flex   justify-evenly items-center ">
+    <div className="bg-yellow-100 rounded-lg p-6 text-black">
+      <div className=""></div>
+      <h1 className="text-4xl text-center text-black ">Check Availability</h1>
+      <div className="mx-12 bg-base-100  drop-shadow-md hover:drop-shadow-xl">
+        <div className="grid  ">
           <div className="text-center   mb-4 ">
             <h1 className="text-xl mb-1 ">
               <FontAwesomeIcon icon={faCalendar} className="me-2" /> Check In
