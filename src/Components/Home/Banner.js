@@ -14,7 +14,7 @@ const Banner = () => {
         <div className="hero-overlay bg-black bg-opacity-40"></div>
         {/* <div></div> */}
         <div className="p-6  text-white lg:flex justify-center items-start">
-          <div className="lg:w-2/3 mt-6">
+          <div className="lg:w-2/3 mt-6 mb-4 ">
             <p className=" lg:text-5xl text-3xl my-6">
               Luxury suites for the elite passionate about luxury & comfort.
             </p>
