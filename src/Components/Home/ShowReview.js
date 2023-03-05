@@ -39,24 +39,21 @@ const ShowReview = () => {
             {review.map((r) => (
               <>
                 <SwiperSlide key={r._id} className="lg:w-full overflow-visible">
-                  <div className="flex justify-between h-screen">
-                    <div className="h-screen lg:w-1/2 bg-secondary flex justify-center items-center">
-                      <div className="p-6 ">
-                        <div>
-                          <h1 className="text-5xl  ">{r.comment}</h1>
-
-                          <h1 className="text-4xl  ">{r.name}</h1>
-                          <h1 className="text-3xl  ">{r.address}</h1>
-                          <h2 className="flex mt-2 justify-center">hh</h2>
-                        </div>
+                  <div
+                    className="hero h-screen"
+                    style={{
+                      backgroundImage:
+                        "url(https://i.ibb.co/LhpgD4N/room10.png)",
+                    }}
+                  >
+                    <div className="hero-overlay bg-black bg-opacity-60"></div>
+                    <div className="hero-content text-center text-neutral-content">
+                      <div className="max-w-md text-white">
+                        <h1 className="mb-5 text-4xl font-serif">
+                         Our Clients Say
+                        </h1>
+                        <p>We provide the best services for our clients</p>
                       </div>
-                    </div>
-                    <div className="h-screen  lg:w-1/2 ">
-                      <img
-                        className="w-full bg-cover"
-                        src="https://i.ibb.co/r7BxSRb/Rectangle-25.png"
-                        alt=""
-                      />
                     </div>
                   </div>
                   {/* <div className="overflow-visible">

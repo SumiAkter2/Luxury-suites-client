@@ -5,9 +5,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import "./ExtraServices.css";
-
-// import required modules
+import { Autoplay } from "swiper";
 import { Pagination, Navigation } from "swiper";
 
 import { CgPhone } from "react-icons/cg";
@@ -99,17 +97,21 @@ const ExtraServices = () => {
             type: "progressbar",
             clickable: true,
           }}
+          autoplay={{
+            delay: 1000,
+            disableOnInteraction: false,
+          }}
           // navigation={true}
-          modules={[Pagination, Navigation]}
+          modules={[Pagination, Navigation, Autoplay]}
           className="mySwiper"
           style={{
             "--swiper-pagination-color": "#a87932",
-            // "--swiper-pagination-padding": "20px",
           }}
           slidesPerView={2}
           spaceBetween={10}
           grabCursor={true}
-          autoplay={true}
+          onSlideChange={() => console.log("slide change")}
+          onSwiper={(swiper) => console.log("swiper")}
         >
           {extraServices.map((service) => (
             <>
@@ -120,11 +122,11 @@ const ExtraServices = () => {
                     alt="service-img"
                     className="w-full h-56"
                   />
-                  <div>
-                    <h1 className="lg:text-3xl text-xl mt-6">
+                  <div className="p-6">
+                    <h1 className="lg:text-3xl text-xl mt-6 text-primary">
                       {service.name}{" "}
                     </h1>
-                    <h1 className="lg:text-3xl text-xl">
+                    <h1 className="lg:text-3xl text-xl my-6">
                       $ {service.price}/Daily{" "}
                     </h1>
                     <p className="flex items-center gap-x-2">

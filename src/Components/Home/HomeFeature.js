@@ -1,3 +1,4 @@
+import React from "react";
 import {
   faAirFreshener,
   faBowlFood,
@@ -7,37 +8,12 @@ import {
   faSwimmingPool,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
 
-const Feature = () => {
+const HomeFeature = () => {
   return (
     <div>
-      <div
-        className="hero h-56"
-        style={{ backgroundImage: "url(https://i.ibb.co/LhpgD4N/room10.png)" }}
-      >
-        <div className="hero-overlay bg-black bg-opacity-60"></div>
-        <div className="hero-content text-center text-neutral-content">
-          <div className="max-w-md text-white">
-            <h1 className="mb-5 text-4xl font-serif">
-              Features Of Luxury Suites
-            </h1>
-            <p>We provide the best services for our clients</p>
-          </div>
-        </div>
-      </div>
-      <div className=" py-12 lg:px-12  px-6  ">
-        <h1 className=" text-4xl font-serif text-center text-primary mb-6">
-          Features
-        </h1>
-        <p className="text-center">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam
-          itaque aliquid hic neque voluptas ipsum quis non nulla, veniam
-          molestiae voluptate praesentium maxime perferendis culpa alias cum
-          obcaecati dolore. Culpa?
-        </p>
-      </div>
       <div className="my-12">
+        <h1 className="my-6 text-3xl lg:text-5xl text-center">Why Choose Us</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="lg:px-12  px-6     ">
             <p className=" rounded-3xl p-2  text-center my-4">
@@ -141,4 +117,4 @@ const Feature = () => {
   );
 };
 
-export default Feature;
+export default HomeFeature;
