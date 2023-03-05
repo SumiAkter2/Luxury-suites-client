@@ -1,4 +1,5 @@
 import React from "react";
+import servent from "../../img/servent.jpg";
 import { Link } from "react-router-dom";
 
 const ShowOff2 = () => {
@@ -7,15 +8,15 @@ const ShowOff2 = () => {
       <div>
         <div className="hero min-h-screen bg-base-100 my-0">
           <div className="hero-content flex-col lg:flex-row-reverse justify-between items-start">
-            <div className="lg:w-1/2 mx-auto">
+            <div className="lg:w-1/2 mx-auto flex gap-x-2 px-6 ">
               <img
                 src="https://i.ibb.co/r61dkX4/servent.jpg"
-                className="lg:w-screen w-80 h-80 rounded-sm shadow-2xl mb-2 mx-auto"
+                className="lg:w-96 w-60 h-80 lg:h-[400px] rounded-sm shadow-2xl mb-2 mx-auto"
                 alt="servant-img"
               />
               <img
-                src="https://i.ibb.co/YRFXvTK/servent.jpg"
-                className="lg:w-screen w-80  h-80 rounded-sm shadow-2xl mx-auto"
+                src={servent}
+                className="lg:w-48 w-32  h-80 lg:h-[400px] rounded-sm shadow-2xl mx-auto"
                 alt="servant-img"
               />
             </div>
