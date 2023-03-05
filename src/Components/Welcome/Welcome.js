@@ -15,15 +15,15 @@ const Welcome = () => {
     <div className="bg-base-100 ">
       <div className="hero min-h-screen mt-0">
         <div className="hero-content flex-col lg:flex-row-reverse">
-          <div className="lg:flex grid lg:gap-16 lg:w-1/2 mx-auto">
+          <div className="flex  lg:gap-16 gap-x-6 lg:w-1/2  justify-center mx-auto">
             <img
               src="https://i.ibb.co/yFCwYQM/welcome2.jpg"
-              className="lg:h-96 lg:w-72 w-80  z-30 mt-24 mr-[-40px] rounded-sm shadow-2xl mb-6 lg:mb-0 "
+              className="lg:h-80 h-60 lg:w-60 w-32  z-30 lg:mt-24 mt-12 mr-[-40px]  "
               alt=""
             />
             <img
               src="https://i.ibb.co/JqJZGbH/welcome.jpg"
-              className=" lg:w-72  lg:h-96 w-80  z-40 rounded-sm shadow-2xl "
+              className=" lg:w-60  w-32 h-60  lg:h-80  z-40  mb-6 ml-6 lg:ml-0 "
               alt=""
             />
           </div>
