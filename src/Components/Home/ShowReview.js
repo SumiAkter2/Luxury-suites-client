@@ -24,7 +24,7 @@ const ShowReview = () => {
         <div>
           <Swiper
             style={{
-              "--swiper-pagination-color": "yellow",
+              "--swiper-pagination-color": "#a87932",
             }}
             slidesPerView={1}
             spaceBetween={0}
