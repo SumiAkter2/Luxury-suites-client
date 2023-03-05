@@ -122,23 +122,23 @@ const ExtraServices = () => {
                     alt="service-img"
                     className="w-full h-56"
                   />
-                  <div className="p-6">
+                  <div className="lg:p-6">
                     <h1 className="lg:text-3xl text-xl mt-6 text-primary">
-                      {service.name}{" "}
+                      {service.name}
                     </h1>
                     <h1 className="lg:text-3xl text-xl my-6">
-                      $ {service.price}/Daily{" "}
+                      $ {service.price}/Daily
                     </h1>
                     <p className="flex items-center gap-x-2">
-                      <TiArrowForward fill="#a87932" size="30px" />{" "}
+                      <TiArrowForward fill="#a87932" size="30px" />
                       {service.work1}
                     </p>
                     <p className="flex items-center gap-x-2">
-                      <TiArrowForward fill="#a87932" size="30px" />{" "}
+                      <TiArrowForward fill="#a87932" size="30px" />
                       {service.work2}
                     </p>
                     <p className="flex items-center gap-x-2">
-                      <TiArrowForward fill="#a87932" size="30px" />{" "}
+                      <TiArrowForward fill="#a87932" size="30px" />
                       {service.work3}
                     </p>
                   </div>

@@ -14,7 +14,7 @@ const BayView = () => {
             />
           </div>
           <div className="lg:pl-8 p-6 lg:w-1/2">
-            <p className="pb-6 text-sm "> Hotel BayView</p>
+            <p className="pb-6 text-sm tracking-[5px]"> Hotel BayView</p>
             <h1 className="lg:text-5xl text-3xl pb-6 text-primary">
               Relax in our Hotel Resort
             </h1>
