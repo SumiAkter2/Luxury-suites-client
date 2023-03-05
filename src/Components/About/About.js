@@ -2,7 +2,7 @@ import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link } from "react-router-dom";
-
+import food from "../../img/food.jpg";
 const About = () => {
   return (
     <div className="font-serif">
@@ -33,37 +33,37 @@ const About = () => {
       </div>
 
       {/*       {/* restaurant services */}
-      <div className="hero min-h-screen my-0">
-        <div className="hero-content flex-col lg:flex-row-reverse">
-          <div className=" flex ">
-            <div className="flex gap-x-4 z-20">
-              <img
-                src="https://i.ibb.co/YNVPKmj/servent3.jpg"
-                className="max-w-sm  lg:w-48 mt-12 mr-[-40px] w-32 h-48 rounded-lg shadow-2xl"
-                alt="servant-img"
-              />
-            </div>
+      <div className="hero min-h-screen my-0 bg-gray-200">
+        <div className="hero-content flex-col lg:flex-row-reverse items-center">
+          <div className=" flex lg:w-1/2 justify-between items-center ">
             <div className="z-30">
               <img
                 src="https://i.ibb.co/s2rtCq9/food2.jpg"
-                className="max-w-sm mt-[-50px] lg:w-48 w-32 h-48 rounded-lg shadow-2xl"
+                className="max-w-sm lg:w-48 w-32 h-60 mr-[-70px] "
+                alt="servant-img"
+              />
+            </div>
+            <div className=" z-20 ">
+              <img
+                src={food}
+                className="lg:h-[500px] w-80 h-80 lg:w-[500px]  "
                 alt="servant-img"
               />
             </div>
           </div>
 
-          <div className="mb-24 ">
+          <div className="mt-24 lg:w-1/2">
             {/* <div className="divider w-60 mx-auto mb-24 opacity-100 bg-opacity-100 "></div> */}
             <h1 className="text-4xl ">
               We provide always fresh and healthy food for our clients.
             </h1>
-            <p className="py-6">
+            <p className="pt-12">
               All our suites are fabulous, they are destinations unto
               themselves. We have crossed the globe to bring you only the best.
               A brasserie inspired by French cuisine, a fresh and modern place
               to visit and enjoy dishes always handmade of the best ingredients
               of the season.
-              <div className="divider w-60 mx-auto mt-24 opacity-100 bg-opacity-100 "></div>
+              <div className="divider w-60 mx-auto mt-24 divider-primary opacity-100 bg-opacity-100 "></div>
             </p>
           </div>
         </div>
@@ -105,7 +105,7 @@ const About = () => {
       </div>
       {/* spa services */}
 
-      <div className="hero min-h-screen  bg-white">
+      <div className="hero min-h-screen  bg-gray-200">
         <div className="hero-content flex-col lg:flex-row">
           <div className="lg:pl-8 pb-6 ">
             <div className="divider w-60 mx-auto mt-2 bg-opacity-100  text-orange-500 text-xl">
@@ -164,7 +164,7 @@ const About = () => {
 
       {/* fitness services */}
 
-      <div className="hero min-h-screen  bg-white">
+      <div className="hero min-h-screen  bg-gray-200">
         <div className="hero-content flex-col lg:flex-row">
           <div className="lg:pl-8 pb-6 lg:w-1/2">
             <div className="divider w-60 mx-auto mt-2 bg-opacity-100  text-orange-500 text-xl">
@@ -181,7 +181,7 @@ const About = () => {
               equipment is available in the fully equipped gymnasium.
             </p>
           </div>
-          <div className="lg:w-1/2"> 
+          <div className="lg:w-1/2">
             <img
               style={{ height: "400px" }}
               src="https://i.ibb.co/5WpybKz/fitness.jpg"
