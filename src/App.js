@@ -1,5 +1,6 @@
 import "./App.css";
-import { RouterProvider } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Header from "./Components/Header/Header";
 import Home from "./Components/Home/Home";
 import Contact from "./Components/Contact/Contact";
@@ -24,6 +25,8 @@ import Booking from "./Components/Booking/Booking";
 import { useState } from "react";
 
 function App() {
+  // ..
+  AOS.init();
   const [suites, setSuites] = useState([]);
   const [booked, setBooked] = useState(null);
   const [bookingSuite, setBookingSuite] = useState({});

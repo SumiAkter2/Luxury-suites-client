@@ -4,15 +4,20 @@ const Space = () => {
   return (
     <div>
       <div className="rounded-sm pb-4 my-12">
-        <h1 className="mx-auto text-3xl text-center text-primary">Some Interior Space</h1>
+        <h1 className="mx-auto text-3xl text-center text-primary">
+          Some Interior Space
+        </h1>
         <p className="text-xl text-center">
-          {" "}
           Plenty of Services to Assure Your Relaxation and Comfortable.
         </p>
-        <div className="grid lg:grid-cols-4 gap-x-4 lg:px-12 pt-12 gap-y-2 w-full mx-auto px-6">
-          <div className="gallery-image">
+        <div className="grid lg:grid-cols-4 pt-12 gap-x-2 gap-y-2 w-full mx-auto ">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="500"
+            className="gallery-image"
+          >
             <div className="img-box">
-              <img src="https://i.ibb.co/Z2Ny3PB/room3.png" alt="" />
+              <img src="https://i.ibb.co/Z2Ny3PB/room3.png" alt="interior space" />
               <div className="transparent-box">
                 <div className="caption flex justify-evenly items-end w-full">
                   <div>
@@ -23,9 +28,13 @@ const Space = () => {
               </div>
             </div>
           </div>
-          <div className="gallery-image">
+          <div
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            className="gallery-image"
+          >
             <div className="img-box">
-              <img src="https://i.ibb.co/WFR6dhm/coridor2.png" alt="" />
+              <img src="https://i.ibb.co/WFR6dhm/coridor2.png" alt="interior space" />
               <div className="transparent-box">
                 <div className="caption flex justify-evenly items-end w-full">
                   <div>
@@ -36,9 +45,13 @@ const Space = () => {
               </div>
             </div>
           </div>
-          <div className="gallery-image">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            className="gallery-image"
+          >
             <div className="img-box">
-              <img src="https://i.ibb.co/NrnZzgM/room2.png" alt="" />
+              <img src="https://i.ibb.co/NrnZzgM/room2.png" alt="interior space" />
               <div className="transparent-box">
                 <div className="caption flex justify-evenly items-end w-full">
                   <div>
@@ -49,9 +62,13 @@ const Space = () => {
               </div>
             </div>
           </div>
-          <div className="gallery-image">
+          <div
+            data-aos="fade-down"
+            data-aos-duration="2000"
+            className="gallery-image"
+          >
             <div className="img-box">
-              <img src="https://i.ibb.co/V91JZpN/coridor.png" alt="" />
+              <img src="https://i.ibb.co/V91JZpN/coridor.png" alt="interior space" />
               <div className="transparent-box">
                 <div className="caption flex justify-evenly items-end w-full">
                   <div>

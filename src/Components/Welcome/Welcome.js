@@ -15,7 +15,11 @@ const Welcome = () => {
     <div className="bg-base-100 ">
       <div className="hero min-h-screen mt-0">
         <div className="hero-content flex-col lg:flex-row-reverse">
-          <div className="flex  lg:gap-16 gap-x-6 lg:w-1/2  justify-center mx-auto">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            className="flex  lg:gap-16 gap-x-6 lg:w-1/2  justify-center mx-auto"
+          >
             <img
               src="https://i.ibb.co/yFCwYQM/welcome2.jpg"
               className="lg:h-80 h-60 lg:w-60 w-32  z-30 lg:mt-24 mt-12 mr-[-40px]  "
@@ -27,7 +31,11 @@ const Welcome = () => {
               alt=""
             />
           </div>
-          <div className="lg:w-1/2 mx-auto">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="500"
+            className="lg:w-1/2 mx-auto"
+          >
             <div className="divider w-60 mx-auto mb-12 opacity-100">
               {icon} {icon}
               {icon}

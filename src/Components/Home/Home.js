@@ -17,7 +17,7 @@ const Home = () => {
     <div className="bg-white">
       <Banner />
       <Space />
-      <Weather />
+      {/* <Weather /> */}
       <Welcome />
       <BayView />
       <Suites />
