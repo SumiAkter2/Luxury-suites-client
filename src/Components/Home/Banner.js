@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import banner from "../../img/banner1.jpg";
-import Header from "../Header/Header";
 import CheckAvailability from "./CheckAvailability";
 
 const Banner = () => {
@@ -18,7 +17,9 @@ const Banner = () => {
             <p className=" lg:text-5xl text-3xl my-6">
               Luxury suites for the elite passionate about luxury & comfort.
             </p>
-            <p className="text-2xl mt-6">Book Your Suites & Enjoy Your Luxury Experience.</p>
+            <p className="text-2xl mt-6">
+              Book Your Suites & Enjoy Your Luxury Experience.
+            </p>
             <button className="btn btn-accent text-white font-bold border-0 mt-12">
               <Link to="/about">About More</Link>
             </button>

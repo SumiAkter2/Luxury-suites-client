@@ -11,7 +11,7 @@ const About = () => {
         className="hero h-56"
         style={{ backgroundImage: "url(https://i.ibb.co/7gJMvks/room.png)" }}
       >
-        <div className="hero-overlay bg-opacity-50"></div>
+        <div className="hero-overlay bg-black bg-opacity-70"></div>
         <div className="hero-content text-center text-neutral-content">
           <div className="max-w-md text-white">
             <h1 className="mb-5 text-5xl font-serif">About Us</h1>
@@ -24,16 +24,16 @@ const About = () => {
 
       {/*  About services */}
 
-      <div className=" text-center py-12">
+      <div className=" text-center pt-12">
         <h1 className=" text-3xl font-serif">Visit Our Famous Facilities</h1>
-        <p className="mb-5 mt-4 font-serif">
+        <p className="mt-4 font-serif">
           A wonderful serenity has taken possession of my entire soul, like
           these sweet mornings of spring which I enjoy with my whole heart.
         </p>
       </div>
 
       {/*       {/* restaurant services */}
-      <div className="hero min-h-screen  bg-white my-0">
+      <div className="hero min-h-screen my-0">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className=" flex ">
             <div className="flex gap-x-4 z-20">
@@ -53,7 +53,7 @@ const About = () => {
           </div>
 
           <div className="mb-24 ">
-            <div className="divider w-60 mx-auto mb-24 opacity-100 bg-opacity-100 "></div>
+            {/* <div className="divider w-60 mx-auto mb-24 opacity-100 bg-opacity-100 "></div> */}
             <h1 className="text-4xl ">
               We provide always fresh and healthy food for our clients.
             </h1>
@@ -73,15 +73,15 @@ const About = () => {
       <div>
         <div className="hero min-h-screen ">
           <div className="hero-content flex-col lg:flex-row">
-            <div className="">
+            <div className="lg:w-1/2">
               <img
                 style={{ height: "400px" }}
                 src="https://i.ibb.co/fQVs2qF/swimingpool2.png"
-                className="lg:pl-6 lg:w-screen rounded-lg shadow-2xl"
+                className="lg:pl-6 lg:h-screen w-80 h-80 lg:w-screen "
                 alt="hotel-img"
               />
             </div>
-            <div className="lg:pl-8 pb-6 ">
+            <div className="lg:pl-8 pb-6 lg:w-1/2">
               <div className="divider w-60 mx-auto mt-2 opacity-100 bg-opacity-100  text-orange-500 text-xl">
                 ......
               </div>
@@ -123,7 +123,7 @@ const About = () => {
             <img
               style={{ height: "400px" }}
               src="https://i.ibb.co/BwMMRQF/spa.jpg"
-              className="lg:pl-6 lg:w-screen rounded-lg shadow-2xl"
+              className="lg:pl-6 lg:h-screen w-80 h-80 lg:w-screen"
               alt="hotel-img"
             />
           </div>
@@ -134,15 +134,15 @@ const About = () => {
 
       <div className="hero min-h-screen ">
         <div className="hero-content flex-col lg:flex-row">
-          <div className="">
+          <div className="lg:w-1/2">
             <img
               style={{ height: "400px" }}
               src="https://i.ibb.co/9WpnjQD/meeting.jpg"
-              className="lg:pl-6 lg:w-screen rounded-lg shadow-2xl"
+              className="lg:pl-6 lg:h-screen w-80 h-80 lg:w-screen"
               alt="hotel-img"
             />
           </div>
-          <div className="lg:pl-8 pb-6 ">
+          <div className="lg:pl-8 pb-6 lg:w-1/2">
             <div className="divider w-60 mx-auto mt-2 opacity-100 bg-opacity-100  text-orange-500 text-xl">
               ......
             </div>
@@ -166,7 +166,7 @@ const About = () => {
 
       <div className="hero min-h-screen  bg-white">
         <div className="hero-content flex-col lg:flex-row">
-          <div className="lg:pl-8 pb-6 ">
+          <div className="lg:pl-8 pb-6 lg:w-1/2">
             <div className="divider w-60 mx-auto mt-2 bg-opacity-100  text-orange-500 text-xl">
               ......
             </div>
@@ -181,11 +181,11 @@ const About = () => {
               equipment is available in the fully equipped gymnasium.
             </p>
           </div>
-          <div>
+          <div className="lg:w-1/2"> 
             <img
               style={{ height: "400px" }}
               src="https://i.ibb.co/5WpybKz/fitness.jpg"
-              className="lg:pl-6 lg:w-screen rounded-lg shadow-2xl"
+              className="lg:pl-6 lg:h-screen w-80 h-80 lg:w-screen"
               alt="hotel-img"
             />
           </div>
