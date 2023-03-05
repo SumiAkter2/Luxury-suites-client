@@ -4,7 +4,7 @@ const Space = () => {
   return (
     <div>
       <div className="rounded-sm pb-4 my-12">
-        <h1 className="mx-auto text-3xl text-center ">Some Interior Space</h1>
+        <h1 className="mx-auto text-3xl text-center text-primary">Some Interior Space</h1>
         <p className="text-xl text-center">
           {" "}
           Plenty of Services to Assure Your Relaxation and Comfortable.

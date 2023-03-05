@@ -5,6 +5,7 @@ import ShowOff2 from "../Welcome/ShowOff2";
 import Welcome from "../Welcome/Welcome";
 import Banner from "./Banner";
 import BayView from "./BayView";
+import ExtraServices from "./ExtraServices";
 import ShowReview from "./ShowReview";
 import Space from "./Space";
 import Subscribe from "./Subscribe";
@@ -20,6 +21,7 @@ const Home = () => {
       <Suites />
 
       <ShowOff2 />
+      <ExtraServices/>
       <ShowReview />
       <Subscribe />
     </div>

@@ -20,7 +20,7 @@ const Banner = () => {
             <p className="text-2xl mt-6">
               Book Your Suites & Enjoy Your Luxury Experience.
             </p>
-            <button className="btn btn-accent text-white font-bold border-0 mt-12">
+            <button className="btn btn-primary text-white font-bold border-0 mt-12">
               <Link to="/about">About More</Link>
             </button>
           </div>

@@ -10,8 +10,9 @@ const Suites = () => {
         <h1 className="text-center lg:text-3xl text-2xl mt-12">
           STEP INTO A ROOM THAT BLURS THE LINES <br />
           <span>BETWEEN DREAMS AND REALITY</span>
+          
         </h1>
-        <h1 className="text-orange-400 text-2xl flex justify-center items-center pb-4 ">
+        <h1 className="text-primary text-2xl flex justify-center items-center pb-4 ">
           .............
         </h1>
 
