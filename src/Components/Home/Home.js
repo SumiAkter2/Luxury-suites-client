@@ -4,6 +4,7 @@ import Weather from "../Weather/Weather";
 import ShowOff2 from "../Welcome/ShowOff2";
 import Welcome from "../Welcome/Welcome";
 import Banner from "./Banner";
+import Banner2 from "./Banner2";
 import BayView from "./BayView";
 import Brand from "./Brand";
 import ExtraServices from "./ExtraServices";
@@ -14,10 +15,9 @@ import Subscribe from "./Subscribe";
 
 const Home = () => {
   return (
-    <div className="bg-white">
+    <div>
       <Banner />
-      {/* <Space /> */}
-      {/* <Weather /> */}
+      <Space />
       <Welcome />
       <BayView />
       <Suites />

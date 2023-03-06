@@ -7,17 +7,17 @@ const Banner = () => {
   return (
     <div>
       <div
-        className="hero lg:h-screen shrink-0 "
-        style={{ backgroundImage: `url(${banner})` }}
+        className="hero lg:h-screen shrink-0 mx-auto "
+        style={{ backgroundImage: `url(${banner})` ,backgroundSize:'cover'}}
       >
         <div className="hero-overlay bg-black bg-opacity-40"></div>
-        {/* <div></div> */}
+
         <div className="  text-white lg:flex justify-center items-start">
           <div
-            data-aos="fade-right"
-            data-aos-offset="300"
-            data-aos-duration="900"
-            data-aos-easing="ease-in-sine"
+            // data-aos="fade-right"
+            // data-aos-offset="300"
+            // data-aos-duration="900"
+            // data-aos-easing="ease-in-sine"
             className="lg:w-2/3 mt-6 mb-4 "
           >
             <p className=" lg:text-5xl text-3xl my-6">

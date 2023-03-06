@@ -10,14 +10,17 @@ const Space = () => {
         <p className="text-xl text-center">
           Plenty of Services to Assure Your Relaxation and Comfortable.
         </p>
-        <div className="grid lg:grid-cols-4 pt-12 gap-x-2 gap-y-2  mx-auto ">
+        <div className="grid lg:grid-cols-4 pt-12 gap-x-2 gap-y-2  mx-auto lg:w-[1280px]">
           <div
             data-aos="fade-up"
             data-aos-duration="500"
             className="gallery-image"
           >
             <div className="img-box">
-              <img src="https://i.ibb.co/Z2Ny3PB/room3.png" alt="interior space" />
+              <img
+                src="https://i.ibb.co/Z2Ny3PB/room3.png"
+                alt="interior space"
+              />
               <div className="transparent-box">
                 <div className="caption flex justify-evenly items-end w-full">
                   <div>
@@ -34,7 +37,10 @@ const Space = () => {
             className="gallery-image"
           >
             <div className="img-box">
-              <img src="https://i.ibb.co/WFR6dhm/coridor2.png" alt="interior space" />
+              <img
+                src="https://i.ibb.co/WFR6dhm/coridor2.png"
+                alt="interior space"
+              />
               <div className="transparent-box">
                 <div className="caption flex justify-evenly items-end w-full">
                   <div>
@@ -51,7 +57,10 @@ const Space = () => {
             className="gallery-image"
           >
             <div className="img-box">
-              <img src="https://i.ibb.co/NrnZzgM/room2.png" alt="interior space" />
+              <img
+                src="https://i.ibb.co/NrnZzgM/room2.png"
+                alt="interior space"
+              />
               <div className="transparent-box">
                 <div className="caption flex justify-evenly items-end w-full">
                   <div>
@@ -68,7 +77,10 @@ const Space = () => {
             className="gallery-image"
           >
             <div className="img-box">
-              <img src="https://i.ibb.co/V91JZpN/coridor.png" alt="interior space" />
+              <img
+                src="https://i.ibb.co/V91JZpN/coridor.png"
+                alt="interior space"
+              />
               <div className="transparent-box">
                 <div className="caption flex justify-evenly items-end w-full">
                   <div>

@@ -52,7 +52,7 @@ const LogIn = () => {
       className="hero font-serif "
       style={{ backgroundImage: "url(https://i.ibb.co/9ZKpt34/room5.png)" }}
     >
-      <div className="hero-overlay bg-black bg-opacity-80"></div>
+      <div className="hero-overlay bg-black bg-opacity-70"></div>
       <div className="hero-content text-center ">
         <div className="max-w-md">
           <div className="p-4  mt-6  lg:w-80  mb-24  rounded-lg hover:border-white border-2 ">

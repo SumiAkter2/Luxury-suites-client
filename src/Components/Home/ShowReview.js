@@ -50,8 +50,8 @@ const ShowReview = () => {
             className="mySwiper swiper"
           >
             {review.map((r) => (
-              <>
-                <SwiperSlide key={r._id} className="lg:w-full ">
+              <div key={r._id}>
+                <SwiperSlide className="lg:w-full ">
                   <div className="hero-content  text-neutral-content h-96 mb-12">
                     <div className="max-w-md text-white text-center">
                       <h1 className="mb-5 text-sm font-serif tracking-[5px]">
@@ -89,7 +89,7 @@ const ShowReview = () => {
                     </div>
                   </div>
                 </SwiperSlide>
-              </>
+              </div>
             ))}
           </Swiper>
         </div>

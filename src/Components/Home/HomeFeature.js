@@ -21,7 +21,7 @@ const HomeFeature = () => {
                 icon={faBowlFood}
                 className="lg:text-3xl"
                 color="#a87932"
-                size="35px"
+               
               ></FontAwesomeIcon>
             </p>
 
@@ -53,7 +53,7 @@ const HomeFeature = () => {
                 icon={faSpa}
                 className="lg:text-3xl"
                 color="#a87932"
-                size="35px"
+                
               ></FontAwesomeIcon>
             </p>
             <h1 className="text-center">
@@ -69,7 +69,7 @@ const HomeFeature = () => {
                 icon={faCarAlt}
                 className="lg:text-3xl"
                 color="#a87932"
-                size="35px"
+                
               ></FontAwesomeIcon>
             </p>
             <h1 className="text-center">
@@ -85,7 +85,7 @@ const HomeFeature = () => {
                 icon={faAirFreshener}
                 className="lg:text-3xl"
                 color="#a87932"
-                size="35px"
+                
               ></FontAwesomeIcon>
             </p>
             <h1 className="text-center">
@@ -101,7 +101,7 @@ const HomeFeature = () => {
                 icon={faGifts}
                 className="lg:text-3xl"
                 color="#a87932"
-                size="35px"
+                
               ></FontAwesomeIcon>
             </p>
             <h1 className="text-center">

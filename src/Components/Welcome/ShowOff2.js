@@ -21,12 +21,9 @@ const ShowOff2 = () => {
               />
             </div>
             <div className="lg:w-1/2 p-6">
-              <div className="divider w-60 mx-auto mb-12 opacity-100 bg-opacity-100  text-orange-500 text-xl ">
-                ......
-              </div>
               <h1 className="text-3xl mb-4">
-                OFFERING A SERIES OF COMFORTABLE AND
-                <span> LAVISH HOTELS & RESIDENCES</span>
+                OFFERING A SERIES OF COMFORTABLE 
+                AND LAVISH HOTELS & RESIDENCES
               </h1>
               <p className="py-6 leading-6">
                 All our suites are fabulous, they are destinations unto

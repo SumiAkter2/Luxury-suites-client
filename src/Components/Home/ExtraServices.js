@@ -110,8 +110,6 @@ const ExtraServices = () => {
           slidesPerView={2}
           spaceBetween={10}
           grabCursor={true}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log("swiper")}
         >
           {extraServices.map((service) => (
             <>

@@ -1,4 +1,4 @@
-import "./App.css";
+// import "./App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Header from "./Components/Header/Header";
@@ -54,7 +54,7 @@ function App() {
       });
   };
   return (
-    <div className="font-serif mx-auto ">
+    <div className="font-serif">
       <Header> </Header>
       <Routes>
         <Route path="/" element={<Home />}></Route>

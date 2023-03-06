@@ -11,7 +11,7 @@ const Footer = () => {
           boxShadow: "none",
           backgroundColor: "#a87932",
           borderRadius: "50%",
-          right: 50,
+          right: 90,
           zIndex: 20,
         }}
         component={
