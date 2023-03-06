@@ -14,11 +14,11 @@ const ShowOff2 = () => {
                 className="lg:w-96 w-60 h-80 lg:h-[400px] rounded-sm shadow-2xl mb-2 mx-auto"
                 alt="servant-img"
               />
-              <img
+              {/* <img
                 src={servent}
-                className="lg:w-48 w-32  h-80 lg:h-[400px] rounded-sm shadow-2xl mx-auto"
+                className=" lg:w-48 w-32  h-80 lg:h-[400px] rounded-sm shadow-2xl mx-auto"
                 alt="servant-img"
-              />
+              /> */}
             </div>
             <div className="lg:w-1/2 p-6">
               <h1 className="text-3xl mb-4">
