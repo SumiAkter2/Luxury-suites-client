@@ -16,12 +16,16 @@ const Space = () => {
             data-aos-duration="500"
             className="gallery-image"
           >
-            <div className="img-box">
+            <div
+            className="img-box"
+            >
               <img
                 src="https://i.ibb.co/Z2Ny3PB/room3.png"
                 alt="interior space"
               />
-              <div className="transparent-box">
+              <div
+              className="transparent-box"
+              >
                 <div className="caption flex justify-evenly items-end w-full">
                   <div>
                     <h1 className="text-2xl">Natural View </h1>

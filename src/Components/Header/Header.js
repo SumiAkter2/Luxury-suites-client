@@ -21,7 +21,7 @@ const Header = () => {
               alt="logo"
             />
           </Link>
-          <Link to="/" className="font-bold text-2xl text-accent
+          <Link to="/" className="font-bold text-2xl text-primary
          
           "
           >

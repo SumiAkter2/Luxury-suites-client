@@ -37,12 +37,12 @@ const AllSuites = ({ handleSubmit, suites, bookingSuite, setBooked }) => {
     <div>
       <div
         className="hero h-56"
-        style={{ backgroundImage: "url(https://i.ibb.co/V91JZpN/coridor.png)" }}
+        style={{ backgroundImage: "url(https://i.ibb.co/7gJMvks/room.png)" }}
       >
-        <div className="hero-overlay bg-opacity-40"></div>
+        <div className="hero-overlay bg-black bg-opacity-40"></div>
         <div className="hero-content text-center text-neutral-content">
           <div className="max-w-md">
-            <h1 className="mb-5 lg:text-5xl font-serif text-3xl">
+            <h1 className="mb-5 lg:text-5xl font-serif text-3xl text-white">
               Search Luxury Suites
             </h1>
           </div>
@@ -50,7 +50,7 @@ const AllSuites = ({ handleSubmit, suites, bookingSuite, setBooked }) => {
       </div>
       <div className=" lg:flex grid justify-evenly items-start px-6 my-12">
         <div className="w-60 my-12 lg:sticky top-14 mx-auto lg:mx-0">
-          <h1 className="text-2xl font-bold mb-12">Check Availability</h1>
+          <h1 className="text-2xl font-bold mb-12 text-primary">Check Availability</h1>
 
           <form onSubmit={handleSubmit}>
             <div className=" font-bold  rounded-lg my-2">
@@ -104,17 +104,17 @@ const AllSuites = ({ handleSubmit, suites, bookingSuite, setBooked }) => {
                 </select>
               </div>
             </div>
-            <button className="btn bg-secondary btn-primary w-52 mt-6">
+            <button className="btn btn-primary w-52 mt-6">
               Search
             </button>
           </form>
         </div>
 
         <div className="lg:gap-12 grid">
-          <h1 className="text-xl text-center mb-6 lg:mb-0">
+          <h1 className="text-xl text-center mb-6 lg:mb-0 text-primary">
             Available Suites : {suites.length}
           </h1>
-          <div className="bg-white p-6 rounded-2xl">
+          <div className=" p-6 rounded-2xl">
             {suites.map((suite) => (
               <AllSuite
                 key={suite._id}

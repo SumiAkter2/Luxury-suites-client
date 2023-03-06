@@ -7,7 +7,7 @@
 
 .gallery-image img {
     height: 350px;
-    width: 400px;
+   width:200px;
     transform: scale(1.0);
     transition: transform 0.4s ease;
     margin: 0 auto;
@@ -16,7 +16,7 @@
 .img-box {
     box-sizing: content-box;
     height: 350px;
-    width: 400px;
+   width:200px;
     overflow: hidden;
     display: inline-block;
     color: white;
@@ -40,7 +40,7 @@
 }
 .transparent-box {
     height: 350px;
-    width: 400px;
+   width:200px;
     background-color: rgba(0, 0, 0, 0);
     position: absolute;
     top: 0;
@@ -67,9 +67,9 @@
 
 @media screen and (max-width:570px) {
     .img-box{
-    width: 320px;
+    width: 300px;
     }
     .gallery-image img{
-    width: 320px;
+    width: 300px;
         }
 }

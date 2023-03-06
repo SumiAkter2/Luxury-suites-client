@@ -21,7 +21,7 @@ const ShowOff2 = () => {
               /> */}
             </div>
             <div className="lg:w-1/2 p-6">
-              <h1 className="text-3xl mb-4">
+              <h1 className="lg:text-3xl text-2xl mb-4">
                 OFFERING A SERIES OF COMFORTABLE 
                 AND LAVISH HOTELS & RESIDENCES
               </h1>

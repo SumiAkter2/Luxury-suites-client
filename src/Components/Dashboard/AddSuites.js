@@ -33,7 +33,7 @@ const AddSuites = () => {
                         type="text"
                         name="Name"
                         placeholder="Type Name"
-                        className="input border-b-4 focus:border-0  input-warning input-sm  max-w-xs mb-2  ml-2"
+                        className="input border-b-4 focus:border-0  input-primary input-sm  max-w-xs mb-2  ml-2"
                         {...register("Name", { required: true })}
                       />
 
@@ -47,7 +47,7 @@ const AddSuites = () => {
                         type="text"
                         name="Price"
                         placeholder="Type Price"
-                        className="input border-b-4 focus:border-0  input-warning input-sm  max-w-xs mb-2  ml-2"
+                        className="input border-b-4 focus:border-0  input-primary input-sm  max-w-xs mb-2  ml-2"
                         {...register("Price", { required: true })}
                       />
 
@@ -63,7 +63,7 @@ const AddSuites = () => {
                         type="text"
                         name="Square"
                         placeholder="Type Square"
-                        className="input border-b-4 focus:border-0  input-warning input-sm  max-w-xs mb-2  ml-2"
+                        className="input border-b-4 focus:border-0  input-primary input-sm  max-w-xs mb-2  ml-2"
                         {...register("Square", { required: true })}
                       />
 
@@ -76,7 +76,7 @@ const AddSuites = () => {
                       <input
                         type="text"
                         placeholder="Type Address"
-                        className="input border-b-4 focus:border-0  input-warning input-sm  max-w-xs  ml-2"
+                        className="input border-b-4 focus:border-0  input-primary input-sm  max-w-xs  ml-2"
                         {...register("Address", { required: true })}
                       />
 
@@ -89,7 +89,7 @@ const AddSuites = () => {
                   <div className="grid justify-center items-center">
                     <input
                       type="file"
-                      className="input border-b-4 focus:border-0  input-warning input-sm  max-w-xs my-2 ml-2"
+                      className="input border-b-4 focus:border-0  input-primary input-sm  max-w-xs my-2 ml-2"
                       {...register("Photo", { required: true })}
                     />
 

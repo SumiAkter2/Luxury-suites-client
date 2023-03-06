@@ -25,7 +25,7 @@ const Contact = () => {
         className="hero h-56"
         style={{ backgroundImage: "url(https://i.ibb.co/7gJMvks/room.png)" }}
       >
-        <div className="hero-overlay bg-opacity-50"></div>
+        <div className="hero-overlay bg-black bg-opacity-50"></div>
         <div className="hero-content text-center text-neutral-content">
           <div className="max-w-md text-white">
             <h1 className="mb-5 text-5xl font-serif">Contact Us</h1>
@@ -37,21 +37,33 @@ const Contact = () => {
       <div className="lg:flex justify-evenly  items-center py-12 bg-secondary px-12">
         <div>
           <h1 className="flex justify-start items-center ">
-            <FontAwesomeIcon icon={faPhone} />
+            <FontAwesomeIcon
+              icon={faPhone}
+              color="#a87932"
+              className=" fa-2xl"
+            />
             <span className="text-3xl pl-2">Phone </span>
           </h1>
           <p className="mb-4">099999765534</p>
         </div>
         <div>
           <h1 className="flex justify-start items-center ">
-            <FontAwesomeIcon icon={faMailBulk} />
+            <FontAwesomeIcon
+              icon={faMailBulk}
+              color="#a87932"
+              className=" fa-2xl"
+            />
             <span className="text-3xl pl-2">Email </span>
           </h1>
           <p className="mb-4">luxurySuites@gmail.com</p>
         </div>
         <div>
           <h1 className="flex justify-start items-center ">
-            <FontAwesomeIcon icon={faLocation} />
+            <FontAwesomeIcon
+              icon={faLocation}
+              color="#a87932"
+              className=" fa-2xl"
+            />
             <span className="text-3xl pl-2">Location </span>
           </h1>
           <p className=" text-sm mb-4">
@@ -62,10 +74,10 @@ const Contact = () => {
       </div>
       <div>
         <form
-          className="mt-6  p-6 rounded-md lg:w-96 mx-auto"
+          className="p-6 rounded-2xl lg:w-96 mx-auto bg-slate-200 my-12 shadow-primary shadow-2xl "
           onSubmit={handleSubmit(onSubmit)}
         >
-          <h1 className="text-3xl font-serif mb-6 text-center">
+          <h1 className="text-3xl text-primary font-serif mb-6 text-center">
             Give us your info
           </h1>
           <div className="grid justify-center items-center">
@@ -73,7 +85,7 @@ const Contact = () => {
               type="text"
               name="email"
               placeholder="Type Email"
-              className="input border-b-4 focus:border-0  input-warning input-sm w-60 max-w-xs mb-2"
+              className="input border-b-4 focus:border-0  input-primary input-sm w-60 max-w-xs mb-2"
               {...register("Email", { required: true })}
             />
 
@@ -86,7 +98,7 @@ const Contact = () => {
             <input
               type="text"
               placeholder="Type Password"
-              className="input border-b-4 focus:border-0  input-warning input-sm w-60 max-w-xs"
+              className="input border-b-4 focus:border-0  input-primary input-sm w-60 max-w-xs"
               {...register("Password", { required: true })}
             />
 
@@ -108,7 +120,7 @@ const Contact = () => {
             </span>
           </div>
           <div className="flex justify-center items-center">
-            <button className="button bg-yellow-300 w-48  ">Submit</button>
+            <button className="btn btn-primary w-48  ">Submit</button>
           </div>
         </form>
       </div>

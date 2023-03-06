@@ -24,8 +24,8 @@ const Home = () => {
       <ShowOff2 />
       <ExtraServices />
       <HomeFeature />
-      <ShowReview />
-      <Brand />
+      {/* <ShowReview /> */}
+      {/* <Brand /> */}
       <Subscribe />
     </div>
   );

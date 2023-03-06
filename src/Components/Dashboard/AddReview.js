@@ -59,7 +59,7 @@ const AddReview = () => {
                     type="text"
                     readOnly
                     value={user?.displayName}
-                    className="input border-b-4 focus:border-0  input-warning input-sm w-60 max-w-xs mb-2"
+                    className="input border-b-4 focus:border-0  input-primary input-sm w-60 max-w-xs mb-2"
                     {...register("Name", { required: true })}
                   />
 
@@ -72,7 +72,7 @@ const AddReview = () => {
                   <input
                     type="text"
                     placeholder="Type Address"
-                    className="input border-b-4 focus:border-0  input-warning input-sm w-60 max-w-xs"
+                    className="input border-b-4 focus:border-0  input-primary input-sm w-60 max-w-xs"
                     {...register("Address", { required: true })}
                   />
 

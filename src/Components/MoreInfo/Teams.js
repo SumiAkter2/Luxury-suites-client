@@ -7,7 +7,7 @@ const Teams = () => {
         className="hero h-56"
         style={{ backgroundImage: "url(https://i.ibb.co/9WpnjQD/meeting.jpg)" }}
       >
-        <div className="hero-overlay bg-opacity-50"></div>
+        <div className="hero-overlay bg-black bg-opacity-50"></div>
         <div className="hero-content text-center text-neutral-content">
           <div className="max-w-md text-white">
             <h1 className="mb-5 text-4xl font-serif">
