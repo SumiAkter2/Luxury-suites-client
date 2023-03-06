@@ -54,7 +54,7 @@ function App() {
       });
   };
   return (
-    <div className="font-serif mx-auto">
+    <div className="font-serif mx-auto ">
       <Header> </Header>
       <Routes>
         <Route path="/" element={<Home />}></Route>

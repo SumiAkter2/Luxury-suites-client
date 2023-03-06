@@ -37,11 +37,11 @@ const SignUp = () => {
       className="hero  font-serif"
       style={{ backgroundImage: "url(https://i.ibb.co/9ZKpt34/room5.png)" }}
     >
-      <div className="hero-overlay bg-opacity-40"></div>
+      <div className="hero-overlay bg-black bg-opacity-80"></div>
       <div className="hero-content text-center ">
         <div className="max-w-lg">
           <div className="   py-12   rounded-lg hover:border-white border-2 ">
-            <h1 className=" text-xl font-serif  text-black">
+            <h1 className=" text-xl font-serif  text-primary">
               Create A New Account
             </h1>
 
@@ -53,7 +53,7 @@ const SignUp = () => {
                   <input
                     type="text"
                     placeholder="Type Name"
-                    className="input border-b-4 focus:border-0  mt-2 input-warning input-sm  max-w-xs"
+                    className="input border-b-4 focus:border-0  mt-2 input-primary input-sm  max-w-xs"
                     {...register("Name", { required: true })}
                   />
                   {/* error for name */}
@@ -66,7 +66,7 @@ const SignUp = () => {
                   <input
                     type="text"
                     placeholder="Type Email"
-                    className="input border-b-4 focus:border-0  mt-2 input-warning input-sm  max-w-xs"
+                    className="input border-b-4 focus:border-0  mt-2 input-primary input-sm  max-w-xs"
                     {...register("Email", { required: true })}
                   />
                   {/* error for email */}
@@ -81,7 +81,7 @@ const SignUp = () => {
                   <input
                     type="text"
                     placeholder="Type Password"
-                    className="input border-b-4 focus:border-0  mt-2 input-warning input-sm  max-w-xs"
+                    className="input border-b-4 focus:border-0  mt-2 input-primary input-sm  max-w-xs"
                     {...register("Password", { required: true })}
                   />
                   {/* error for pass */}
@@ -95,7 +95,7 @@ const SignUp = () => {
                   <input
                     type="text"
                     placeholder="Type Number"
-                    className="input border-b-4 focus:border-0  mt-2 input-warning input-sm  max-w-xs"
+                    className="input border-b-4 focus:border-0  mt-2 input-primary input-sm  max-w-xs"
                     {...register("Number", { required: true })}
                   />
                   {/* error for num */}
@@ -105,16 +105,16 @@ const SignUp = () => {
                   </span>
                 </div>
               </div>
-              <button className="button bg-secondary lg:w-80 w-48 ">
+              <button className="btn btn-primary mt-6 lg:w-80 w-48 ">
                 Sign Up
               </button>
             </form>
 
             {/* social */}
             <Social />
-            <div className="mt-4 font-serif text-black text-sm flex justify-center">
+            <div className="mt-4 font-serif text-white text-sm flex justify-center">
               <p>Have An Account? </p>
-              <Link to="/login" className="text-white pl-2">
+              <Link to="/login" className="hover:text-primary pl-2">
                 Please Log IN
               </Link>
             </div>

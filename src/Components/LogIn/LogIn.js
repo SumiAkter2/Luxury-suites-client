@@ -49,14 +49,14 @@ const LogIn = () => {
   }
   return (
     <div
-      className="hero font-serif"
+      className="hero font-serif "
       style={{ backgroundImage: "url(https://i.ibb.co/9ZKpt34/room5.png)" }}
     >
-      <div className="hero-overlay bg-opacity-50"></div>
+      <div className="hero-overlay bg-black bg-opacity-80"></div>
       <div className="hero-content text-center ">
         <div className="max-w-md">
           <div className="p-4  mt-6  lg:w-80  mb-24  rounded-lg hover:border-white border-2 ">
-            <h1 className=" text-xl font-serif pt-6 text-black">
+            <h1 className=" text-xl font-serif pt-6 text-primary">
               Please Log In
             </h1>
             {/* form */}
@@ -66,7 +66,7 @@ const LogIn = () => {
                   type="text"
                   name="email"
                   placeholder="Type Email"
-                  className="input border-b-4 focus:border-0  input-warning input-sm w-60 max-w-xs mb-2"
+                  className="input border-b-4 focus:border-0  input-primary input-sm w-60 max-w-xs mb-2"
                   {...register("Email", { required: true })}
                 />
 
@@ -79,7 +79,7 @@ const LogIn = () => {
                 <input
                   type="text"
                   placeholder="Type Password"
-                  className="input border-b-4 focus:border-0  input-warning input-sm w-60 max-w-xs"
+                  className="input border-b-4 focus:border-0  input-primary input-sm w-60 max-w-xs"
                   {...register("Password", { required: true })}
                 />
 
@@ -89,19 +89,19 @@ const LogIn = () => {
                 </span>
               </div>
 
-              <button className="button bg-secondary w-48 ">Log In</button>
+              <button className="btn btn-primary w-48 mt-6">Log In</button>
             </form>
             {/* Reset pass */}
-            <div className="mt-4  text-sm flex justify-center">
-              <p className="text-black  pl-2">Forgot Password ? </p>
-              <button className="text-white pl-2">Please Reset</button>
+            <div className="mt-4  text-sm flex justify-center text-white">
+              <p className=" pl-2">Forgot Password ? </p>
+              <button className=" pl-2 hover:text-primary">Please Reset</button>
             </div>
             {/* social */}
 
             <Social />
-            <div className="mt-4 font-serif text-black text-sm flex justify-center">
+            <div className="mt-4 font-serif text-sm flex justify-center text-white">
               <p>New To Here ? </p>
-              <Link to="/signUp" className="text-white pl-2">
+              <Link to="/signUp" className="hover:text-primary pl-2">
                 Create An Account
               </Link>
             </div>

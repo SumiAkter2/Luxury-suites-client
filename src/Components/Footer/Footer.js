@@ -20,7 +20,7 @@ const Footer = () => {
           />
         }
         smooth
-        // top={500}
+       
       />
       <footer className="footer py-6 bg-secondary text-base-content">
         <div>

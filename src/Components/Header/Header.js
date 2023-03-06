@@ -11,7 +11,7 @@ const Header = () => {
     signOut(auth);
   };
   return (
-    <div className="relative">
+    <div className="">
       <div className="navbar text-black bg-white ">
         <div className="navbar-start">
           <Link to="/">
@@ -21,7 +21,10 @@ const Header = () => {
               alt="logo"
             />
           </Link>
-          <Link to="/" className="font-bold text-2xl text-accent pr-12">
+          <Link to="/" className="font-bold text-2xl text-accent
+         
+          "
+          >
             Luxury Suites.
           </Link>
         </div>

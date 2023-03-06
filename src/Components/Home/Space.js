@@ -10,7 +10,7 @@ const Space = () => {
         <p className="text-xl text-center">
           Plenty of Services to Assure Your Relaxation and Comfortable.
         </p>
-        <div className="grid lg:grid-cols-4 pt-12 gap-x-2 gap-y-2 w-full mx-auto ">
+        <div className="grid lg:grid-cols-4 pt-12 gap-x-2 gap-y-2  mx-auto ">
           <div
             data-aos="fade-up"
             data-aos-duration="500"
