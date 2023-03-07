@@ -74,7 +74,7 @@ const Contact = () => {
       </div>
       <div>
         <form
-          className="p-6 rounded-2xl lg:w-96 mx-auto bg-slate-200 my-12 shadow-primary shadow-2xl "
+          className="p-6 rounded-2xl lg:w-96 mx-auto  my-12 shadow-primary shadow-2xl "
           onSubmit={handleSubmit(onSubmit)}
         >
           <h1 className="text-3xl text-primary font-serif mb-6 text-center">
@@ -111,7 +111,7 @@ const Contact = () => {
               type="text"
               name="email"
               placeholder="Type Here"
-              className="textarea border-b-4 focus:border-0  textarea-warning textarea-sm w-60 max-w-xs mb-2 mt-2"
+              className="textarea border-b-4 focus:border-0  textarea-primary textarea-sm w-60 max-w-xs mb-2 mt-2"
               {...register("TextArea", { required: true })}
             />
 
@@ -124,11 +124,11 @@ const Contact = () => {
           </div>
         </form>
       </div>
-      <div className="bg-secondary py-12">
+      <div className=" pb-6">
         <Subscribe />
       </div>
 
-      <div className=" flex justify-center my-6">
+      <div className=" flex justify-center mb-6">
         <p className="cursor-pointer p-2  text-2xl">
           <FontAwesomeIcon icon={faArrowLeft} /> <Link to="/"> Go Home</Link>
         </p>

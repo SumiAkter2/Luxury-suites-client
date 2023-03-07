@@ -125,7 +125,7 @@ const AddReview = () => {
                     name="comment"
                     type="text"
                     placeholder="Type comment"
-                    className="textarea border-b-4 focus:border-0  textarea-warning textarea-sm w-60 max-w-xs"
+                    className="textarea border-b-4 focus:border-0  textarea-primary textarea-sm w-60 max-w-xs"
                     {...register("comment", { required: true })}
                   />
 

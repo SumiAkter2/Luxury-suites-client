@@ -104,7 +104,7 @@ const AddSuites = () => {
                       name="Description"
                       type="text"
                       placeholder="Type Description"
-                      className="textarea border-b-4 lg:w-96 ml-2 focus:border-0  textarea-warning textarea-sm max-w-xs"
+                      className="textarea border-b-4 lg:w-96 ml-2 focus:border-0  textarea-primary textarea-sm max-w-xs"
                       {...register("Description", { required: true })}
                     />
 

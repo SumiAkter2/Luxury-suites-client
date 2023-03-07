@@ -5,7 +5,11 @@ import "./Suite.css";
 const suite = ({ suite }) => {
   return (
     <div>
-      <div className="gallery-image">
+      <div
+        className="gallery-image"
+        data-aos="zoom-in"
+        data-aos-duration="800"
+      >
         <div className="img-box mx-auto">
           <img src={suite.picture} alt="suites-img" />
           <div className="transparent-box">

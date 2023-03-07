@@ -5,15 +5,23 @@ const BayView = () => {
     <div className="bg-white">
       <div className="hero min-h-screen ">
         <div className="hero-content flex-col lg:flex-row">
-          <div className="lg:w-1/2 w-full  mx-auto">
+          <div
+            className="lg:w-1/2 w-full  mx-auto"
+            data-aos="fade-right"
+            data-aos-duration="700"
+          >
             <img
-              
               src={img}
               className="lg:pl-6 lg:h-screen w-80 h-80 lg:w-screen mx-auto"
               alt="hotel-img"
             />
           </div>
-          <div className="lg:pl-8 p-6 lg:w-1/2">
+          <div
+            className="lg:pl-8 p-6 lg:w-1/2"
+            data-aos="fade-left"
+            data-aos-duration="800"
+           
+          >
             <p className="pb-6 text-sm tracking-[5px]"> Hotel BayView</p>
             <h1 className="lg:text-5xl text-3xl pb-6 text-primary">
               Relax in our Hotel Resort

@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { AiFillStar } from "react-icons/ai";
-import { Navigation, Pagination } from "swiper";
+import { Autoplay, Navigation, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/pagination";
@@ -23,7 +23,7 @@ const ShowReview = () => {
         Clients Testimonial
       </h1>
 
-      <div className="">
+      <div data-aos="zoom-in" data-aos-duration="800">
         <div
           className="hero lg:h-screen"
           style={{
@@ -36,17 +36,20 @@ const ShowReview = () => {
               "--swiper-pagination-color": "#fff",
               "--swiper-navigation-color": "#fff",
             }}
+            autoplay={{
+              delay: 2000,
+              disableOnInteraction: false,
+            }}
             slidesPerView={1}
             spaceBetween={0}
             grabCursor={true}
-            autoplay={true}
             pagination={{
               clickable: true,
             }}
             navigation={{
               clickable: true,
             }}
-            modules={[Pagination, Navigation]}
+            modules={[Pagination, Navigation, Autoplay]}
             className="mySwiper swiper"
           >
             {review.map((r) => (
