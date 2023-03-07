@@ -15,17 +15,17 @@ const Brand = () => {
   return (
     <div>
       <div className="hero bg-gray-200">
-        <div className="hero-content text-white p-6 lg:px-12">
+        <div className="hero-content text-white p-6 ">
           <Swiper
             autoplay={{
               delay: 900,
               disableOnInteraction: false,
             }}
             // loop={true}
-            slidesPerView={6}
+            slidesPerView={3}
             spaceBetween={30}
             modules={[Autoplay]}
-            className="mySwiper mt-12"
+            className="mySwiper mt-12 overflow-hidden"
           >
             <SwiperSlide>
               <img src={logo1} className="w-12 h-12 " alt="brand-logo" />
@@ -46,7 +46,7 @@ const Brand = () => {
             <SwiperSlide>
               <img src={logo6} className="w-12 h-12 " alt="brand-logo" />
             </SwiperSlide>
-            <SwiperSlide className="my-6">
+            {/* <SwiperSlide className="my-6">
               <img src={logo1} className="w-12 h-12 " alt="brand-logo" />
             </SwiperSlide>
             <SwiperSlide>
@@ -64,7 +64,7 @@ const Brand = () => {
             </SwiperSlide>
             <SwiperSlide>
               <img src={logo6} className="w-12 h-12 " alt="brand-logo" />
-            </SwiperSlide>
+            </SwiperSlide> */}
           </Swiper>
         </div>
       </div>

@@ -24,7 +24,7 @@ const Home = () => {
       <ShowOff2 />
       <ExtraServices />
       <HomeFeature />
-      {/* <ShowReview /> */}
+      <ShowReview />
       {/* <Brand /> */}
       <Subscribe />
     </div>

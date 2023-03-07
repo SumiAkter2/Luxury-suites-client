@@ -29,7 +29,7 @@ const Header = () => {
           </Link>
         </div>
         <div className="navbar-center hidden lg:block">
-          <ul className="menu menu-horizontal gap-x-2">
+          <ul className="menu menu-horizontal gap-x-1">
             <li>
               <NavLink to="/" className=" font-bold  rounded-lg  ">
                 Home
@@ -80,7 +80,7 @@ const Header = () => {
 
             <li className="dropdown dropdown-hover dropdown-end ">
               <label tabIndex="0" className="  border-0 font-bold rounded-lg ">
-                More Info <AiFillCaretDown size="20px" />
+                More  <AiFillCaretDown size="20px" />
               </label>
 
               <ul

@@ -1,17 +1,16 @@
 import React from "react";
 import ScrollToTop from "react-scroll-to-top";
 import { FaArrowAltCircleUp } from "react-icons/fa";
-import "./Footer.css";
+
 const Footer = () => {
   const date = new Date().getFullYear();
   return (
     <div>
-      <ScrollToTop
+      {/* <ScrollToTop
         style={{
           boxShadow: "none",
           backgroundColor: "#a87932",
           borderRadius: "50%",
-          right: 90,
           zIndex: 20,
         }}
         component={
@@ -20,8 +19,7 @@ const Footer = () => {
           />
         }
         smooth
-       
-      />
+      /> */}
       <footer className="footer py-6 bg-secondary text-base-content">
         <div>
           <div className="flex">
