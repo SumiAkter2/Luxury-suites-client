@@ -54,7 +54,7 @@ function App() {
       });
   };
   return (
-    <div className="font-serif max-w-screen-lg mx-auto">
+    <div className="font-serif lg:max-w-screen-lg mx-auto ">
       <Header> </Header>
       <Routes>
         <Route path="/" element={<Home />}></Route>
