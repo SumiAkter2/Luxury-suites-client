@@ -14,11 +14,11 @@ const Banner = () => {
 
         <div className="  text-white lg:flex justify-center items-start">
           <div
-            // data-aos="fade-right"
-            // data-aos-offset="300"
-            // data-aos-duration="900"
-            // data-aos-easing="ease-in-sine"
-            className="lg:w-2/3 mt-6 mb-4 "
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-duration="900"
+            data-aos-easing="ease-in-sine"
+            className="lg:w-2/3 mt-6 mb-4 p-6"
           >
             <p className=" lg:text-5xl text-3xl my-6">
               Luxury suites for the elite passionate about luxury & comfort.

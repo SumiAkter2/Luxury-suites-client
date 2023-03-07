@@ -14,7 +14,7 @@ const Subscribe = () => {
             placeholder="abc@abc.com"
             className="input input-bordered w-full pr-16"
           />
-          <button className="btn btn-primary bg-secondary absolute top-0 right-0 rounded-l-none">
+          <button className="btn btn-primary absolute top-0 right-0 rounded-l-none">
             Subscribe
           </button>
         </div>

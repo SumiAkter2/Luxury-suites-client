@@ -7,16 +7,16 @@ const ShowOff2 = () => {
     <div>
       <div>
         <div className="hero min-h-screen bg-base-100 my-0">
-          <div className="hero-content flex-col lg:flex-row-reverse justify-between items-start">
+          <div className="hero-content flex-col lg:flex-row-reverse justify-center items-start">
             <div className="lg:w-1/2 mx-auto flex gap-x-2 px-6 ">
               <img
                 src="https://i.ibb.co/r61dkX4/servent.jpg"
-                className="lg:w-60 w-60 h-80 lg:h-[400px] rounded-sm shadow-2xl mb-2 mx-auto"
+                className="lg:w-60 w-80 h-80 lg:h-[400px] rounded-sm shadow-2xl mb-2 mx-auto"
                 alt="servant-img"
               />
               <img
                 src={servent}
-                className=" lg:w-48 w-32  h-80 lg:h-[400px] rounded-sm shadow-2xl mx-auto"
+                className=" lg:w-48 w-32  h-80 lg:h-[400px] rounded-sm shadow-2xl mx-auto hidden lg:block"
                 alt="servant-img"
               />
             </div>

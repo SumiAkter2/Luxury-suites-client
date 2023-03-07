@@ -9,7 +9,7 @@ const BayView = () => {
             <img
               
               src={img}
-              className="lg:pl-6 lg:h-screen w-80 h-80 lg:w-screen shadow-2xl"
+              className="lg:pl-6 lg:h-screen w-80 h-80 lg:w-screen mx-auto"
               alt="hotel-img"
             />
           </div>

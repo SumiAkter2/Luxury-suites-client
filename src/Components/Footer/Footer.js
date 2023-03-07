@@ -6,12 +6,13 @@ const Footer = () => {
   const date = new Date().getFullYear();
   return (
     <div>
-      {/* <ScrollToTop
+      <ScrollToTop
         style={{
           boxShadow: "none",
           backgroundColor: "#a87932",
           borderRadius: "50%",
           zIndex: 20,
+          
         }}
         component={
           <FaArrowAltCircleUp
@@ -19,7 +20,7 @@ const Footer = () => {
           />
         }
         smooth
-      /> */}
+      />
       <footer className="footer py-6 bg-secondary text-base-content">
         <div>
           <div className="flex">

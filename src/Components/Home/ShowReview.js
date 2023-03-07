@@ -25,7 +25,7 @@ const ShowReview = () => {
 
       <div className="">
         <div
-          className="hero h-screen"
+          className="hero lg:h-screen"
           style={{
             backgroundImage: "url(https://i.ibb.co/LhpgD4N/room10.png)",
           }}

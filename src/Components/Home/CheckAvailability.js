@@ -5,14 +5,13 @@ import { faCalendar, faUsers } from "@fortawesome/free-solid-svg-icons";
 const CheckAvailability = () => {
   return (
     <div
-      // data-aos="fade-left"
-      // data-aos-anchor="#example-anchor"
-      // data-aos-offset="300"
-      // data-aos-duration="900"
-      className="bg-white rounded-lg p-6 text-black"
+      data-aos="fade-left"
+      data-aos-anchor="#example-anchor"
+      data-aos-offset="300"
+      data-aos-duration="900"
+      className="bg-white rounded-lg p-6 text-black w-72 mx-auto mb-6"
     >
-      {/* <div className=""></div> */}
-      <h1 className="text-3xl  text-center text-black mb-4">
+      <h1 className="text-3xl text-center text-black mb-4">
         Check Availability
       </h1>
       <div className="gap-y-4 grid">
