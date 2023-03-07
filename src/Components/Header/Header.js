@@ -102,7 +102,7 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <div className="navbar-end absolute right-0 lg:hidden block ">
+        <div className="navbar-end  lg:hidden block ">
           <div className="dropdown dropdown-start ">
             <label tabIndex={0} className="btn btn-ghost btn-circle">
               <svg
