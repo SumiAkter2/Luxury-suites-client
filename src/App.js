@@ -54,7 +54,7 @@ function App() {
       });
   };
   return (
-    <div className="font-serif">
+    <div className="font-serif max-w-8xl">
       <Header> </Header>
       <Routes>
         <Route path="/" element={<Home />}></Route>
