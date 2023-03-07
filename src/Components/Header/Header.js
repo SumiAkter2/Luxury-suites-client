@@ -21,7 +21,9 @@ const Header = () => {
               alt="logo"
             />
           </Link>
-          <Link to="/" className="font-bold text-2xl text-primary
+          <Link
+            to="/"
+            className="font-bold text-2xl text-primary
          
           "
           >
@@ -80,7 +82,7 @@ const Header = () => {
 
             <li className="dropdown dropdown-hover dropdown-end ">
               <label tabIndex="0" className="  border-0 font-bold rounded-lg ">
-                More  <AiFillCaretDown size="20px" />
+                More <AiFillCaretDown size="20px" />
               </label>
 
               <ul
@@ -100,8 +102,8 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <div className="navbar-end absolute right-4 lg:hidden block">
-          <div className="dropdown dropdown-left">
+        <div className="navbar-end absolute right-0 lg:hidden block ">
+          <div className="dropdown dropdown-start ">
             <label tabIndex={0} className="btn btn-ghost btn-circle">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -120,7 +122,7 @@ const Header = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu text-white menu-compact dropdown-content  mt-3 p-2 shadow  rounded-box w-52 gap-y-4 "
+              className="menu  menu-compact dropdown-content  mt-3 p-6 shadow  rounded-box w-48 gap-y-4 bg-red-600 backdrop-blur-sm bg-white/30"
             >
               <li>
                 <NavLink to="/allSuites" className=" font-bold rounded-lg  ">
