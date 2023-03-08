@@ -23,7 +23,7 @@ const AddReview = () => {
 
     // console.log(data.Name, data.Address, data.Ratting, data.comment);
 
-    fetch(`http://localhost:5000/reviews`, {
+    fetch(`https://luxury-suites-server-production.up.railway.app/reviews`, {
       method: "POST",
       headers: {
         "content-type": "application/json",

@@ -13,7 +13,7 @@ import "./Review.css";
 const ShowReview = () => {
   const [review, setReview] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/reviews")
+    fetch("https://luxury-suites-server-production.up.railway.app/reviews")
       .then((res) => res.json())
       .then((data) => setReview(data));
   }, []);

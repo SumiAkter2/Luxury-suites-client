@@ -17,9 +17,9 @@ const BookingSuite = ({ booked, bookingSuite }) => {
   const navigate = useNavigate();
   const handleConfirmBooking = (booked) => {
     console.log(booked);
-  
+
     navigate("/");
-    // fetch(`http://localhost:5000/bookings`, {
+    // fetch(`https://luxury-suites-server-production.up.railway.app/bookings`, {
     //   method: "POST",
     //   headers: {
     //     "content-type": "application/json",

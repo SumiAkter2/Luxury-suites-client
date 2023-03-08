@@ -22,7 +22,7 @@ const AllSuites = ({ handleSubmit, suites, bookingSuite, setBooked }) => {
 
   //   console.log(bookingSuite);
   //   setBookingSuite(bookingSuite);
-  //   fetch("http://localhost:5000/suites")
+  //   fetch("https://luxury-suites-server-production.up.railway.app/suites")
   //     .then((res) => res.json())
   //     .then((data) => {
   //       const suites = data.filter(
@@ -50,7 +50,9 @@ const AllSuites = ({ handleSubmit, suites, bookingSuite, setBooked }) => {
       </div>
       <div className=" lg:flex grid justify-evenly items-start px-6 my-12">
         <div className="w-60 my-12 lg:sticky top-14 mx-auto lg:mx-0">
-          <h1 className="text-2xl font-bold mb-12 text-primary">Check Availability</h1>
+          <h1 className="text-2xl font-bold mb-12 text-primary">
+            Check Availability
+          </h1>
 
           <form onSubmit={handleSubmit}>
             <div className=" font-bold  rounded-lg my-2">
@@ -104,9 +106,7 @@ const AllSuites = ({ handleSubmit, suites, bookingSuite, setBooked }) => {
                 </select>
               </div>
             </div>
-            <button className="btn btn-primary w-52 mt-6">
-              Search
-            </button>
+            <button className="btn btn-primary w-52 mt-6">Search</button>
           </form>
         </div>
 

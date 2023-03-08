@@ -14,20 +14,23 @@ const BookingList = () => {
   //  }, [user?.email]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/bookings")
+    fetch("https://luxury-suites-server-production.up.railway.app/bookings")
       .then((res) => res.json())
       .then((data) => setBooking(data));
   }, []);
 
   const handleDelete = (id) => {
     alert("sure to delete");
-    fetch(`http://localhost:5000/bookings/${id} `, {
-      method: "DELETE",
-      // headers: {
-      //   "content-type": "application/json",
-      // },
-      // body: JSON.stringify(booking),
-    })
+    fetch(
+      `https://luxury-suites-server-production.up.railway.app/bookings/${id} `,
+      {
+        method: "DELETE",
+        // headers: {
+        //   "content-type": "application/json",
+        // },
+        // body: JSON.stringify(booking),
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
         const restData = data.filter((o) => o._id !== id);

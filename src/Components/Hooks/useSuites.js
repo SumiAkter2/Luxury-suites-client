@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 const useSuites = () => {
   const [suites, setSuites] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/suites")
+    fetch("https://luxury-suites-server-production.up.railway.app/suites")
       .then((res) => res.json())
       .then((data) => setSuites(data));
   }, []);

@@ -42,7 +42,7 @@ function App() {
 
     console.log(bookingSuite);
     setBookingSuite(bookingSuite);
-    fetch("http://localhost:5000/suites")
+    fetch("https://luxury-suites-server-production.up.railway.app/suites")
       .then((res) => res.json())
       .then((data) => {
         const suites = data.filter(
