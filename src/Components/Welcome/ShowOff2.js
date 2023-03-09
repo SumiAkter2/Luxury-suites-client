@@ -1,5 +1,5 @@
 import React from "react";
-import servent from "../../img/servent.jpg";
+import servant from "../../img/servent.jpg";
 import { Link } from "react-router-dom";
 
 const ShowOff2 = () => {
@@ -10,16 +10,16 @@ const ShowOff2 = () => {
           <div className="hero-content flex-col lg:flex-row-reverse justify-center items-start">
             <div className="lg:w-1/2 mx-auto flex gap-x-2 px-6 ">
               <img
-                data-aos="fade-left"
+                data-aos="fade-up"
                 data-aos-duration="500"
                 src="https://i.ibb.co/r61dkX4/servent.jpg"
                 className="lg:w-60 w-80 h-80 lg:h-[400px] rounded-sm shadow-2xl mb-2 mx-auto"
                 alt="servant-img"
               />
               <img
-                data-aos="fade-left"
+                data-aos="fade-down"
                 data-aos-duration="800"
-                src={servent}
+                src={servant}
                 className=" lg:w-48 w-32  h-80 lg:h-[400px] rounded-sm shadow-2xl mx-auto hidden lg:block"
                 alt="servant-img"
               />
