@@ -11,7 +11,7 @@ const About = () => {
         className="hero h-56"
         style={{ backgroundImage: "url(https://i.ibb.co/7gJMvks/room.png)" }}
       >
-        <div className="hero-overlay bg-black bg-opacity-70"></div>
+        <div className="hero-overlay bg-black bg-opacity-40"></div>
         <div className="hero-content text-center text-neutral-content">
           <div className="max-w-md text-white">
             <h1 className="mb-5 text-5xl font-serif">About Us</h1>
@@ -33,7 +33,7 @@ const About = () => {
       </div>
 
       {/*       {/* restaurant services */}
-      <div className="hero min-h-screen my-0 bg-gray-200">
+      <div className="hero min-h-screen my-0 bg-white">
         <div className="hero-content flex-col lg:flex-row-reverse items-center">
           <div className=" flex lg:w-1/2 justify-between items-center ">
             <div className="z-30">
@@ -105,7 +105,7 @@ const About = () => {
       </div>
       {/* spa services */}
 
-      <div className="hero min-h-screen  bg-gray-200">
+      <div className="hero min-h-screen  bg-white">
         <div className="hero-content flex-col lg:flex-row">
           <div className="lg:pl-8 pb-6 ">
             <div className="divider w-60 mx-auto mt-2 bg-opacity-100  text-orange-500 text-xl">
@@ -164,7 +164,7 @@ const About = () => {
 
       {/* fitness services */}
 
-      <div className="hero min-h-screen  bg-gray-200">
+      <div className="hero min-h-screen  bg-white">
         <div className="hero-content flex-col lg:flex-row">
           <div className="lg:pl-8 pb-6 lg:w-1/2">
             <div className="divider w-60 mx-auto mt-2 bg-opacity-100  text-orange-500 text-xl">

@@ -4,7 +4,7 @@ import {
   useSendPasswordResetEmail,
   useSignInWithEmailAndPassword,
 } from "react-firebase-hooks/auth";
-import "./Login.css";
+// import "./Login.css";
 import Social from "../Social/Social";
 import auth from "../../firebase.init";
 import { Link } from "react-router-dom";
@@ -50,13 +50,13 @@ const LogIn = () => {
   return (
     <div
       className="hero font-serif "
-      style={{ backgroundImage: "url(https://i.ibb.co/9ZKpt34/room5.png)" }}
+      style={{ backgroundImage: "url(https://i.ibb.co/7gJMvks/room.png)" }}
     >
-      <div className="hero-overlay bg-black bg-opacity-70"></div>
+      <div className="hero-overlay bg-black bg-opacity-50"></div>
       <div className="hero-content text-center ">
-        <div className="max-w-md">
-          <div className="p-4  mt-6  lg:w-80  mb-24  rounded-lg hover:border-white border-2 ">
-            <h1 className=" text-xl font-serif pt-6 text-primary">
+        <div className="max-w-md ">
+          <div className="p-4  mt-6  lg:w-80  mb-24  rounded-lg hover:border-white border-2 backdrop-blur-sm backdrop-brightness-50 bg-white/30">
+            <h1 className=" text-xl font-serif font-bold pt-6 text-primary">
               Please Log In
             </h1>
             {/* form */}

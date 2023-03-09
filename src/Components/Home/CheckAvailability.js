@@ -4,7 +4,11 @@ import { faCalendar, faUsers } from "@fortawesome/free-solid-svg-icons";
 
 const CheckAvailability = () => {
   return (
-    <div className="bg-white rounded-lg p-6 text-black w-72 mx-auto mb-6">
+    <div
+      data-aos="fade-down-left"
+      data-aos-duration="1000"
+      className="bg-white rounded-lg p-6 text-black w-72 mx-auto mb-6"
+    >
       <h1 className="text-3xl text-center text-black mb-4">
         Check Availability
       </h1>

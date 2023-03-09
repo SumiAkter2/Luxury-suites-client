@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <div className="">
       <div className="navbar text-black bg-white ">
-        <div className="navbar-start">
+        <div className="navbar-start ">
           <Link to="/">
             <img
               style={{ width: "80px" }}
@@ -23,7 +23,7 @@ const Header = () => {
           </Link>
           <Link
             to="/"
-            className="font-bold text-2xl text-primary
+            className="font-bold lg:text-2xl text-sm text-primary
          
           "
           >
@@ -102,15 +102,16 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <div className="navbar-end  lg:hidden block ">
-          <div className="dropdown dropdown-start ">
+        <div className="navbar-start lg:hidden block ">
+          <div className="dropdown dropdown-left absolute right-3 top-4">
             <label tabIndex={0} className="btn btn-ghost btn-circle">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
+                className="h-8 w-8"
+                fill="red"
                 viewBox="0 0 24 24"
-                stroke="currentColor"
+                // stroke="currentColor"
+                stroke="#a87932"
               >
                 <path
                   strokeLinecap="round"
@@ -122,7 +123,7 @@ const Header = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu  menu-compact dropdown-content  mt-3 p-6 shadow  rounded-box w-48 gap-y-4 bg-red-600 backdrop-blur-sm bg-white/30"
+              className="menu  menu-compact dropdown-content  mt-3 p-6 shadow  rounded-box w-48 gap-y-4  backdrop-blur-sm bg-white/30"
             >
               <li>
                 <NavLink to="/allSuites" className=" font-bold rounded-lg  ">

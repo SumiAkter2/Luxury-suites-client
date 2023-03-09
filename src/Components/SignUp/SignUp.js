@@ -3,7 +3,6 @@ import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import auth from "../../firebase.init";
-import "../LogIn/Login.css";
 import Social from "../Social/Social";
 
 const SignUp = () => {
@@ -34,14 +33,14 @@ const SignUp = () => {
 
   return (
     <div
-      className="hero  font-serif"
-      style={{ backgroundImage: "url(https://i.ibb.co/9ZKpt34/room5.png)" }}
+      className="hero font-serif"
+      style={{ backgroundImage: "url(https://i.ibb.co/7gJMvks/room.png)" }}
     >
-      <div className="hero-overlay bg-black bg-opacity-70"></div>
+      <div className="hero-overlay bg-black bg-opacity-60"></div>
       <div className="hero-content text-center ">
-        <div className="max-w-lg">
-          <div className="   py-12   rounded-lg hover:border-white border-2 ">
-            <h1 className=" text-xl font-serif  text-primary">
+        <div className="max-w-lg py-12">
+          <div className="py-12 rounded-lg hover:border-white border-2 backdrop-blur-sm backdrop-brightness-50 bg-white/30">
+            <h1 className=" text-xl font-serif text-primary font-bold">
               Create A New Account
             </h1>
 

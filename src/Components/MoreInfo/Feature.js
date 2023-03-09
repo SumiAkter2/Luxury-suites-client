@@ -16,7 +16,7 @@ const Feature = () => {
         className="hero h-56"
         style={{ backgroundImage: "url(https://i.ibb.co/LhpgD4N/room10.png)" }}
       >
-        <div className="hero-overlay bg-black bg-opacity-60"></div>
+        <div className="hero-overlay bg-black bg-opacity-40"></div>
         <div className="hero-content text-center text-neutral-content">
           <div className="max-w-md text-white">
             <h1 className="mb-5 text-4xl font-serif">

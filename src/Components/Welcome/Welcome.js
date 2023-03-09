@@ -16,8 +16,8 @@ const Welcome = () => {
       <div className="hero min-h-screen mt-0">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div
-            // data-aos="fade-up"
-            // data-aos-duration="1000"
+            data-aos="fade-down"
+            data-aos-duration="1000"
             className="flex  lg:gap-16 gap-x-6 lg:w-1/2  justify-center mx-auto"
           >
             <img
@@ -32,8 +32,8 @@ const Welcome = () => {
             />
           </div>
           <div
-            // data-aos="fade-down"
-            // data-aos-duration="500"
+            data-aos="fade-up"
+            data-aos-duration="1000"
             className="lg:w-1/2 mx-auto"
           >
             <div className="divider w-60 mx-auto mb-12 opacity-100">

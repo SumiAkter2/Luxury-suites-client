@@ -25,7 +25,7 @@ const Home = () => {
       <ExtraServices />
       <HomeFeature />
       <ShowReview />
-      {/* <Brand /> */}
+
       <Subscribe />
     </div>
   );

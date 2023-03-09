@@ -34,7 +34,7 @@ const Contact = () => {
         </div>
       </div>
       {/* detail contact */}
-      <div className="lg:flex justify-evenly  items-center py-12 bg-secondary px-12">
+      <div className="lg:flex justify-evenly  items-center py-12 bg-secondary px-12 lg:m-0 m-6">
         <div>
           <h1 className="flex justify-start items-center ">
             <FontAwesomeIcon
@@ -74,7 +74,7 @@ const Contact = () => {
       </div>
       <div>
         <form
-          className="p-6 rounded-2xl lg:w-96 mx-auto  my-12 shadow-primary shadow-2xl "
+          className="p-6 rounded-2xl lg:w-96 mx-auto bg-slate-50 my-12 shadow-primary shadow-2xl "
           onSubmit={handleSubmit(onSubmit)}
         >
           <h1 className="text-3xl text-primary font-serif mb-6 text-center">

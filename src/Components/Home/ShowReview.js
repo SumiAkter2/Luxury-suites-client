@@ -28,9 +28,10 @@ const ShowReview = () => {
           className="hero lg:h-screen"
           style={{
             backgroundImage: "url(https://i.ibb.co/LhpgD4N/room10.png)",
+            backgroundSize: "cover",
           }}
         >
-          <div className="hero-overlay bg-black bg-opacity-60"></div>
+          <div className="hero-overlay p-6  bg-black bg-opacity-50"></div>
           <Swiper
             style={{
               "--swiper-pagination-color": "#fff",
@@ -54,7 +55,7 @@ const ShowReview = () => {
           >
             {review.map((r) => (
               <div key={r._id}>
-                <SwiperSlide className="lg:w-full ">
+                <SwiperSlide className=" ">
                   <div className="hero-content  text-neutral-content h-96 mb-12">
                     <div className="max-w-md text-white text-center">
                       <h1 className="mb-5 text-sm font-serif tracking-[5px]">
