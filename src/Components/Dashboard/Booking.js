@@ -45,9 +45,9 @@ const BookingList = () => {
       <h1 className="text-3xl p-6">Your Booking List</h1>
       <div className="w-full px-6 my-6">
         <div className="overflow-x-auto shadow-lg  top-24 mt-4">
-          <table className="table table-compact w-full mb-6">
-            <thead>
-              <tr>
+          <table className="table table-compact w-full mb-6 ">
+            <thead >
+              <tr className="text-primary">
                 <th>No</th>
                 <th>Name</th>
                 <th>Bed</th>

@@ -14,7 +14,7 @@ const ManageSuites = () => {
           <div className="overflow-x-auto shadow-lg  top-24 mt-4">
             <table className="table table-compact w-full mb-6">
               <thead>
-                <tr>
+                <tr className="text-primary">
                   <th>No</th>
 
                   <th>Name</th>

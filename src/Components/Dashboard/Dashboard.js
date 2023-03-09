@@ -27,45 +27,46 @@ const Dashboard = () => {
             Open drawer
           </label>
         </div>
-        <div className="drawer-side bg-secondary">
+        <div className="drawer-side bg-gray-200 rounded-lg">
           <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
-          <ul className="menu p-4 w-60  overflow-y-auto  bg-secondary text-base-content">
+          <ul className="menu p-4 w-60  overflow-y-auto  text-base-content">
             {/* <!-- Sidebar content here --> */}
             <li>
               <Link to="/">
-                <FontAwesomeIcon icon={faHouse} /> Back Home
+                <FontAwesomeIcon color="#a87932" icon={faHouse} /> Back Home
               </Link>
             </li>
             <li className="mt-1">
               <Link to="/dashboard">
-                <IoIosListBox />
+                <IoIosListBox color="#a87932" />
                 Booking List
               </Link>
             </li>
             <li className="mt-1">
               <Link to="/dashboard/profile">
-                <FontAwesomeIcon icon={faIdBadge} /> Profile
+                <FontAwesomeIcon color="#a87932" icon={faIdBadge} /> Profile
               </Link>
             </li>
             <li className="mt-1">
               <Link to="/dashboard/review">
-                <FontAwesomeIcon icon={faComment} /> Review
+                <FontAwesomeIcon color="#a87932" icon={faComment} /> Review
               </Link>
             </li>
             <li className="mt-1">
               <Link to="/dashboard/addSuites">
-                <FontAwesomeIcon icon={faSquarePlus} />
+                <FontAwesomeIcon color="#a87932" icon={faSquarePlus} />
                 Add Suites
               </Link>
             </li>
             <li className="mt-1">
               <Link to="/dashboard/manageSuites">
-                <FontAwesomeIcon icon={faPlusMinus} /> Manage Suites
+                <FontAwesomeIcon color="#a87932" icon={faPlusMinus} /> Manage
+                Suites
               </Link>
             </li>
             <li className="mt-1">
               <Link to="/dashboard/admin">
-                <FontAwesomeIcon icon={faUserPlus} /> Make Admin
+                <FontAwesomeIcon color="#a87932" icon={faUserPlus} /> Make Admin
               </Link>
             </li>
           </ul>

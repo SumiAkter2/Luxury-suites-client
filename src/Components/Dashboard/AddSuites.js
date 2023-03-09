@@ -18,13 +18,13 @@ const AddSuites = () => {
         className="hero font-serif"
         style={{ backgroundImage: "url(https://i.ibb.co/ZhxLNjN/balcony.jpg)" }}
       >
-        <div className="hero-overlay bg-opacity-60"></div>
+        <div className="hero-overlay bg-black bg-opacity-50"></div>
         <div className="hero-content text-center ">
           <div className="max-w-md">
             <h1 className="text-4xl text-center my-6 text-white">
               Add A New Suites
             </h1>
-            <div className="p-4  mt-6    mb-24  rounded-lg hover:border-white border-2 ">
+            <div className="p-4 mt-6 mb-24 rounded-lg hover:border-white border-2 ">
               <div className="font-serif">
                 <form className="mt-6 " onSubmit={handleSubmit(onSubmit)}>
                   <div className=" lg:flex">
@@ -33,7 +33,7 @@ const AddSuites = () => {
                         type="text"
                         name="Name"
                         placeholder="Type Name"
-                        className="input border-b-4 focus:border-0  input-primary input-sm  max-w-xs mb-2  ml-2"
+                        className="input border-b-4 focus:border-0  input-primary input-sm    w-72 lg:w-48 mb-2  ml-2"
                         {...register("Name", { required: true })}
                       />
 
@@ -47,7 +47,7 @@ const AddSuites = () => {
                         type="text"
                         name="Price"
                         placeholder="Type Price"
-                        className="input border-b-4 focus:border-0  input-primary input-sm  max-w-xs mb-2  ml-2"
+                        className="input border-b-4 focus:border-0  input-primary input-sm     w-72 lg:w-48 mb-2  ml-2"
                         {...register("Price", { required: true })}
                       />
 
@@ -63,7 +63,7 @@ const AddSuites = () => {
                         type="text"
                         name="Square"
                         placeholder="Type Square"
-                        className="input border-b-4 focus:border-0  input-primary input-sm  max-w-xs mb-2  ml-2"
+                        className="input border-b-4 focus:border-0  input-primary input-sm     w-72 lg:w-48 mb-2  ml-2"
                         {...register("Square", { required: true })}
                       />
 
@@ -76,7 +76,7 @@ const AddSuites = () => {
                       <input
                         type="text"
                         placeholder="Type Address"
-                        className="input border-b-4 focus:border-0  input-primary input-sm  max-w-xs  ml-2"
+                        className="input border-b-4 focus:border-0  input-primary input-sm     w-72 lg:w-48  ml-2"
                         {...register("Address", { required: true })}
                       />
 
@@ -86,25 +86,13 @@ const AddSuites = () => {
                       </span>
                     </div>
                   </div>
-                  <div className="grid justify-center items-center">
-                    <input
-                      type="file"
-                      className="input border-b-4 focus:border-0  input-primary input-sm  max-w-xs my-2 ml-2"
-                      {...register("Photo", { required: true })}
-                    />
 
-                    <span className="label-text-alt text-white ">
-                      {errors.Photo?.type === "required" &&
-                        "! Photo is required"}
-                    </span>
-                  </div>
-
-                  <div className="grid justify-center items-center mt-4">
+                  <div className="grid justify-center items-center mt-2">
                     <textarea
                       name="Description"
                       type="text"
                       placeholder="Type Description"
-                      className="textarea border-b-4 lg:w-96 ml-2 focus:border-0  textarea-primary textarea-sm max-w-xs"
+                      className="textarea border-b-4 ml-2 focus:border-0  textarea-primary textarea-sm  w-72 lg:w-96"
                       {...register("Description", { required: true })}
                     />
 
@@ -113,13 +101,25 @@ const AddSuites = () => {
                         "! Description is required"}
                     </span>
                   </div>
+                  <div className="grid justify-center items-center">
+                    <input
+                      type="file"
+                      className="input border-b-4 focus:border-0   input-primary input-sm w-72 lg:w-96 my-2 ml-2"
+                      {...register("Photo", { required: true })}
+                    />
+
+                    <span className="label-text-alt text-white ">
+                      {errors.Photo?.type === "required" &&
+                        "! Photo is required"}
+                    </span>
+                  </div>
                   <div className=" lg:flex">
                     <div className="grid justify-center items-center mt-2">
                       <select
                         name="Bed"
                         type="text"
                         placeholder="Type Bed"
-                        className="select border-b-4 focus:border-0  select-warning select-sm max-w-xs  ml-2"
+                        className="select border-b-4 focus:border-0  select-warning select-sm    w-72 lg:w-32  ml-2"
                         {...register("Bed", { required: true })}
                       >
                         <option selected>1 King Bed</option>
@@ -138,7 +138,7 @@ const AddSuites = () => {
                         name="Guest"
                         type="text"
                         placeholder="Type Guest"
-                        className="select border-b-4 focus:border-0  select-warning select-sm  max-w-xs  ml-2"
+                        className="select border-b-4 focus:border-0  select-warning select-sm     w-72 lg:w-32  ml-2"
                         {...register("Guest", { required: true })}
                       >
                         <option selected>5 Guest</option>
@@ -158,7 +158,7 @@ const AddSuites = () => {
                         name="Ratting"
                         type="text"
                         placeholder="Type Ratting"
-                        className="select border-b-4 focus:border-0  select-warning select-sm  max-w-xs lg:w-28 ml-2"
+                        className="select border-b-4 focus:border-0  select-warning select-sm     w-72 lg:w-32 ml-2"
                         {...register("Ratting", { required: true })}
                       >
                         <option selected>5/5</option>
@@ -175,7 +175,7 @@ const AddSuites = () => {
                     </div>
                   </div>
 
-                  <button className="button bg-secondary w-48 ">
+                  <button className="btn btn-primary mt-6 lg:w-48 ">
                     Add Suites
                   </button>
                 </form>

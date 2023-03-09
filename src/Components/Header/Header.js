@@ -2,6 +2,7 @@ import { signOut } from "firebase/auth";
 import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { AiFillCaretDown } from "react-icons/ai";
+import { CgMenuGridO } from "react-icons/cg";
 import { NavLink, Link } from "react-router-dom";
 import auth from "../../firebase.init";
 
@@ -10,6 +11,7 @@ const Header = () => {
   const handleSignOut = () => {
     signOut(auth);
   };
+  console.log(user?.email);
   return (
     <div className="">
       <div className="navbar text-black bg-white ">
@@ -23,8 +25,7 @@ const Header = () => {
           </Link>
           <Link
             to="/"
-            className="font-bold lg:text-2xl text-sm text-primary
-         
+            className="font-bold lg:text-2xl text-xl text-primary
           "
           >
             Luxury Suites.
@@ -87,7 +88,7 @@ const Header = () => {
 
               <ul
                 tabIndex="0"
-                className="dropdown-content menu p-2 shadow text-white rounded-box w-52 bg-accent opacity-60"
+                className="dropdown-content menu p-2 shadow rounded-box w-52 backdrop-brightness-150 backdrop-blur-sm bg-primary/30 opacity-60 text-black"
               >
                 <li>
                   <a href="/teams">Our Teams</a>
@@ -103,27 +104,13 @@ const Header = () => {
           </ul>
         </div>
         <div className="navbar-start lg:hidden block ">
-          <div className="dropdown dropdown-left absolute right-3 top-4">
+          <div className="dropdown dropdown-left absolute right-3 top-4 ">
             <label tabIndex={0} className="btn btn-ghost btn-circle">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-8 w-8"
-                fill="red"
-                viewBox="0 0 24 24"
-                // stroke="currentColor"
-                stroke="#a87932"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16M4 18h7"
-                />
-              </svg>
+              <CgMenuGridO color="#a87932" size="35px" />
             </label>
             <ul
               tabIndex={0}
-              className="menu  menu-compact dropdown-content  mt-3 p-6 shadow  rounded-box w-48 gap-y-4  backdrop-blur-sm bg-white/30"
+              className="menu  menu-compact dropdown-content  mt-3 p-6 shadow  rounded-box w-48 gap-y-4 backdrop-blur-sm bg-white/30"
             >
               <li>
                 <NavLink to="/allSuites" className=" font-bold rounded-lg  ">
