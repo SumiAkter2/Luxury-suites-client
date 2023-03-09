@@ -7,8 +7,8 @@ const BayView = () => {
         <div className="hero-content flex-col lg:flex-row">
           <div
             className="lg:w-1/2 w-full  mx-auto"
-            data-aos="fade-right"
-            data-aos-duration="700"
+            // data-aos="fade-right"
+            // data-aos-duration="700"
           >
             <img
               src={img}
@@ -18,8 +18,8 @@ const BayView = () => {
           </div>
           <div
             className="lg:pl-8 p-6 lg:w-1/2"
-            data-aos="fade-left"
-            data-aos-duration="800"
+            // data-aos="fade-left"
+            // data-aos-duration="800"
            
           >
             <p className="pb-6 text-sm tracking-[5px]"> Hotel BayView</p>
