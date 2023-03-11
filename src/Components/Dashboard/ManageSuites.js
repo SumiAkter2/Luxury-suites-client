@@ -1,6 +1,7 @@
 import { faAdd, faTrash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import Button from "../Button/Button";
 import useSuites from "../Hooks/useSuites";
 
 const ManageSuites = () => {
@@ -50,14 +51,14 @@ const ManageSuites = () => {
                     </td>
 
                     <th className="flex flex-col">
-                      <button className="btn btn-ghost btn-xs py-2">
+                      <Button className="btn btn-ghost btn-xs py-2">
                         <FontAwesomeIcon className="mr-2" icon={faAdd} />
                         Add
-                      </button>
-                      <button className="btn btn-ghost btn-xs py-2">
+                      </Button>
+                      <Button className="btn btn-ghost btn-xs py-2">
                         <FontAwesomeIcon className="mr-2" icon={faTrash} />
                         Delete
-                      </button>
+                      </Button>
                     </th>
                   </tr>
                 ))}

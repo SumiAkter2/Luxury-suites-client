@@ -5,6 +5,7 @@ import { IoIosPeople } from "react-icons/io";
 import { BsFillSquareFill } from "react-icons/bs";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
+import Button from "../Button/Button";
 
 const AllSuite = ({ suite, setBooked, bookingSuite }) => {
   const navigate = useNavigate();
@@ -88,9 +89,7 @@ const AllSuite = ({ suite, setBooked, bookingSuite }) => {
           className="card-actions justify-start mt-4"
           onClick={handleBookingNow}
         >
-          <label htmlFor="booking-suites-modal" className="btn btn-primary ">
-            Confirm Booking
-          </label>
+          <Button htmlFor="booking-suites-modal">Confirm Booking</Button>
         </div>
 
         <div className="divider"> </div>

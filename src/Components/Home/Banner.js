@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import banner from "../../img/banner1.jpg";
+import Button from "../Button/Button";
 import CheckAvailability from "./CheckAvailability";
 
 const Banner = () => {
@@ -24,9 +25,10 @@ const Banner = () => {
             <p className="text-2xl mt-6">
               Book Your Suites & Enjoy Your Luxury Experience.
             </p>
-            <button className="btn btn-primary text-white font-bold border-0 mt-12">
-              <Link to="/about">About More</Link>
-            </button>
+
+            <Button className=" text-white font-bold border-0 mt-12">
+              <Link to="/about">Explore More</Link>
+            </Button>
           </div>
           <CheckAvailability />
         </div>

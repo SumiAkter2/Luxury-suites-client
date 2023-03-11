@@ -7,9 +7,11 @@ import {
   faUserPlus,
 } from "@fortawesome/free-solid-svg-icons";
 import { IoIosListBox } from "react-icons/io";
+import { ImDrawer } from "react-icons/im";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
+import Button from "../Button/Button";
 
 const Dashboard = () => {
   return (
@@ -17,15 +19,22 @@ const Dashboard = () => {
       <div className="drawer drawer-mobile bg-yellow-50">
         <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col  justify-start">
+          <Button
+            htmlFor="my-drawer-2"
+            className=" btn-outline my-12 drawer-button lg:hidden mx-auto flex justify-center items-center"
+          >
+            <ImDrawer size="20px" className="mr-2 " />
+            <span> Open drawer</span>
+          </Button>
           {/* <!-- Page content here --> */}
           <Outlet />
 
-          <label
+          {/* <label
             htmlFor="my-drawer-2"
-            className="button drawer-button lg:hidden mx-auto"
+            className=" my-12 drawer-button lg:hidden mx-auto"
           >
             Open drawer
-          </label>
+          </label> */}
         </div>
         <div className="drawer-side bg-gray-200 rounded-lg">
           <label htmlFor="my-drawer-2" className="drawer-overlay"></label>

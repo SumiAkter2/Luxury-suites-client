@@ -1,5 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import Button from "../Button/Button";
 
 const AddSuites = () => {
   const {
@@ -175,9 +176,7 @@ const AddSuites = () => {
                     </div>
                   </div>
 
-                  <button className="btn btn-primary mt-6 lg:w-48 ">
-                    Add Suites
-                  </button>
+                  <Button className=" mt-6 lg:w-48 ">Add Suites</Button>
                 </form>
               </div>
             </div>

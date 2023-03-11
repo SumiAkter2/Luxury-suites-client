@@ -16,16 +16,16 @@ const FAQ = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-start items-center px-12">
+      <div className="lg:flex justify-center lg:justify-start items-center px-12">
         <div>
-          <h1 className="text-3xl">
+          <h1 className="text-3xl mt-4">
             Frequently <br />
             Ask Question
           </h1>
         </div>
 
         <div className="ml-12 my-12">
-          <ul className="steps steps-horizontal lg:steps-vertical">
+          <ul className="steps  steps-vertical ">
             <li className="step step-primary text-start">
               {/* <!-- The button to open modal --> */}
               <label

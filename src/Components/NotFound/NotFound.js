@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Button from "../Button/Button";
 const NotFound = () => {
   return (
     <div>
@@ -14,7 +15,7 @@ const NotFound = () => {
             <p className="mb-5 font-serif text-5xl">
               That page can not be found
             </p>
-            <button className="btn btn-primary">
+            <Button className="">
               <Link
                 to="/"
                 className="pl-4 font-serif text-3xl flex justify-center items-center "
@@ -29,7 +30,7 @@ const NotFound = () => {
                 </svg>
                 <span className="ml-4"> Go Home</span>
               </Link>
-            </button>
+            </Button>
           </div>
         </div>
       </div>

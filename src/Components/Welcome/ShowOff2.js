@@ -3,6 +3,7 @@ import servant from "../../img/servent2.jpg";
 import servant2 from "../../img/servent3.jpg";
 import servant3 from "../../img/servent4.jpg";
 import { Link } from "react-router-dom";
+import Button from "../Button/Button";
 
 const ShowOff2 = () => {
   return (
@@ -19,8 +20,8 @@ const ShowOff2 = () => {
                 alt="servant-img"
               />
               <img
-                data-aos="fade-up"   
-                data-aos-duration="2200" 
+                data-aos="fade-up"
+                data-aos-duration="2200"
                 // src="https://i.ibb.co/r61dkX4/servent.jpg"
                 src={servant3}
                 className="
@@ -54,9 +55,9 @@ const ShowOff2 = () => {
                 exercitationem hic pariatur!
               </p>
               <Link to="/about">
-                <button className="btn  btn-primary  mt-6">
+                <Button className="btn  btn-primary  mt-6">
                   Learn More ...
-                </button>
+                </Button>
               </Link>
             </div>
           </div>

@@ -4,6 +4,7 @@ import { MdDeleteOutline } from "react-icons/md";
 import { MdPayment } from "react-icons/md";
 import axios from "axios";
 import Swal from "sweetalert2";
+import Button from "../Button/Button";
 const BookingList = () => {
   const [booking, setBooking] = useState([]);
   //  const [order, setOrder] = useState([]);
@@ -93,19 +94,19 @@ const BookingList = () => {
                   </td>
 
                   <th>
-                    <button className="btn btn-primary btn-xs h-8 btn-outline">
+                    <Button className=" btn-xs h-8 btn-outline">
                       <MdPayment size="20px" className="mr-2 " />
                       Payment
-                    </button>
+                    </Button>
                   </th>
                   <th>
-                    <button
-                      className="btn btn-primary btn-xs h-8 btn-outline"
+                    <Button
+                      className=" btn-xs h-8 btn-outline"
                       onClick={() => handleDelete(s._id)}
                     >
                       <MdDeleteOutline size="20px" className="mr-2 " />
                       Delete
-                    </button>
+                    </Button>
                   </th>
                 </tr>
               ))}

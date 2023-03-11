@@ -2,6 +2,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
 import auth from "../../firebase.init";
+import Button from "../Button/Button";
 
 const AddReview = () => {
   const [user] = useAuthState(auth);
@@ -134,9 +135,7 @@ const AddReview = () => {
                       "! Comment is required"}
                   </span>
                 </div>
-                <button className="btn btn-primary mt-6 w-48 ">
-                  Review Now
-                </button>
+                <Button className=" mt-6 w-48 ">Review Now</Button>
               </form>
             </div>
           </div>

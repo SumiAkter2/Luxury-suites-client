@@ -9,6 +9,7 @@ import "swiper/css/pagination";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./Review.css";
+import Button from "../Button/Button";
 
 const ShowReview = () => {
   const [review, setReview] = useState([]);
@@ -55,7 +56,7 @@ const ShowReview = () => {
           >
             {review.map((r) => (
               <div key={r._id}>
-                <SwiperSlide className=" ">
+                <SwiperSlide>
                   <div className="hero-content  text-neutral-content h-96 mb-12">
                     <div className="max-w-md text-white text-center">
                       <h1 className="mb-5 text-sm font-serif tracking-[5px]">
@@ -100,9 +101,9 @@ const ShowReview = () => {
       </div>
 
       <div className="flex justify-center items-center ">
-        <button className=" btn btn-primary mt-24">
+        <Button className="  mt-24">
           <Link to="/dashboard/review ">Add Your Review</Link>
-        </button>
+        </Button>
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Button from "../Button/Button";
 import useSuites from "../Hooks/useSuites";
 import Suite from "./Suite";
 const Suites = () => {
@@ -25,10 +26,11 @@ const Suites = () => {
           <Suite key={suite._id} suite={suite}></Suite>
         ))}
       </div>
-      <Link to="/allSuites">
-        <button className="btn btn-primary mt-16 mx-auto flex justify-center items-center">
-          View All Suites
-        </button>
+      <Link
+        to="/allSuites"
+        className=" mt-16 mx-auto flex justify-center items-center"
+      >
+        <Button>View All Suites</Button>
       </Link>
     </div>
   );

@@ -1,8 +1,7 @@
 import { useState } from "react";
-import BookingSuite from "../BookingModal/BookingSuite";
-import useSuites from "../Hooks/useSuites";
 import AllSuite from "./AllSuite";
 import DatePicker from "react-datepicker";
+import Button from "../Button/Button";
 
 const AllSuites = ({ handleSubmit, suites, bookingSuite, setBooked }) => {
   const [startDate, setStartDate] = useState(new Date());
@@ -54,7 +53,10 @@ const AllSuites = ({ handleSubmit, suites, bookingSuite, setBooked }) => {
             Check Availability
           </h1>
 
-          <form onSubmit={handleSubmit} className="bg-orange-200 p-4 rounded-md">
+          <form
+            onSubmit={handleSubmit}
+            className="bg-orange-200 p-4 rounded-md"
+          >
             <div className=" font-bold  rounded-lg my-2">
               <h1 className="mb-2"> Check In</h1>
 
@@ -106,7 +108,7 @@ const AllSuites = ({ handleSubmit, suites, bookingSuite, setBooked }) => {
                 </select>
               </div>
             </div>
-            <button className="btn btn-primary w-52 mt-6">Search</button>
+            <Button className=" w-52 mt-6">Search</Button>
           </form>
         </div>
 

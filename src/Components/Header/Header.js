@@ -128,13 +128,7 @@ const Header = () => {
                   Contact
                 </NavLink>
               </li>
-              {user ? (
-                <li className="font-bold rounded-lg  mt-3">
-                  {user.displayName}
-                </li>
-              ) : (
-                ""
-              )}
+
               {user ? (
                 <li>
                   <NavLink

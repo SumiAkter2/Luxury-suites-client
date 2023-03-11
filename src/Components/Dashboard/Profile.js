@@ -2,6 +2,7 @@ import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
 import { GrUpdate } from "react-icons/gr";
+import Button from "../Button/Button";
 
 const Profile = () => {
   const [user] = useAuthState(auth);
@@ -21,9 +22,9 @@ const Profile = () => {
           <h2 className="card-title">{user?.displayName}</h2>
           <p>{user?.email}</p>
 
-          <button className="btn btn-primary">
+          <Button className="">
             <GrUpdate className="mr-4" /> Update
-          </button>
+          </Button>
         </div>
       </div>
     </div>

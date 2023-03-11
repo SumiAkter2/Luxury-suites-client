@@ -8,6 +8,7 @@ import Social from "../Social/Social";
 import auth from "../../firebase.init";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import Button from "../Button/Button";
 const LogIn = () => {
   // const [email, setEmail] = useState("");
   const {
@@ -15,14 +16,15 @@ const LogIn = () => {
     formState: { errors },
     handleSubmit,
   } = useForm();
-  const [signInWithEmailAndPassword,loading] = useSignInWithEmailAndPassword(auth);
+  const [signInWithEmailAndPassword, loading] =
+    useSignInWithEmailAndPassword(auth);
   // const [sendPasswordResetEmail, sending, error] =
   //   useSendPasswordResetEmail(auth);
   const navigate = useNavigate();
-//   if (loading) {
-//   return <Loading/>
-   
-// }
+  //   if (loading) {
+  //   return <Loading/>
+
+  // }
   const onSubmit = (data) => {
     signInWithEmailAndPassword(data.Email, data.Password);
     console.log(data);
@@ -87,12 +89,12 @@ const LogIn = () => {
                 </span>
               </div>
 
-              <button className="btn btn-primary w-48 mt-6">Log In</button>
+              <Button className=" w-48 mt-6">Log In</Button>
             </form>
             {/* Reset pass */}
             <div className="mt-4  text-sm flex justify-center text-white">
               <p className=" pl-2">Forgot Password ? </p>
-              <button className=" pl-2 hover:text-primary">Please Reset</button>
+              <Button className=" pl-2 hover:text-primary">Please Reset</Button>
             </div>
             {/* social */}
 

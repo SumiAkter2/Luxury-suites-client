@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import auth from "../../firebase.init";
 import Social from "../Social/Social";
+import Button from "../Button/Button";
 
 const SignUp = () => {
   const {
@@ -12,7 +13,7 @@ const SignUp = () => {
     handleSubmit,
   } = useForm();
   const navigate = useNavigate();
-  const [createUserWithEmailAndPassword, loading, error] =
+  const [createUserWithEmailAndPassword, loading] =
     useCreateUserWithEmailAndPassword(auth);
 
   if (loading) {
@@ -102,9 +103,7 @@ const SignUp = () => {
                   </span>
                 </div>
               </div>
-              <button className="btn btn-primary mt-6 lg:w-80 w-48 ">
-                Sign Up
-              </button>
+              <Button className=" mt-6 lg:w-80 w-48 ">Sign Up</Button>
             </form>
 
             {/* social */}

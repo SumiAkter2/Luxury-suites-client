@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../Button/Button";
 
 const Subscribe = () => {
   return (
@@ -20,9 +21,9 @@ const Subscribe = () => {
             placeholder="abc@abc.com"
             className="input input-bordered w-full pr-16"
           />
-          <button className="btn btn-primary absolute top-0 right-0 rounded-l-none">
+          <Button className=" absolute top-0 right-0 rounded-l-none">
             Subscribe
-          </button>
+          </Button>
         </div>
       </div>
     </div>

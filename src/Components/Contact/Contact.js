@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
+import Button from "../Button/Button";
 import Subscribe from "../Home/Subscribe";
 
 const Contact = () => {
@@ -120,7 +121,7 @@ const Contact = () => {
             </span>
           </div>
           <div className="flex justify-center items-center">
-            <button className="btn btn-primary w-48  ">Submit</button>
+            <Button className=" w-48  ">Submit</Button>
           </div>
         </form>
       </div>

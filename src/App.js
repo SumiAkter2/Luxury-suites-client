@@ -6,7 +6,7 @@ import Home from "./Components/Home/Home";
 import Contact from "./Components/Contact/Contact";
 import About from "./Components/About/About";
 import LogIn from "./Components/LogIn/LogIn";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useNavigate } from "react-router-dom";
 import Footer from "./Components/Footer/Footer";
 import NotFound from "./Components/NotFound/NotFound";
 import AllSuites from "./Components/AllSuites/AllSuites";
@@ -30,6 +30,7 @@ function App() {
   const [suites, setSuites] = useState([]);
   const [booked, setBooked] = useState(null);
   const [bookingSuite, setBookingSuite] = useState({});
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -78,7 +79,7 @@ function App() {
 
         <Route path="/dashboard" element={<Dashboard />}>
           <Route index element={<BookingList />}></Route>
-          <Route path="profile" element={<Profile />}></Route>
+          <Route path="profile" element={<Profile  />}></Route>
           <Route path="review" element={<AddReview />}></Route>
           <Route path="addSuites" element={<AddSuites />}></Route>
           <Route path="manageSuites" element={<ManageSuites />}></Route>

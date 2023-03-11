@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendar, faUsers } from "@fortawesome/free-solid-svg-icons";
+import Button from "../Button/Button";
 
 const CheckAvailability = () => {
   return (
@@ -45,7 +46,7 @@ const CheckAvailability = () => {
           </select>
         </div>
 
-        <button className="btn btn-primary  ">Check Available</button>
+        <Button className="  ">Check Available</Button>
       </div>
     </div>
   );
