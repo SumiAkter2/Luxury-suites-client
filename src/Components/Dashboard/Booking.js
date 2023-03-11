@@ -18,27 +18,34 @@ const BookingList = () => {
       .then((res) => res.json())
       .then((data) => setBooking(data));
   }, []);
+  // http://localhost:5000/bookings/63bd2121e0b273f75c079b28
 
   const handleDelete = (id) => {
-    alert("sure to delete");
-    fetch(
-      `https://luxury-suites-server-production.up.railway.app/bookings/${id} `,
-      {
-        method: "DELETE",
-        // headers: {
-        //   "content-type": "application/json",
-        // },
-        // body: JSON.stringify(booking),
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You won't be able to revert this!",
+      icon: "question",
+      showCancelButton: true,
+      confirmButtonColor: "green",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, Delete it!",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        fetch(`http://localhost:5000/bookings/${id}`, {
+          method: "DELETE",
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            if (data.deletedCount > 0) {
+              const restData = booking.filter((b) => b._id !== id);
+              setBooking(restData);
+            }
+            console.log(data);
+          });
       }
-    )
-      .then((res) => res.json())
-      .then((data) => {
-        const restData = data.filter((o) => o._id !== id);
-        setBooking(restData);
-        // swal('Are you sure to Delete your order??')
-        console.log(data);
-      });
-    console.log("dlt");
+    });
+
+    console.log(id);
   };
   return (
     <div>
@@ -46,7 +53,7 @@ const BookingList = () => {
       <div className="w-full px-6 my-6">
         <div className="overflow-x-auto shadow-lg  top-24 mt-4">
           <table className="table table-compact w-full mb-6 ">
-            <thead >
+            <thead>
               <tr className="text-primary">
                 <th>No</th>
                 <th>Name</th>
@@ -85,15 +92,15 @@ const BookingList = () => {
                   </td>
 
                   <th>
-                    <button className="btn btn-ghost btn-xs h-12">
+                    <button className="btn btn-primary btn-xs h-8 btn-outline">
                       <MdPayment size="20px" className="mr-2 " />
                       Payment
                     </button>
                   </th>
                   <th>
                     <button
-                      className="btn btn-ghost btn-xs h-12"
-                      onClick={handleDelete}
+                      className="btn btn-primary btn-xs h-8 btn-outline"
+                      onClick={() => handleDelete(s._id)}
                     >
                       <MdDeleteOutline size="20px" className="mr-2 " />
                       Delete
