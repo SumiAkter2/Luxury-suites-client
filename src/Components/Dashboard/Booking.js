@@ -22,6 +22,7 @@ const BookingList = () => {
 
   const handleDelete = (id) => {
     Swal.fire({
+      background: "#ffebc4",
       title: "Are you sure?",
       text: "You won't be able to revert this!",
       icon: "question",

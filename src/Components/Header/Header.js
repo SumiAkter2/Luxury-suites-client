@@ -11,7 +11,7 @@ const Header = () => {
   const handleSignOut = () => {
     signOut(auth);
   };
-  console.log(user?.email);
+
   return (
     <div className="">
       <div className="navbar text-black bg-white ">
@@ -58,11 +58,7 @@ const Header = () => {
                 Contact
               </NavLink>
             </li>
-            {user ? (
-              <li className="font-bold rounded-lg  mt-3">{user.displayName}</li>
-            ) : (
-              ""
-            )}
+
             {user ? (
               <li>
                 <NavLink

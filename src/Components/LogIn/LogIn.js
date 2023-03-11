@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { useForm } from "react-hook-form";
 import {
   useSendPasswordResetEmail,
   useSignInWithEmailAndPassword,
 } from "react-firebase-hooks/auth";
-// import "./Login.css";
 import Social from "../Social/Social";
 import auth from "../../firebase.init";
 import { Link } from "react-router-dom";
@@ -16,18 +15,17 @@ const LogIn = () => {
     formState: { errors },
     handleSubmit,
   } = useForm();
-  const [signInWithEmailAndPassword, user] =
-    useSignInWithEmailAndPassword(auth);
-  const [sendPasswordResetEmail, sending, error] =
-    useSendPasswordResetEmail(auth);
+  const [signInWithEmailAndPassword,loading] = useSignInWithEmailAndPassword(auth);
+  // const [sendPasswordResetEmail, sending, error] =
+  //   useSendPasswordResetEmail(auth);
   const navigate = useNavigate();
-  if (user) {
-    console.log("yes, user is available", user);
-  }
-
+//   if (loading) {
+//   return <Loading/>
+   
+// }
   const onSubmit = (data) => {
     signInWithEmailAndPassword(data.Email, data.Password);
-    // console.log(data.Email, data.Password);
+    console.log(data);
 
     navigate("/");
     // const resetPass = () => {
@@ -37,16 +35,16 @@ const LogIn = () => {
     // };
   };
 
-  if (error) {
-    return (
-      <div>
-        <p>Error: {error.message}</p>
-      </div>
-    );
-  }
-  if (sending) {
-    return <p>Sending...</p>;
-  }
+  // if (error) {
+  //   return (
+  //     <div>
+  //       <p>Error: {error.message}</p>
+  //     </div>
+  //   );
+  // }
+  // if (sending) {
+  //   return <p>Sending...</p>;
+  // }
   return (
     <div
       className="hero font-serif "

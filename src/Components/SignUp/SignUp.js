@@ -12,11 +12,9 @@ const SignUp = () => {
     handleSubmit,
   } = useForm();
   const navigate = useNavigate();
-  const [createUserWithEmailAndPassword, user, loading, error] =
+  const [createUserWithEmailAndPassword, loading, error] =
     useCreateUserWithEmailAndPassword(auth);
-  if (user) {
-    console.log("yes", user);
-  }
+
   if (loading) {
     return <p>loading...</p>;
   }
@@ -27,7 +25,7 @@ const SignUp = () => {
       data.Name,
       data.Number
     );
-    console.log(data);
+
     navigate("/");
   };
 
