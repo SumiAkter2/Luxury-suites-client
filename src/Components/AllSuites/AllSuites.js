@@ -54,12 +54,12 @@ const AllSuites = ({ handleSubmit, suites, bookingSuite, setBooked }) => {
             Check Availability
           </h1>
 
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} className="bg-orange-200 p-4 rounded-md">
             <div className=" font-bold  rounded-lg my-2">
               <h1 className="mb-2"> Check In</h1>
 
               <DatePicker
-                className="bg-secondary rounded-md p-1 w-52"
+                className="bg-primary rounded-md p-1 w-52"
                 selected={startDate}
                 name="startDate"
                 onChange={(date) => setStartDate(date)}
@@ -69,7 +69,7 @@ const AllSuites = ({ handleSubmit, suites, bookingSuite, setBooked }) => {
               <h1 className="mb-2"> Check Out</h1>
               <DatePicker
                 name="endDate"
-                className="bg-secondary rounded-md p-1 w-52"
+                className="bg-primary rounded-md p-1 w-52"
                 selected={endDate}
                 onChange={(date) => setEndDate(date)}
               />
@@ -80,7 +80,7 @@ const AllSuites = ({ handleSubmit, suites, bookingSuite, setBooked }) => {
                 <h1 className="mb-2"> Adult</h1>
                 <select
                   name="guest"
-                  className="w-24 bg-secondary rounded-md p-1"
+                  className="w-24 bg-primary rounded-md p-1"
                   type="number"
                   placeholder="1"
                 >
@@ -95,7 +95,7 @@ const AllSuites = ({ handleSubmit, suites, bookingSuite, setBooked }) => {
                 <h1 className="mb-2">Children</h1>
                 <select
                   name="children"
-                  className="w-24 bg-secondary rounded-md p-1"
+                  className="w-24 bg-primary rounded-md p-1"
                   type="number"
                   placeholder="1"
                 >
