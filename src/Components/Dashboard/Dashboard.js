@@ -19,13 +19,12 @@ const Dashboard = () => {
       <div className="drawer drawer-mobile bg-yellow-50">
         <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col  justify-start">
-          <Button
-            htmlFor="my-drawer-2"
-            className=" btn-outline my-12 drawer-button lg:hidden mx-auto flex justify-center items-center"
-          >
-            <ImDrawer size="20px" className="mr-2 " />
-            <span> Open drawer</span>
-          </Button>
+          <div className=" btn-outline my-12 drawer-button lg:hidden mx-auto flex justify-center items-center">
+            <Button htmlFor="my-drawer-2">
+              <ImDrawer size="20px" className="mr-2 " />
+              <span> Open drawer</span>
+            </Button>
+          </div>
           {/* <!-- Page content here --> */}
           <Outlet />
 

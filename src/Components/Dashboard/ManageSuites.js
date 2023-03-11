@@ -51,14 +51,14 @@ const ManageSuites = () => {
                     </td>
 
                     <th className="flex flex-col">
-                      <Button className="btn btn-ghost btn-xs py-2">
+                      <button className="btn btn-primary btn-xs btn-outline mb-2">
                         <FontAwesomeIcon className="mr-2" icon={faAdd} />
                         Add
-                      </Button>
-                      <Button className="btn btn-ghost btn-xs py-2">
+                      </button>
+                      <button className="btn btn-primary  btn-xs ">
                         <FontAwesomeIcon className="mr-2" icon={faTrash} />
                         Delete
-                      </Button>
+                      </button>
                     </th>
                   </tr>
                 ))}

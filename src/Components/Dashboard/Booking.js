@@ -94,19 +94,19 @@ const BookingList = () => {
                   </td>
 
                   <th>
-                    <Button className=" btn-xs h-8 btn-outline">
+                    <button className="btn btn-primary btn-xs h-8 btn-outline">
                       <MdPayment size="20px" className="mr-2 " />
                       Payment
-                    </Button>
+                    </button>
                   </th>
                   <th>
-                    <Button
-                      className=" btn-xs h-8 btn-outline"
+                    <button
+                      className="btn btn-primary btn-xs h-8 btn-outline"
                       onClick={() => handleDelete(s._id)}
                     >
                       <MdDeleteOutline size="20px" className="mr-2 " />
                       Delete
-                    </Button>
+                    </button>
                   </th>
                 </tr>
               ))}
